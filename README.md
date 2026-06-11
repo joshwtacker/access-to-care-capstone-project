@@ -1,12 +1,6 @@
----
-title: "README"
-output: html_document
----
 
----
-title: "Access to Care: Opioid Overdose Risk vs Treatment Availability in the United States"
-author: "Josh Tacker"
-output: github_document
+Access to Care: Opioid Overdose Risk vs Treatment Availability in the United States
+Author: "Josh Tacker"
 ---
 
 ## Project Overview
