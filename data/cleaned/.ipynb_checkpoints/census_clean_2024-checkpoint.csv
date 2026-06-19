@@ -1,0 +1,3223 @@
+state,county,fips,median_income,population
+ Alabama,Autauga County,01001,72481,59947
+ Alabama,Baldwin County,01003,78775,246989
+ Alabama,Barbour County,01005,46042,24643
+ Alabama,Bibb County,01007,52541,22130
+ Alabama,Blount County,01009,64190,59518
+ Alabama,Bullock County,01011,31310,10058
+ Alabama,Butler County,01013,44755,18630
+ Alabama,Calhoun County,01015,55029,116090
+ Alabama,Chambers County,01017,49656,34192
+ Alabama,Cherokee County,01019,53863,25443
+ Alabama,Chilton County,01021,65603,45992
+ Alabama,Choctaw County,01023,47813,12380
+ Alabama,Clarke County,01025,49249,22543
+ Alabama,Clay County,01027,55250,14192
+ Alabama,Cleburne County,01029,55345,15426
+ Alabama,Coffee County,01031,68353,54920
+ Alabama,Colbert County,01033,60628,58022
+ Alabama,Conecuh County,01035,41327,11275
+ Alabama,Coosa County,01037,57355,10300
+ Alabama,Covington County,01039,52456,37628
+ Alabama,Crenshaw County,01041,48560,13122
+ Alabama,Cullman County,01043,62656,90566
+ Alabama,Dale County,01045,54963,49599
+ Alabama,Dallas County,01047,35627,36858
+ Alabama,DeKalb County,01049,51204,72269
+ Alabama,Elmore County,01051,78243,89526
+ Alabama,Escambia County,01053,48225,36629
+ Alabama,Etowah County,01055,54563,103105
+ Alabama,Fayette County,01057,49488,16053
+ Alabama,Franklin County,01059,53338,31966
+ Alabama,Geneva County,01061,52771,26887
+ Alabama,Greene County,01063,29200,7424
+ Alabama,Hale County,01065,39250,14829
+ Alabama,Henry County,01067,59931,17647
+ Alabama,Houston County,01069,58626,108140
+ Alabama,Jackson County,01071,51908,53053
+ Alabama,Jefferson County,01073,66388,667755
+ Alabama,Lamar County,01075,50000,13693
+ Alabama,Lauderdale County,01077,62649,95830
+ Alabama,Lawrence County,01079,66071,33276
+ Alabama,Lee County,01081,65824,181134
+ Alabama,Limestone County,01083,83629,111233
+ Alabama,Lowndes County,01085,37052,9833
+ Alabama,Macon County,01087,43707,18691
+ Alabama,Madison County,01089,86499,405718
+ Alabama,Marengo County,01091,43825,18851
+ Alabama,Marion County,01093,50088,29184
+ Alabama,Marshall County,01095,62571,99748
+ Alabama,Mobile County,01097,58880,412590
+ Alabama,Monroe County,01099,42292,19388
+ Alabama,Montgomery County,01101,59386,226718
+ Alabama,Morgan County,01103,68845,124471
+ Alabama,Perry County,01105,37654,8031
+ Alabama,Pickens County,01107,46274,18721
+ Alabama,Pike County,01109,48677,32987
+ Alabama,Randolph County,01111,52338,22510
+ Alabama,Russell County,01113,51197,58811
+ Alabama,St. Clair County,01115,77463,94166
+ Alabama,Shelby County,01117,97961,230211
+ Alabama,Sumter County,01119,33310,11878
+ Alabama,Talladega County,01121,57776,81021
+ Alabama,Tallapoosa County,01123,59356,40938
+ Alabama,Tuscaloosa County,01125,66231,237552
+ Alabama,Walker County,01127,56509,64841
+ Alabama,Washington County,01129,61042,15143
+ Alabama,Wilcox County,01131,40640,10172
+ Alabama,Winston County,01133,57256,23682
+ Alaska,Aleutians East Borough,02013,65365,3491
+ Alaska,Aleutians West Census Area,02016,135500,5235
+ Alaska,Anchorage Municipality,02020,103284,288976
+ Alaska,Bethel Census Area,02050,73996,18394
+ Alaska,Bristol Bay Borough,02060,95625,918
+ Alaska,Chugach Census Area,02063,90509,6862
+ Alaska,Copper River Census Area,02066,79250,2626
+ Alaska,Denali Borough,02068,80781,1969
+ Alaska,Dillingham Census Area,02070,78533,4724
+ Alaska,Fairbanks North Star Borough,02090,88267,95460
+ Alaska,Haines Borough,02100,86927,2086
+ Alaska,Hoonah-Angoon Census Area,02105,61406,2311
+ Alaska,Juneau City and Borough,02110,101661,31794
+ Alaska,Kenai Peninsula Borough,02122,80538,60413
+ Alaska,Ketchikan Gateway Borough,02130,92885,13768
+ Alaska,Kodiak Island Borough,02150,86250,12771
+ Alaska,Kusilvak Census Area,02158,51471,8176
+ Alaska,Lake and Peninsula Borough,02164,65625,1013
+ Alaska,Matanuska-Susitna Borough,02170,94031,112988
+ Alaska,Nome Census Area,02180,78681,9866
+ Alaska,North Slope Borough,02185,95694,10810
+ Alaska,Northwest Arctic Borough,02188,84018,7441
+ Alaska,Petersburg Borough,02195,75125,3409
+ Alaska,Prince of Wales-Hyder Census Area,02198,61156,5715
+ Alaska,Sitka City and Borough,02220,101727,8368
+ Alaska,Skagway Municipality,02230,81136,1244
+ Alaska,Southeast Fairbanks Census Area,02240,73882,7068
+ Alaska,Wrangell City and Borough,02275,63750,2088
+ Alaska,Yakutat City and Borough,02282,85000,527
+ Alaska,Yukon-Koyukuk Census Area,02290,55741,5195
+ Arizona,Apache County,04001,41438,65341
+ Arizona,Cochise County,04003,59742,125566
+ Arizona,Coconino County,04005,72966,144508
+ Arizona,Gila County,04007,61986,53795
+ Arizona,Graham County,04009,67325,39232
+ Arizona,Greenlee County,04011,71164,9409
+ Arizona,La Paz County,04012,49478,16664
+ Arizona,Maricopa County,04013,89300,4559748
+ Arizona,Mohave County,04015,57684,220517
+ Arizona,Navajo County,04017,54606,108415
+ Arizona,Pima County,04019,70315,1060490
+ Arizona,Pinal County,04021,80266,469006
+ Arizona,Santa Cruz County,04023,55217,48926
+ Arizona,Yavapai County,04025,69613,245480
+ Arizona,Yuma County,04027,62876,211741
+ Arkansas,Arkansas County,05001,53164,16515
+ Arkansas,Ashley County,05003,44266,18429
+ Arkansas,Baxter County,05005,48452,42407
+ Arkansas,Benton County,05007,93506,303632
+ Arkansas,Boone County,05009,55143,38138
+ Arkansas,Bradley County,05011,41476,10208
+ Arkansas,Calhoun County,05013,66809,4704
+ Arkansas,Carroll County,05015,54230,28626
+ Arkansas,Chicot County,05017,39045,9765
+ Arkansas,Clark County,05019,52034,21125
+ Arkansas,Clay County,05021,51481,14280
+ Arkansas,Cleburne County,05023,55798,25226
+ Arkansas,Cleveland County,05025,54794,7453
+ Arkansas,Columbia County,05027,55334,22349
+ Arkansas,Conway County,05029,54187,21054
+ Arkansas,Craighead County,05031,59548,113249
+ Arkansas,Crawford County,05033,64132,61139
+ Arkansas,Crittenden County,05035,55358,47266
+ Arkansas,Cross County,05037,50863,16543
+ Arkansas,Dallas County,05039,42500,6242
+ Arkansas,Desha County,05041,37662,10786
+ Arkansas,Drew County,05043,42824,17046
+ Arkansas,Faulkner County,05045,67289,127717
+ Arkansas,Franklin County,05047,55886,17326
+ Arkansas,Fulton County,05049,42241,12302
+ Arkansas,Garland County,05051,57181,100035
+ Arkansas,Grant County,05053,71549,18242
+ Arkansas,Greene County,05055,57839,46432
+ Arkansas,Hempstead County,05057,46787,19508
+ Arkansas,Hot Spring County,05059,55405,33180
+ Arkansas,Howard County,05061,45603,12583
+ Arkansas,Independence County,05063,56609,38175
+ Arkansas,Izard County,05065,49405,14009
+ Arkansas,Jackson County,05067,44218,16712
+ Arkansas,Jefferson County,05069,51096,64802
+ Arkansas,Johnson County,05071,45995,26003
+ Arkansas,Lafayette County,05073,41278,6136
+ Arkansas,Lawrence County,05075,44882,16238
+ Arkansas,Lee County,05077,34375,8359
+ Arkansas,Lincoln County,05079,51778,12950
+ Arkansas,Little River County,05081,53344,11821
+ Arkansas,Logan County,05083,58555,21277
+ Arkansas,Lonoke County,05085,72828,75272
+ Arkansas,Madison County,05087,56798,17329
+ Arkansas,Marion County,05089,48619,17228
+ Arkansas,Miller County,05091,48836,42360
+ Arkansas,Mississippi County,05093,52548,39126
+ Arkansas,Monroe County,05095,43214,6589
+ Arkansas,Montgomery County,05097,48906,8553
+ Arkansas,Nevada County,05099,53886,8159
+ Arkansas,Newton County,05101,48986,7112
+ Arkansas,Ouachita County,05103,49268,22085
+ Arkansas,Perry County,05105,55764,10101
+ Arkansas,Phillips County,05107,40134,15450
+ Arkansas,Pike County,05109,49269,10115
+ Arkansas,Poinsett County,05111,46707,22543
+ Arkansas,Polk County,05113,49191,19361
+ Arkansas,Pope County,05115,57344,64131
+ Arkansas,Prairie County,05117,51646,8064
+ Arkansas,Pulaski County,05119,62873,399818
+ Arkansas,Randolph County,05121,50911,18838
+ Arkansas,St. Francis County,05123,42574,22400
+ Arkansas,Saline County,05125,79046,127479
+ Arkansas,Scott County,05127,43270,9816
+ Arkansas,Searcy County,05129,44426,7859
+ Arkansas,Sebastian County,05131,57790,128900
+ Arkansas,Sevier County,05133,53527,15712
+ Arkansas,Sharp County,05135,44637,17773
+ Arkansas,Stone County,05137,40943,12568
+ Arkansas,Union County,05139,55259,37900
+ Arkansas,Van Buren County,05141,50354,15998
+ Arkansas,Washington County,05143,70639,256765
+ Arkansas,White County,05145,55249,77838
+ Arkansas,Woodruff County,05147,48158,6026
+ Arkansas,Yell County,05149,55934,20134
+ California,Alameda County,06001,129367,1649473
+ California,Alpine County,06003,105521,1616
+ California,Amador County,06005,88044,41428
+ California,Butte County,06007,67928,207929
+ California,Calaveras County,06009,78647,46248
+ California,Colusa County,06011,75672,21984
+ California,Contra Costa County,06013,127229,1165012
+ California,Del Norte County,06015,67058,27107
+ California,El Dorado County,06017,108845,192662
+ California,Fresno County,06019,74201,1016725
+ California,Glenn County,06021,67139,28494
+ California,Humboldt County,06023,61160,134541
+ California,Imperial County,06025,57681,180202
+ California,Inyo County,06027,73991,18739
+ California,Kern County,06029,70210,915075
+ California,Kings County,06031,70995,153298
+ California,Lake County,06033,60621,68152
+ California,Lassen County,06035,67403,30356
+ California,Los Angeles County,06037,90112,9808667
+ California,Madera County,06039,76627,160940
+ California,Marin County,06041,149091,257969
+ California,Mariposa County,06043,68412,17082
+ California,Mendocino County,06045,68092,90244
+ California,Merced County,06047,65510,290201
+ California,Modoc County,06049,59455,8600
+ California,Mono County,06051,99415,13148
+ California,Monterey County,06053,97230,437613
+ California,Napa County,06055,111471,134869
+ California,Nevada County,06057,89882,102481
+ California,Orange County,06059,116289,3165820
+ California,Placer County,06061,115998,419156
+ California,Plumas County,06063,66031,19423
+ California,Riverside County,06065,93074,2478600
+ California,Sacramento County,06067,92175,1594006
+ California,San Benito County,06069,114394,67290
+ California,San Bernardino County,06071,85478,2197104
+ California,San Diego County,06073,106268,3288774
+ California,San Francisco County,06075,140970,830235
+ California,San Joaquin County,06077,92179,797334
+ California,San Luis Obispo County,06079,97446,281555
+ California,San Mateo County,06081,158855,742340
+ California,Santa Barbara County,06083,98161,443701
+ California,Santa Clara County,06085,164281,1902047
+ California,Santa Cruz County,06087,111093,264926
+ California,Shasta County,06089,72636,181436
+ California,Sierra County,06091,63355,2746
+ California,Siskiyou County,06093,59095,43466
+ California,Solano County,06095,100401,451918
+ California,Sonoma County,06097,104674,485040
+ California,Stanislaus County,06099,81468,553990
+ California,Sutter County,06101,79704,98857
+ California,Tehama County,06103,63784,65167
+ California,Trinity County,06105,53002,15860
+ California,Tulare County,06107,71300,478693
+ California,Tuolumne County,06109,77404,54498
+ California,Ventura County,06111,109797,837469
+ California,Yolo County,06113,91752,220564
+ California,Yuba County,06115,76373,84507
+ Colorado,Adams County,08001,94571,530225
+ Colorado,Alamosa County,08003,55397,16581
+ Colorado,Arapahoe County,08005,101087,659844
+ Colorado,Archuleta County,08007,83065,13900
+ Colorado,Baca County,08009,46215,3428
+ Colorado,Bent County,08011,50179,5549
+ Colorado,Boulder County,08013,103994,328961
+ Colorado,Broomfield County,08014,123874,76304
+ Colorado,Chaffee County,08015,84132,20178
+ Colorado,Cheyenne County,08017,70865,1741
+ Colorado,Clear Creek County,08019,94577,9262
+ Colorado,Conejos County,08021,50978,7530
+ Colorado,Costilla County,08023,36861,3607
+ Colorado,Crowley County,08025,48826,5647
+ Colorado,Custer County,08027,72674,5247
+ Colorado,Delta County,08029,57774,31598
+ Colorado,Denver County,08031,94718,718877
+ Colorado,Dolores County,08033,64907,2432
+ Colorado,Douglas County,08035,149594,377150
+ Colorado,Eagle County,08037,104096,55135
+ Colorado,Elbert County,08039,132685,27874
+ Colorado,El Paso County,08041,90363,742999
+ Colorado,Fremont County,08043,62664,49634
+ Colorado,Garfield County,08045,91131,62479
+ Colorado,Gilpin County,08047,95361,5901
+ Colorado,Grand County,08049,88612,15895
+ Colorado,Gunnison County,08051,84527,17241
+ Colorado,Hinsdale County,08053,75972,1005
+ Colorado,Huerfano County,08055,52526,6972
+ Colorado,Jackson County,08057,47667,1372
+ Colorado,Jefferson County,08059,110656,579377
+ Colorado,Kiowa County,08061,58618,1376
+ Colorado,Kit Carson County,08063,70259,7023
+ Colorado,Lake County,08065,96575,7380
+ Colorado,La Plata County,08067,86056,56331
+ Colorado,Larimer County,08069,93765,367368
+ Colorado,Las Animas County,08071,52074,14413
+ Colorado,Lincoln County,08073,62861,5550
+ Colorado,Logan County,08075,51829,20892
+ Colorado,Mesa County,08077,73658,158601
+ Colorado,Mineral County,08079,56250,729
+ Colorado,Moffat County,08081,73849,13207
+ Colorado,Montezuma County,08083,65244,26412
+ Colorado,Montrose County,08085,72120,43807
+ Colorado,Morgan County,08087,73278,29520
+ Colorado,Otero County,08089,54037,18321
+ Colorado,Ouray County,08091,91020,5087
+ Colorado,Park County,08093,103670,17907
+ Colorado,Phillips County,08095,64674,4496
+ Colorado,Pitkin County,08097,102645,16985
+ Colorado,Prowers County,08099,53508,11910
+ Colorado,Pueblo County,08101,64010,169356
+ Colorado,Rio Blanco County,08103,65473,6544
+ Colorado,Rio Grande County,08105,64411,11321
+ Colorado,Routt County,08107,106489,25084
+ Colorado,Saguache County,08109,50082,6580
+ Colorado,San Juan County,08111,77824,724
+ Colorado,San Miguel County,08113,79024,7968
+ Colorado,Sedgwick County,08115,52386,2304
+ Colorado,Summit County,08117,109773,31017
+ Colorado,Teller County,08119,85361,24825
+ Colorado,Washington County,08121,67167,4831
+ Colorado,Weld County,08123,97097,350396
+ Colorado,Yuma County,08125,60545,9979
+ Connecticut,Capitol Planning Region,09110,93394,977290
+ Connecticut,Greater Bridgeport Planning Region,09120,89667,329259
+ Connecticut,Lower Connecticut River Valley Planning Region,09130,104428,175822
+ Connecticut,Naugatuck Valley Planning Region,09140,86191,454969
+ Connecticut,Northeastern Connecticut Planning Region,09150,90589,96312
+ Connecticut,Northwest Hills Planning Region,09160,93551,113216
+ Connecticut,South Central Connecticut Planning Region,09170,88197,570598
+ Connecticut,Southeastern Connecticut Planning Region,09180,86586,279971
+ Connecticut,Western Connecticut Planning Region,09190,128188,627071
+ Delaware,Kent County,10001,74477,187604
+ Delaware,New Castle County,10003,91166,577961
+ Delaware,Sussex County,10005,81497,255626
+ District of Columbia,District of Columbia,11001,109870,681294
+ Florida,Alachua County,12001,61949,285492
+ Florida,Baker County,12003,79836,28430
+ Florida,Bay County,12005,73533,186393
+ Florida,Bradford County,12007,63050,27885
+ Florida,Brevard County,12009,78476,632780
+ Florida,Broward County,12011,77633,1977129
+ Florida,Calhoun County,12013,50517,13492
+ Florida,Charlotte County,12015,69952,201064
+ Florida,Citrus County,12017,56546,162472
+ Florida,Clay County,12019,87820,227584
+ Florida,Collier County,12021,90045,398291
+ Florida,Columbia County,12023,59205,71789
+ Florida,DeSoto County,12027,54417,35386
+ Florida,Dixie County,12029,50110,17058
+ Florida,Duval County,12031,71277,1023153
+ Florida,Escambia County,12033,67500,325923
+ Florida,Flagler County,12035,77363,126528
+ Florida,Franklin County,12037,64105,12553
+ Florida,Gadsden County,12039,48801,43710
+ Florida,Gilchrist County,12041,63523,19040
+ Florida,Glades County,12043,45870,12563
+ Florida,Gulf County,12045,61179,15131
+ Florida,Hamilton County,12047,50144,13616
+ Florida,Hardee County,12049,60489,25675
+ Florida,Hendry County,12051,56393,42382
+ Florida,Hernando County,12053,66058,207018
+ Florida,Highlands County,12055,54897,105702
+ Florida,Hillsborough County,12057,79540,1522748
+ Florida,Holmes County,12059,49343,19513
+ Florida,Indian River County,12061,73491,166936
+ Florida,Jackson County,12063,49149,48250
+ Florida,Jefferson County,12065,61212,15091
+ Florida,Lafayette County,12067,62757,8161
+ Florida,Lake County,12069,73161,412924
+ Florida,Lee County,12071,76107,817666
+ Florida,Leon County,12073,66287,297542
+ Florida,Levy County,12075,56750,45391
+ Florida,Liberty County,12077,58671,7687
+ Florida,Madison County,12079,48485,18089
+ Florida,Manatee County,12081,78457,429792
+ Florida,Marion County,12083,61010,400078
+ Florida,Martin County,12085,82943,162176
+ Florida,Miami-Dade County,12086,71753,2738356
+ Florida,Monroe County,12087,87738,81860
+ Florida,Nassau County,12089,89804,97859
+ Florida,Okaloosa County,12091,81998,216599
+ Florida,Okeechobee County,12093,57984,40816
+ Florida,Orange County,12095,79719,1471937
+ Florida,Osceola County,12097,72637,427415
+ Florida,Palm Beach County,12099,83581,1533806
+ Florida,Pasco County,12101,70492,611444
+ Florida,Pinellas County,12103,72646,963481
+ Florida,Polk County,12105,65978,790694
+ Florida,Putnam County,12107,47934,75164
+ Florida,St. Johns County,12109,109839,306934
+ Florida,St. Lucie County,12111,71457,360500
+ Florida,Santa Rosa County,12113,91922,198472
+ Florida,Sarasota County,12115,83416,459547
+ Florida,Seminole County,12117,85761,481470
+ Florida,Sumter County,12119,76508,143408
+ Florida,Suwannee County,12121,56658,45342
+ Florida,Taylor County,12123,49073,21503
+ Florida,Union County,12125,64146,15701
+ Florida,Volusia County,12127,70044,579622
+ Florida,Wakulla County,12129,81895,35387
+ Florida,Walton County,12131,81986,82948
+ Florida,Washington County,12133,58210,25529
+ Georgia,Appling County,13001,46651,18493
+ Georgia,Atkinson County,13003,42347,8337
+ Georgia,Bacon County,13005,44694,11109
+ Georgia,Baker County,13007,46012,2790
+ Georgia,Baldwin County,13009,54403,43642
+ Georgia,Banks County,13011,77063,19264
+ Georgia,Barrow County,13013,80653,89886
+ Georgia,Bartow County,13015,82243,113113
+ Georgia,Ben Hill County,13017,41758,17089
+ Georgia,Berrien County,13019,52876,18352
+ Georgia,Bibb County,13021,51234,156578
+ Georgia,Bleckley County,13023,62008,12430
+ Georgia,Brantley County,13025,58239,18315
+ Georgia,Brooks County,13027,46807,16293
+ Georgia,Bryan County,13029,103408,48263
+ Georgia,Bulloch County,13031,58810,82683
+ Georgia,Burke County,13033,53014,24470
+ Georgia,Butts County,13035,69241,26496
+ Georgia,Calhoun County,13037,46940,5498
+ Georgia,Camden County,13039,74378,56970
+ Georgia,Candler County,13043,49581,11043
+ Georgia,Carroll County,13045,73714,124569
+ Georgia,Catoosa County,13047,74639,68634
+ Georgia,Charlton County,13049,61276,12818
+ Georgia,Chatham County,13051,71097,300879
+ Georgia,Chattahoochee County,13053,61042,8887
+ Georgia,Chattooga County,13055,50285,25036
+ Georgia,Cherokee County,13057,108115,281032
+ Georgia,Clarke County,13059,53625,129609
+ Georgia,Clay County,13061,49147,2850
+ Georgia,Clayton County,13063,59806,298924
+ Georgia,Clinch County,13065,45847,6759
+ Georgia,Cobb County,13067,102738,775208
+ Georgia,Coffee County,13069,50683,43347
+ Georgia,Colquitt County,13071,49341,46224
+ Georgia,Columbia County,13073,95592,162434
+ Georgia,Cook County,13075,53651,17532
+ Georgia,Coweta County,13077,95548,152852
+ Georgia,Crawford County,13079,67116,12225
+ Georgia,Crisp County,13081,45105,19790
+ Georgia,Dade County,13083,64568,16165
+ Georgia,Dawson County,13085,92991,30242
+ Georgia,Decatur County,13087,53317,29195
+ Georgia,DeKalb County,13089,80644,765351
+ Georgia,Dodge County,13091,51587,19805
+ Georgia,Dooly County,13093,60987,10984
+ Georgia,Dougherty County,13095,49044,83091
+ Georgia,Douglas County,13097,82984,147888
+ Georgia,Early County,13099,54083,10603
+ Georgia,Echols County,13101,59489,3709
+ Georgia,Effingham County,13103,88438,69143
+ Georgia,Elbert County,13105,58450,19849
+ Georgia,Emanuel County,13107,52772,23026
+ Georgia,Evans County,13109,53259,10757
+ Georgia,Fannin County,13111,57073,25742
+ Georgia,Fayette County,13113,111978,122244
+ Georgia,Floyd County,13115,65565,99693
+ Georgia,Forsyth County,13117,143784,267287
+ Georgia,Franklin County,13119,53046,24234
+ Georgia,Fulton County,13121,95292,1076561
+ Georgia,Gilmer County,13123,74499,32426
+ Georgia,Glascock County,13125,54934,2932
+ Georgia,Glynn County,13127,69799,85447
+ Georgia,Gordon County,13129,63650,59100
+ Georgia,Grady County,13131,58980,26108
+ Georgia,Greene County,13133,86272,20109
+ Georgia,Gwinnett County,13135,87890,979864
+ Georgia,Habersham County,13137,67309,47793
+ Georgia,Hall County,13139,80901,212705
+ Georgia,Hancock County,13141,40082,8650
+ Georgia,Haralson County,13143,72127,31285
+ Georgia,Harris County,13145,97302,36086
+ Georgia,Hart County,13147,59385,26939
+ Georgia,Heard County,13149,65868,11773
+ Georgia,Henry County,13151,83146,249960
+ Georgia,Houston County,13153,80698,169649
+ Georgia,Irwin County,13155,51384,9285
+ Georgia,Jackson County,13157,89544,84757
+ Georgia,Jasper County,13159,60134,15929
+ Georgia,Jeff Davis County,13161,40283,14924
+ Georgia,Jefferson County,13163,53014,15341
+ Georgia,Jenkins County,13165,44389,8711
+ Georgia,Johnson County,13167,51028,9190
+ Georgia,Jones County,13169,75500,28673
+ Georgia,Lamar County,13171,67062,19571
+ Georgia,Lanier County,13173,47186,10221
+ Georgia,Laurens County,13175,55010,49798
+ Georgia,Lee County,13177,89168,33626
+ Georgia,Liberty County,13179,60456,67397
+ Georgia,Lincoln County,13181,56907,7854
+ Georgia,Long County,13183,68808,18374
+ Georgia,Lowndes County,13185,58541,119965
+ Georgia,Lumpkin County,13187,77448,34505
+ Georgia,McDuffie County,13189,56733,21718
+ Georgia,McIntosh County,13191,50273,11312
+ Georgia,Macon County,13193,41031,11864
+ Georgia,Madison County,13195,61963,31528
+ Georgia,Marion County,13197,51667,7509
+ Georgia,Meriwether County,13199,57340,20929
+ Georgia,Miller County,13201,51425,5850
+ Georgia,Mitchell County,13205,57613,21058
+ Georgia,Monroe County,13207,83183,29664
+ Georgia,Montgomery County,13209,51941,8640
+ Georgia,Morgan County,13211,78111,21078
+ Georgia,Murray County,13213,69253,40562
+ Georgia,Muscogee County,13215,58073,203711
+ Georgia,Newton County,13217,77179,118152
+ Georgia,Oconee County,13219,121217,43551
+ Georgia,Oglethorpe County,13221,75034,15509
+ Georgia,Paulding County,13223,98031,178909
+ Georgia,Peach County,13225,71293,28560
+ Georgia,Pickens County,13227,78930,34951
+ Georgia,Pierce County,13229,60517,20202
+ Georgia,Pike County,13231,86719,19903
+ Georgia,Polk County,13233,58515,43785
+ Georgia,Pulaski County,13235,50406,9939
+ Georgia,Putnam County,13237,72096,22855
+ Georgia,Quitman County,13239,40179,2264
+ Georgia,Rabun County,13241,67493,17312
+ Georgia,Randolph County,13243,28380,6196
+ Georgia,Richmond County,13245,55637,206069
+ Georgia,Rockdale County,13247,77247,95281
+ Georgia,Schley County,13249,56875,4513
+ Georgia,Screven County,13251,52792,14130
+ Georgia,Seminole County,13253,49495,9156
+ Georgia,Spalding County,13255,62071,68892
+ Georgia,Stephens County,13257,54754,27012
+ Georgia,Stewart County,13259,33250,4869
+ Georgia,Sumter County,13261,42653,29061
+ Georgia,Talbot County,13263,41597,5742
+ Georgia,Taliaferro County,13265,52500,1558
+ Georgia,Tattnall County,13267,50747,24208
+ Georgia,Taylor County,13269,41788,7786
+ Georgia,Telfair County,13271,50929,11831
+ Georgia,Terrell County,13273,46171,8850
+ Georgia,Thomas County,13275,60736,45777
+ Georgia,Tift County,13277,53255,41438
+ Georgia,Toombs County,13279,52621,27102
+ Georgia,Towns County,13281,59135,12913
+ Georgia,Treutlen County,13283,55518,6376
+ Georgia,Troup County,13285,56776,70330
+ Georgia,Turner County,13287,36799,8939
+ Georgia,Twiggs County,13289,56324,7803
+ Georgia,Union County,13291,66176,26304
+ Georgia,Upson County,13293,55429,28029
+ Georgia,Walker County,13295,59469,68762
+ Georgia,Walton County,13297,84945,103313
+ Georgia,Ware County,13299,47448,35976
+ Georgia,Warren County,13301,44289,5170
+ Georgia,Washington County,13303,46023,19849
+ Georgia,Wayne County,13305,53427,30949
+ Georgia,Webster County,13307,46792,2381
+ Georgia,Wheeler County,13309,40539,7335
+ Georgia,White County,13311,70666,28810
+ Georgia,Whitfield County,13313,67070,103598
+ Georgia,Wilcox County,13315,54138,8798
+ Georgia,Wilkes County,13317,52043,9549
+ Georgia,Wilkinson County,13319,45465,8747
+ Georgia,Worth County,13321,58694,20451
+ Hawaii,Hawaii County,15001,78639,205769
+ Hawaii,Honolulu County,15003,106195,1001146
+ Hawaii,Kalawao County,15005,73750,67
+ Hawaii,Kauai County,15007,97668,73731
+ Hawaii,Maui County,15009,97161,164522
+ Idaho,Ada County,16001,91502,518935
+ Idaho,Adams County,16003,61808,4744
+ Idaho,Bannock County,16005,66499,89454
+ Idaho,Bear Lake County,16007,75260,6650
+ Idaho,Benewah County,16009,59794,10142
+ Idaho,Bingham County,16011,77878,49664
+ Idaho,Blaine County,16013,92566,24951
+ Idaho,Boise County,16015,78774,8273
+ Idaho,Bonner County,16017,66979,51049
+ Idaho,Bonneville County,16019,79068,129523
+ Idaho,Boundary County,16021,67237,13172
+ Idaho,Butte County,16023,53015,2684
+ Idaho,Camas County,16025,57955,1124
+ Idaho,Canyon County,16027,76488,250790
+ Idaho,Caribou County,16029,68782,7162
+ Idaho,Cassia County,16031,70830,25483
+ Idaho,Clark County,16033,55208,849
+ Idaho,Clearwater County,16035,60000,9012
+ Idaho,Custer County,16037,67574,4470
+ Idaho,Elmore County,16039,65359,29321
+ Idaho,Franklin County,16041,71950,15056
+ Idaho,Fremont County,16043,72683,13943
+ Idaho,Gem County,16045,64605,20614
+ Idaho,Gooding County,16047,63559,15931
+ Idaho,Idaho County,16049,66325,17432
+ Idaho,Jefferson County,16051,86679,33154
+ Idaho,Jerome County,16053,71724,25173
+ Idaho,Kootenai County,16055,81861,181996
+ Idaho,Latah County,16057,65424,41049
+ Idaho,Lemhi County,16059,53202,8249
+ Idaho,Lewis County,16061,51615,3682
+ Idaho,Lincoln County,16063,71453,5358
+ Idaho,Madison County,16065,60160,54618
+ Idaho,Minidoka County,16067,70377,22208
+ Idaho,Nez Perce County,16069,72599,42697
+ Idaho,Oneida County,16071,74954,4768
+ Idaho,Owyhee County,16073,64406,12503
+ Idaho,Payette County,16075,67673,26771
+ Idaho,Power County,16077,61146,8133
+ Idaho,Shoshone County,16079,55527,13785
+ Idaho,Teton County,16081,99805,12425
+ Idaho,Twin Falls County,16083,67409,93734
+ Idaho,Valley County,16085,76078,12389
+ Idaho,Washington County,16087,54000,11142
+ Illinois,Adams County,17001,66220,64754
+ Illinois,Alexander County,17003,47043,4875
+ Illinois,Bond County,17005,65959,16716
+ Illinois,Boone County,17007,84571,53230
+ Illinois,Brown County,17009,67917,6322
+ Illinois,Bureau County,17011,69257,32866
+ Illinois,Calhoun County,17013,93203,4330
+ Illinois,Carroll County,17015,60758,15576
+ Illinois,Cass County,17017,68125,12784
+ Illinois,Champaign County,17019,63683,208741
+ Illinois,Christian County,17021,62611,33538
+ Illinois,Clark County,17023,72927,15266
+ Illinois,Clay County,17025,60417,13052
+ Illinois,Clinton County,17027,86588,36954
+ Illinois,Coles County,17029,56478,46777
+ Illinois,Cook County,17031,83498,5182090
+ Illinois,Crawford County,17033,71674,18511
+ Illinois,Cumberland County,17035,73327,10334
+ Illinois,DeKalb County,17037,70724,100703
+ Illinois,De Witt County,17039,71678,15373
+ Illinois,Douglas County,17041,77320,19751
+ Illinois,DuPage County,17043,112096,930024
+ Illinois,Edgar County,17045,59941,16535
+ Illinois,Edwards County,17047,60519,6075
+ Illinois,Effingham County,17049,80404,34522
+ Illinois,Fayette County,17051,60944,21315
+ Illinois,Ford County,17053,62439,13406
+ Illinois,Franklin County,17055,56740,37323
+ Illinois,Fulton County,17057,60599,33020
+ Illinois,Gallatin County,17059,59219,4819
+ Illinois,Greene County,17061,62192,11683
+ Illinois,Grundy County,17063,92235,53219
+ Illinois,Hamilton County,17065,65746,7916
+ Illinois,Hancock County,17067,65865,17281
+ Illinois,Hardin County,17069,54271,3605
+ Illinois,Henderson County,17071,62227,6193
+ Illinois,Henry County,17073,71911,48643
+ Illinois,Iroquois County,17075,66255,26449
+ Illinois,Jackson County,17077,48763,53064
+ Illinois,Jasper County,17079,74755,9180
+ Illinois,Jefferson County,17081,63118,36550
+ Illinois,Jersey County,17083,80361,21274
+ Illinois,Jo Daviess County,17085,73993,21851
+ Illinois,Johnson County,17087,62528,13376
+ Illinois,Kane County,17089,103163,517255
+ Illinois,Kankakee County,17091,71281,106635
+ Illinois,Kendall County,17093,111601,137675
+ Illinois,Knox County,17095,57030,49046
+ Illinois,Lake County,17097,110416,714223
+ Illinois,LaSalle County,17099,73045,108714
+ Illinois,Lawrence County,17101,55324,15031
+ Illinois,Lee County,17103,70292,33869
+ Illinois,Livingston County,17105,73790,35565
+ Illinois,Logan County,17107,66358,27713
+ Illinois,McDonough County,17109,52795,26920
+ Illinois,McHenry County,17111,104802,312591
+ Illinois,McLean County,17113,79905,171556
+ Illinois,Macon County,17115,62666,101849
+ Illinois,Macoupin County,17117,70805,44350
+ Illinois,Madison County,17119,75793,264238
+ Illinois,Marion County,17121,61240,37000
+ Illinois,Marshall County,17123,71585,11647
+ Illinois,Mason County,17125,62845,12745
+ Illinois,Massac County,17127,65116,13865
+ Illinois,Menard County,17129,82176,12095
+ Illinois,Mercer County,17131,74182,15495
+ Illinois,Monroe County,17133,102880,35036
+ Illinois,Montgomery County,17135,63620,27942
+ Illinois,Morgan County,17137,66306,33021
+ Illinois,Moultrie County,17139,71784,14424
+ Illinois,Ogle County,17141,82132,51495
+ Illinois,Peoria County,17143,65108,179645
+ Illinois,Perry County,17145,62118,20639
+ Illinois,Piatt County,17147,94811,16695
+ Illinois,Pike County,17149,59777,14469
+ Illinois,Pope County,17151,60050,3739
+ Illinois,Pulaski County,17153,42463,5015
+ Illinois,Putnam County,17155,75590,5601
+ Illinois,Randolph County,17157,68131,30058
+ Illinois,Richland County,17159,62455,15598
+ Illinois,Rock Island County,17161,67159,142757
+ Illinois,St. Clair County,17163,73854,253694
+ Illinois,Saline County,17165,53117,23213
+ Illinois,Sangamon County,17167,75357,194947
+ Illinois,Schuyler County,17169,65948,6787
+ Illinois,Scott County,17171,66705,4937
+ Illinois,Shelby County,17173,72095,20720
+ Illinois,Stark County,17175,62878,5308
+ Illinois,Stephenson County,17177,64043,43768
+ Illinois,Tazewell County,17179,77982,130290
+ Illinois,Union County,17181,55728,16997
+ Illinois,Vermilion County,17183,56877,72386
+ Illinois,Wabash County,17185,57086,11119
+ Illinois,Warren County,17187,67385,16447
+ Illinois,Washington County,17189,78224,13627
+ Illinois,Wayne County,17191,55521,15973
+ Illinois,White County,17193,54813,13619
+ Illinois,Whiteside County,17195,67500,54947
+ Illinois,Will County,17197,109984,701462
+ Illinois,Williamson County,17199,65604,66876
+ Illinois,Winnebago County,17201,65837,283292
+ Illinois,Woodford County,17203,91483,38312
+ Indiana,Adams County,18001,65289,36227
+ Indiana,Allen County,18003,70737,392378
+ Indiana,Bartholomew County,18005,79901,83536
+ Indiana,Benton County,18007,65875,8735
+ Indiana,Blackford County,18009,51326,11950
+ Indiana,Boone County,18011,111250,74718
+ Indiana,Brown County,18013,78528,15606
+ Indiana,Carroll County,18015,65645,20535
+ Indiana,Cass County,18017,56403,37680
+ Indiana,Clark County,18019,74214,124354
+ Indiana,Clay County,18021,70010,26409
+ Indiana,Clinton County,18023,65019,32944
+ Indiana,Crawford County,18025,49640,10499
+ Indiana,Daviess County,18027,68503,33658
+ Indiana,Dearborn County,18029,84735,51094
+ Indiana,Decatur County,18031,69783,26422
+ Indiana,DeKalb County,18033,74331,43807
+ Indiana,Delaware County,18035,58127,112280
+ Indiana,Dubois County,18037,75979,43614
+ Indiana,Elkhart County,18039,68561,207132
+ Indiana,Fayette County,18041,59321,23334
+ Indiana,Floyd County,18043,79704,80918
+ Indiana,Fountain County,18045,62542,16617
+ Indiana,Franklin County,18047,78074,23020
+ Indiana,Fulton County,18049,61360,20312
+ Indiana,Gibson County,18051,67573,33000
+ Indiana,Grant County,18053,53522,66295
+ Indiana,Greene County,18055,62094,31021
+ Indiana,Hamilton County,18057,121530,365056
+ Indiana,Hancock County,18059,93186,84037
+ Indiana,Harrison County,18061,74475,39859
+ Indiana,Hendricks County,18063,101144,183344
+ Indiana,Henry County,18065,63150,48970
+ Indiana,Howard County,18067,64027,83752
+ Indiana,Huntington County,18069,66301,36798
+ Indiana,Jackson County,18071,70262,46660
+ Indiana,Jasper County,18073,77314,33234
+ Indiana,Jay County,18075,54969,20229
+ Indiana,Jefferson County,18077,64577,32998
+ Indiana,Jennings County,18079,69322,27562
+ Indiana,Johnson County,18081,90454,166315
+ Indiana,Knox County,18083,61237,36007
+ Indiana,Kosciusko County,18085,75317,80442
+ Indiana,LaGrange County,18087,84487,40805
+ Indiana,Lake County,18089,71493,500379
+ Indiana,LaPorte County,18091,71055,111917
+ Indiana,Lawrence County,18093,66468,45102
+ Indiana,Madison County,18095,63037,131900
+ Indiana,Marion County,18097,66346,975809
+ Indiana,Marshall County,18099,71808,46284
+ Indiana,Martin County,18101,68594,9830
+ Indiana,Miami County,18103,61139,35712
+ Indiana,Monroe County,18105,65868,140965
+ Indiana,Montgomery County,18107,71479,38312
+ Indiana,Morgan County,18109,79429,72659
+ Indiana,Newton County,18111,75481,13922
+ Indiana,Noble County,18113,71723,47495
+ Indiana,Ohio County,18115,70392,5999
+ Indiana,Orange County,18117,65873,19767
+ Indiana,Owen County,18119,62464,21604
+ Indiana,Parke County,18121,68485,16406
+ Indiana,Perry County,18123,61151,19270
+ Indiana,Pike County,18125,71334,12154
+ Indiana,Porter County,18127,87972,174818
+ Indiana,Posey County,18129,78129,25116
+ Indiana,Pulaski County,18131,62792,12441
+ Indiana,Putnam County,18133,78378,37280
+ Indiana,Randolph County,18135,60791,24387
+ Indiana,Ripley County,18137,70573,29095
+ Indiana,Rush County,18139,66473,16739
+ Indiana,St. Joseph County,18141,66868,273040
+ Indiana,Scott County,18143,56352,24526
+ Indiana,Shelby County,18145,72190,45265
+ Indiana,Spencer County,18147,74506,19955
+ Indiana,Starke County,18149,63960,23365
+ Indiana,Steuben County,18151,74911,34726
+ Indiana,Sullivan County,18153,56204,20780
+ Indiana,Switzerland County,18155,65343,9909
+ Indiana,Tippecanoe County,18157,60636,189071
+ Indiana,Tipton County,18159,76156,15346
+ Indiana,Union County,18161,76424,6985
+ Indiana,Vanderburgh County,18163,61648,180117
+ Indiana,Vermillion County,18165,60200,15421
+ Indiana,Vigo County,18167,52976,106109
+ Indiana,Wabash County,18169,66806,30844
+ Indiana,Warren County,18171,82425,8464
+ Indiana,Warrick County,18173,89844,65261
+ Indiana,Washington County,18175,64641,28212
+ Indiana,Wayne County,18177,55692,66397
+ Indiana,Wells County,18179,71957,28420
+ Indiana,White County,18181,67303,24717
+ Indiana,Whitley County,18183,78083,34618
+ Iowa,Adair County,19001,68092,7460
+ Iowa,Adams County,19003,71875,3622
+ Iowa,Allamakee County,19005,70694,14092
+ Iowa,Appanoose County,19007,54934,12184
+ Iowa,Audubon County,19009,58229,5599
+ Iowa,Benton County,19011,86962,25724
+ Iowa,Black Hawk County,19013,66417,131049
+ Iowa,Boone County,19015,83531,26668
+ Iowa,Bremer County,19017,86784,25204
+ Iowa,Buchanan County,19019,78236,20694
+ Iowa,Buena Vista County,19021,71719,20753
+ Iowa,Butler County,19023,73715,14268
+ Iowa,Calhoun County,19025,64964,9803
+ Iowa,Carroll County,19027,72930,20594
+ Iowa,Cass County,19029,63013,13096
+ Iowa,Cedar County,19031,80602,18349
+ Iowa,Cerro Gordo County,19033,68189,42632
+ Iowa,Cherokee County,19035,71269,11600
+ Iowa,Chickasaw County,19037,75675,11807
+ Iowa,Clarke County,19039,71641,9662
+ Iowa,Clay County,19041,65428,16461
+ Iowa,Clayton County,19043,67242,17013
+ Iowa,Clinton County,19045,66981,46268
+ Iowa,Crawford County,19047,67027,16277
+ Iowa,Dallas County,19049,102379,107968
+ Iowa,Davis County,19051,77194,9157
+ Iowa,Decatur County,19053,59044,7759
+ Iowa,Delaware County,19055,74989,17558
+ Iowa,Des Moines County,19057,62928,38487
+ Iowa,Dickinson County,19059,75432,17990
+ Iowa,Dubuque County,19061,77630,99030
+ Iowa,Emmet County,19063,63730,9262
+ Iowa,Fayette County,19065,60165,19288
+ Iowa,Floyd County,19067,68557,15328
+ Iowa,Franklin County,19069,59894,9956
+ Iowa,Fremont County,19071,71621,6514
+ Iowa,Greene County,19073,63409,8688
+ Iowa,Grundy County,19075,87205,12384
+ Iowa,Guthrie County,19077,77711,10688
+ Iowa,Hamilton County,19079,72432,14886
+ Iowa,Hancock County,19081,70601,10671
+ Iowa,Hardin County,19083,65069,16639
+ Iowa,Harrison County,19085,79535,14632
+ Iowa,Henry County,19087,67436,20004
+ Iowa,Howard County,19089,67446,9445
+ Iowa,Humboldt County,19091,71946,9591
+ Iowa,Ida County,19093,63073,6911
+ Iowa,Iowa County,19095,71223,16507
+ Iowa,Jackson County,19097,74186,19390
+ Iowa,Jasper County,19099,71311,37954
+ Iowa,Jefferson County,19101,61620,15705
+ Iowa,Johnson County,19103,74935,156639
+ Iowa,Jones County,19105,73531,20896
+ Iowa,Keokuk County,19107,62329,9924
+ Iowa,Kossuth County,19109,67697,14516
+ Iowa,Lee County,19111,62382,32893
+ Iowa,Linn County,19113,77649,230004
+ Iowa,Louisa County,19115,77354,10678
+ Iowa,Lucas County,19117,61793,8716
+ Iowa,Lyon County,19119,76746,12162
+ Iowa,Madison County,19121,90855,16926
+ Iowa,Mahaska County,19123,70940,22021
+ Iowa,Marion County,19125,78680,33642
+ Iowa,Marshall County,19127,73315,40114
+ Iowa,Mills County,19129,90753,14568
+ Iowa,Mitchell County,19131,71365,10575
+ Iowa,Monona County,19133,68377,8557
+ Iowa,Monroe County,19135,70996,7513
+ Iowa,Montgomery County,19137,63666,10214
+ Iowa,Muscatine County,19139,69396,42559
+ Iowa,O'Brien County,19141,68356,14126
+ Iowa,Osceola County,19143,69239,6100
+ Iowa,Page County,19145,57953,15131
+ Iowa,Palo Alto County,19147,72781,8863
+ Iowa,Plymouth County,19149,83251,25747
+ Iowa,Pocahontas County,19151,61875,7046
+ Iowa,Polk County,19153,83576,503175
+ Iowa,Pottawattamie County,19155,73602,93424
+ Iowa,Poweshiek County,19157,67391,18545
+ Iowa,Ringgold County,19159,73346,4645
+ Iowa,Sac County,19161,73838,9689
+ Iowa,Scott County,19163,78277,174608
+ Iowa,Shelby County,19165,72738,11778
+ Iowa,Sioux County,19167,86098,36212
+ Iowa,Story County,19169,69685,100466
+ Iowa,Tama County,19171,70781,16868
+ Iowa,Taylor County,19173,67740,5868
+ Iowa,Union County,19175,57772,11993
+ Iowa,Van Buren County,19177,61161,7241
+ Iowa,Wapello County,19179,64766,35362
+ Iowa,Warren County,19181,94588,54409
+ Iowa,Washington County,19183,75647,22561
+ Iowa,Wayne County,19185,61964,6532
+ Iowa,Webster County,19187,68975,36886
+ Iowa,Winnebago County,19189,67642,10583
+ Iowa,Winneshiek County,19191,79066,19873
+ Iowa,Woodbury County,19193,73658,106247
+ Iowa,Worth County,19195,78008,7350
+ Iowa,Wright County,19197,67190,12791
+ Kansas,Allen County,20001,60689,12483
+ Kansas,Anderson County,20003,70614,7834
+ Kansas,Atchison County,20005,61112,16208
+ Kansas,Barber County,20007,61926,4069
+ Kansas,Barton County,20009,58851,25097
+ Kansas,Bourbon County,20011,59238,14394
+ Kansas,Brown County,20013,62233,9343
+ Kansas,Butler County,20015,81610,68287
+ Kansas,Chase County,20017,56484,2561
+ Kansas,Chautauqua County,20019,56438,3370
+ Kansas,Cherokee County,20021,57668,19151
+ Kansas,Cheyenne County,20023,55429,2628
+ Kansas,Clark County,20025,63043,1974
+ Kansas,Clay County,20027,66176,8048
+ Kansas,Cloud County,20029,58770,8898
+ Kansas,Coffey County,20031,70346,8308
+ Kansas,Comanche County,20033,54545,1729
+ Kansas,Cowley County,20035,57878,34411
+ Kansas,Crawford County,20037,52844,39008
+ Kansas,Decatur County,20039,53870,2726
+ Kansas,Dickinson County,20041,68417,18445
+ Kansas,Doniphan County,20043,74028,7503
+ Kansas,Douglas County,20045,69746,120302
+ Kansas,Edwards County,20047,52692,2779
+ Kansas,Elk County,20049,64609,2453
+ Kansas,Ellis County,20051,63084,28920
+ Kansas,Ellsworth County,20053,65560,6360
+ Kansas,Finney County,20055,73009,38084
+ Kansas,Ford County,20057,70781,34074
+ Kansas,Franklin County,20059,77207,26106
+ Kansas,Geary County,20061,59317,35815
+ Kansas,Gove County,20063,66029,2799
+ Kansas,Graham County,20065,50650,2389
+ Kansas,Grant County,20067,66476,7229
+ Kansas,Gray County,20069,79122,5701
+ Kansas,Greeley County,20071,80565,1304
+ Kansas,Greenwood County,20073,60042,5919
+ Kansas,Hamilton County,20075,70250,2471
+ Kansas,Harper County,20077,53488,5400
+ Kansas,Harvey County,20079,74368,33756
+ Kansas,Haskell County,20081,66162,3641
+ Kansas,Hodgeman County,20083,59955,1652
+ Kansas,Jackson County,20085,75215,13341
+ Kansas,Jefferson County,20087,81278,18349
+ Kansas,Jewell County,20089,52634,2916
+ Kansas,Johnson County,20091,109208,620631
+ Kansas,Kearny County,20093,89135,3864
+ Kansas,Kingman County,20095,59842,7186
+ Kansas,Kiowa County,20097,75539,2422
+ Kansas,Labette County,20099,56325,19869
+ Kansas,Lane County,20101,54526,1461
+ Kansas,Leavenworth County,20103,89218,83123
+ Kansas,Lincoln County,20105,57500,2923
+ Kansas,Linn County,20107,59069,9767
+ Kansas,Logan County,20109,75662,2707
+ Kansas,Lyon County,20111,59912,32186
+ Kansas,McPherson County,20113,78851,30205
+ Kansas,Marion County,20115,64695,11754
+ Kansas,Marshall County,20117,68419,9993
+ Kansas,Meade County,20119,71852,3903
+ Kansas,Miami County,20121,89000,34938
+ Kansas,Mitchell County,20123,64246,5779
+ Kansas,Montgomery County,20125,55697,30940
+ Kansas,Morris County,20127,58686,5340
+ Kansas,Morton County,20129,66447,2611
+ Kansas,Nemaha County,20131,77348,10160
+ Kansas,Neosho County,20133,56618,15656
+ Kansas,Ness County,20135,68616,2653
+ Kansas,Norton County,20137,54050,5359
+ Kansas,Osage County,20139,74467,15744
+ Kansas,Osborne County,20141,63011,3452
+ Kansas,Ottawa County,20143,74018,5819
+ Kansas,Pawnee County,20145,63517,6144
+ Kansas,Phillips County,20147,62123,4813
+ Kansas,Pottawatomie County,20149,92325,26204
+ Kansas,Pratt County,20151,66022,9127
+ Kansas,Rawlins County,20153,67742,2516
+ Kansas,Reno County,20155,60645,61553
+ Kansas,Republic County,20157,56833,4646
+ Kansas,Rice County,20159,63925,9350
+ Kansas,Riley County,20161,61098,71946
+ Kansas,Rooks County,20163,62500,4813
+ Kansas,Rush County,20165,59970,2947
+ Kansas,Russell County,20167,62392,6679
+ Kansas,Saline County,20169,65422,53668
+ Kansas,Scott County,20171,68839,5027
+ Kansas,Sedgwick County,20173,69365,528226
+ Kansas,Seward County,20175,63827,21486
+ Kansas,Shawnee County,20177,67104,178025
+ Kansas,Sheridan County,20179,73750,2426
+ Kansas,Sherman County,20181,61750,5858
+ Kansas,Smith County,20183,59135,3552
+ Kansas,Stafford County,20185,64226,3978
+ Kansas,Stanton County,20187,71700,2038
+ Kansas,Stevens County,20189,64178,5162
+ Kansas,Sumner County,20191,63951,22353
+ Kansas,Thomas County,20193,71325,7885
+ Kansas,Trego County,20195,81528,2777
+ Kansas,Wabaunsee County,20197,76908,7009
+ Kansas,Wallace County,20199,63207,1417
+ Kansas,Washington County,20201,65482,5533
+ Kansas,Wichita County,20203,79063,2091
+ Kansas,Wilson County,20205,60677,8505
+ Kansas,Woodson County,20207,50326,3109
+ Kansas,Wyandotte County,20209,63631,167654
+ Kentucky,Adair County,21001,53553,19089
+ Kentucky,Allen County,21003,61403,21293
+ Kentucky,Anderson County,21005,74488,24353
+ Kentucky,Ballard County,21007,66164,7654
+ Kentucky,Barren County,21009,50628,44938
+ Kentucky,Bath County,21011,56541,12851
+ Kentucky,Bell County,21013,31354,23509
+ Kentucky,Boone County,21015,99414,139841
+ Kentucky,Bourbon County,21017,61354,20240
+ Kentucky,Boyd County,21019,61118,47911
+ Kentucky,Boyle County,21021,61159,30941
+ Kentucky,Bracken County,21023,66319,8444
+ Kentucky,Breathitt County,21025,34808,13276
+ Kentucky,Breckinridge County,21027,55843,20881
+ Kentucky,Bullitt County,21029,80558,84027
+ Kentucky,Butler County,21031,56092,12393
+ Kentucky,Caldwell County,21033,59583,12618
+ Kentucky,Calloway County,21035,52706,38224
+ Kentucky,Campbell County,21037,77567,93426
+ Kentucky,Carlisle County,21039,62439,4762
+ Kentucky,Carroll County,21041,56466,10954
+ Kentucky,Carter County,21043,51235,26341
+ Kentucky,Casey County,21045,45510,15914
+ Kentucky,Christian County,21047,55494,72069
+ Kentucky,Clark County,21049,64348,37192
+ Kentucky,Clay County,21051,40900,19921
+ Kentucky,Clinton County,21053,44844,9202
+ Kentucky,Crittenden County,21055,46656,8979
+ Kentucky,Cumberland County,21057,40000,5948
+ Kentucky,Daviess County,21059,68214,103648
+ Kentucky,Edmonson County,21061,54937,12355
+ Kentucky,Elliott County,21063,45776,7307
+ Kentucky,Estill County,21065,46051,14035
+ Kentucky,Fayette County,21067,69479,323725
+ Kentucky,Fleming County,21069,49307,15323
+ Kentucky,Floyd County,21071,41279,35224
+ Kentucky,Franklin County,21073,65298,51842
+ Kentucky,Fulton County,21075,38217,6409
+ Kentucky,Gallatin County,21077,63346,8769
+ Kentucky,Garrard County,21079,63087,17568
+ Kentucky,Grant County,21081,69178,25418
+ Kentucky,Graves County,21083,50772,36630
+ Kentucky,Grayson County,21085,50757,26707
+ Kentucky,Green County,21087,46798,11369
+ Kentucky,Greenup County,21089,60751,35501
+ Kentucky,Hancock County,21091,65464,9034
+ Kentucky,Hardin County,21093,67647,111942
+ Kentucky,Harlan County,21095,41693,25772
+ Kentucky,Harrison County,21097,66442,19140
+ Kentucky,Hart County,21099,52285,19603
+ Kentucky,Henderson County,21101,58851,44280
+ Kentucky,Henry County,21103,63347,15856
+ Kentucky,Hickman County,21105,60867,4439
+ Kentucky,Hopkins County,21107,56815,45119
+ Kentucky,Jackson County,21109,40000,13086
+ Kentucky,Jefferson County,21111,69866,783022
+ Kentucky,Jessamine County,21113,74576,54588
+ Kentucky,Johnson County,21115,44904,22334
+ Kentucky,Kenton County,21117,80548,171288
+ Kentucky,Knott County,21119,41761,13830
+ Kentucky,Knox County,21121,32527,29865
+ Kentucky,Larue County,21123,67067,15107
+ Kentucky,Laurel County,21125,57771,62983
+ Kentucky,Lawrence County,21127,46772,16077
+ Kentucky,Lee County,21129,37568,7339
+ Kentucky,Leslie County,21131,35934,10079
+ Kentucky,Letcher County,21133,41793,20808
+ Kentucky,Lewis County,21135,46838,12965
+ Kentucky,Lincoln County,21137,52440,24504
+ Kentucky,Livingston County,21139,58984,8903
+ Kentucky,Logan County,21141,60382,27986
+ Kentucky,Lyon County,21143,65066,8900
+ Kentucky,McCracken County,21145,64373,67564
+ Kentucky,McCreary County,21147,33750,16867
+ Kentucky,McLean County,21149,65596,9114
+ Kentucky,Madison County,21151,63351,95769
+ Kentucky,Magoffin County,21153,33080,11348
+ Kentucky,Marion County,21155,59627,19749
+ Kentucky,Marshall County,21157,65831,31743
+ Kentucky,Martin County,21159,37042,11027
+ Kentucky,Mason County,21161,52178,16956
+ Kentucky,Meade County,21163,74355,30158
+ Kentucky,Menifee County,21165,45096,6230
+ Kentucky,Mercer County,21167,64824,23028
+ Kentucky,Metcalfe County,21169,51473,10425
+ Kentucky,Monroe County,21171,51280,11269
+ Kentucky,Montgomery County,21173,56396,28395
+ Kentucky,Morgan County,21175,47913,14053
+ Kentucky,Muhlenberg County,21177,51927,30591
+ Kentucky,Nelson County,21179,69562,47606
+ Kentucky,Nicholas County,21181,59531,7708
+ Kentucky,Ohio County,21183,57798,23735
+ Kentucky,Oldham County,21185,122497,69257
+ Kentucky,Owen County,21187,61134,11330
+ Kentucky,Owsley County,21189,22188,3971
+ Kentucky,Pendleton County,21191,64669,14723
+ Kentucky,Perry County,21193,42181,27499
+ Kentucky,Pike County,21195,44312,56727
+ Kentucky,Powell County,21197,40309,13038
+ Kentucky,Pulaski County,21199,51898,65897
+ Kentucky,Robertson County,21201,51830,2283
+ Kentucky,Rockcastle County,21203,48862,16163
+ Kentucky,Rowan County,21205,54321,24578
+ Kentucky,Russell County,21207,44738,18221
+ Kentucky,Scott County,21209,85158,59536
+ Kentucky,Shelby County,21211,82604,49096
+ Kentucky,Simpson County,21213,59858,19972
+ Kentucky,Spencer County,21215,102618,20193
+ Kentucky,Taylor County,21217,60456,26397
+ Kentucky,Todd County,21219,61103,12469
+ Kentucky,Trigg County,21221,59857,14315
+ Kentucky,Trimble County,21223,66027,8550
+ Kentucky,Union County,21225,60327,13260
+ Kentucky,Warren County,21227,65794,140918
+ Kentucky,Washington County,21229,61616,12140
+ Kentucky,Wayne County,21231,45739,19602
+ Kentucky,Webster County,21233,59628,12842
+ Kentucky,Whitley County,21235,44615,36920
+ Kentucky,Wolfe County,21237,30417,6443
+ Kentucky,Woodford County,21239,83788,27279
+ Louisiana,Acadia Parish,22001,45562,56955
+ Louisiana,Allen Parish,22003,46469,22477
+ Louisiana,Ascension Parish,22005,91549,130314
+ Louisiana,Assumption Parish,22007,51423,20484
+ Louisiana,Avoyelles Parish,22009,39325,38905
+ Louisiana,Beauregard Parish,22011,65944,36676
+ Louisiana,Bienville Parish,22013,35011,12638
+ Louisiana,Bossier Parish,22015,69617,129789
+ Louisiana,Caddo Parish,22017,50705,230004
+ Louisiana,Calcasieu Parish,22019,67564,207088
+ Louisiana,Caldwell Parish,22021,47028,9500
+ Louisiana,Cameron Parish,22023,75278,5015
+ Louisiana,Catahoula Parish,22025,50275,8583
+ Louisiana,Claiborne Parish,22027,32831,13833
+ Louisiana,Concordia Parish,22029,39943,18174
+ Louisiana,De Soto Parish,22031,48578,27026
+ Louisiana,East Baton Rouge Parish,22033,63071,452938
+ Louisiana,East Carroll Parish,22035,33341,7072
+ Louisiana,East Feliciana Parish,22037,73085,19271
+ Louisiana,Evangeline Parish,22039,41915,32060
+ Louisiana,Franklin Parish,22041,47020,19408
+ Louisiana,Grant Parish,22043,64016,22095
+ Louisiana,Iberia Parish,22045,56961,68599
+ Louisiana,Iberville Parish,22047,54000,29815
+ Louisiana,Jackson Parish,22049,44925,14884
+ Louisiana,Jefferson Parish,22051,65252,430920
+ Louisiana,Jefferson Davis Parish,22053,57341,31924
+ Louisiana,Lafayette Parish,22055,67451,247997
+ Louisiana,Lafourche Parish,22057,63135,96252
+ Louisiana,LaSalle Parish,22059,68497,14789
+ Louisiana,Lincoln Parish,22061,39172,48174
+ Louisiana,Livingston Parish,22063,80122,148115
+ Louisiana,Madison Parish,22065,35456,9513
+ Louisiana,Morehouse Parish,22067,39454,24551
+ Louisiana,Natchitoches Parish,22069,46292,36693
+ Louisiana,Orleans Parish,22071,56631,371853
+ Louisiana,Ouachita Parish,22073,54688,158480
+ Louisiana,Plaquemines Parish,22075,86315,22803
+ Louisiana,Pointe Coupee Parish,22077,65961,20217
+ Louisiana,Rapides Parish,22079,54967,127527
+ Louisiana,Red River Parish,22081,49167,7443
+ Louisiana,Richland Parish,22083,53544,19822
+ Louisiana,Sabine Parish,22085,50329,21977
+ Louisiana,St. Bernard Parish,22087,58651,44419
+ Louisiana,St. Charles Parish,22089,80897,51396
+ Louisiana,St. Helena Parish,22091,41934,10858
+ Louisiana,St. James Parish,22093,65531,19528
+ Louisiana,St. John the Baptist Parish,22095,66630,40743
+ Louisiana,St. Landry Parish,22097,44462,81670
+ Louisiana,St. Martin Parish,22099,55960,51353
+ Louisiana,St. Mary Parish,22101,52576,47828
+ Louisiana,St. Tammany Parish,22103,81202,272421
+ Louisiana,Tangipahoa Parish,22105,56760,136738
+ Louisiana,Tensas Parish,22107,36615,3935
+ Louisiana,Terrebonne Parish,22109,64836,106186
+ Louisiana,Union Parish,22111,42885,20821
+ Louisiana,Vermilion Parish,22113,55707,57123
+ Louisiana,Vernon Parish,22115,57270,47117
+ Louisiana,Washington Parish,22117,45380,45120
+ Louisiana,Webster Parish,22119,41182,35820
+ Louisiana,West Baton Rouge Parish,22121,87299,27974
+ Louisiana,West Carroll Parish,22123,49134,9464
+ Louisiana,West Feliciana Parish,22125,77452,15327
+ Louisiana,Winn Parish,22127,48871,13467
+ Maine,Androscoggin County,23001,67873,113423
+ Maine,Aroostook County,23003,56700,67058
+ Maine,Cumberland County,23005,95677,308827
+ Maine,Franklin County,23007,58675,30413
+ Maine,Hancock County,23009,72744,56460
+ Maine,Kennebec County,23011,69077,126808
+ Maine,Knox County,23013,74096,41003
+ Maine,Lincoln County,23015,76875,36099
+ Maine,Oxford County,23017,60173,59255
+ Maine,Penobscot County,23019,66356,154710
+ Maine,Piscataquis County,23021,61345,17263
+ Maine,Sagadahoc County,23023,87806,37285
+ Maine,Somerset County,23025,58179,50959
+ Maine,Waldo County,23027,72782,40192
+ Maine,Washington County,23029,56024,31331
+ Maine,York County,23031,88333,216731
+ Maryland,Allegany County,24001,59603,67452
+ Maryland,Anne Arundel County,24003,124911,598166
+ Maryland,Baltimore County,24005,91768,850796
+ Maryland,Calvert County,24009,133922,94313
+ Maryland,Caroline County,24011,68457,33669
+ Maryland,Carroll County,24013,118211,175321
+ Maryland,Cecil County,24015,92007,104960
+ Maryland,Charles County,24017,122816,170527
+ Maryland,Dorchester County,24019,61839,32754
+ Maryland,Frederick County,24021,122002,287048
+ Maryland,Garrett County,24023,67688,28615
+ Maryland,Harford County,24025,112265,263757
+ Maryland,Howard County,24027,149763,336328
+ Maryland,Kent County,24029,80147,19346
+ Maryland,Montgomery County,24031,132450,1065949
+ Maryland,Prince George's County,24033,101798,959754
+ Maryland,Queen Anne's County,24035,112826,51825
+ Maryland,St. Mary's County,24037,119446,115126
+ Maryland,Somerset County,24039,64943,24822
+ Maryland,Talbot County,24041,84811,37917
+ Maryland,Washington County,24043,77747,155709
+ Maryland,Wicomico County,24045,76210,104914
+ Maryland,Worcester County,24047,81745,53700
+ Maryland,Baltimore city,24510,62177,573243
+ Massachusetts,Barnstable County,25001,95241,231668
+ Massachusetts,Berkshire County,25003,76013,129430
+ Massachusetts,Bristol County,25005,85625,582270
+ Massachusetts,Dukes County,25007,125786,20933
+ Massachusetts,Essex County,25009,101883,813054
+ Massachusetts,Franklin County,25011,74907,70944
+ Massachusetts,Hampden County,25013,71306,462815
+ Massachusetts,Hampshire County,25015,87001,162028
+ Massachusetts,Middlesex County,25017,130847,1638365
+ Massachusetts,Nantucket County,25019,139688,14483
+ Massachusetts,Norfolk County,25021,130739,730082
+ Massachusetts,Plymouth County,25023,114201,535075
+ Massachusetts,Suffolk County,25025,95631,785121
+ Massachusetts,Worcester County,25027,95939,867788
+ Michigan,Alcona County,26001,54993,10397
+ Michigan,Alger County,26003,61286,8762
+ Michigan,Allegan County,26005,83283,121456
+ Michigan,Alpena County,26007,53950,28880
+ Michigan,Antrim County,26009,72054,24127
+ Michigan,Arenac County,26011,58811,15077
+ Michigan,Baraga County,26013,55327,8191
+ Michigan,Barry County,26015,77500,63409
+ Michigan,Bay County,26017,61763,103008
+ Michigan,Benzie County,26019,74834,18310
+ Michigan,Berrien County,26021,65425,153288
+ Michigan,Branch County,26023,63724,45300
+ Michigan,Calhoun County,26025,63177,133778
+ Michigan,Cass County,26027,70443,51520
+ Michigan,Charlevoix County,26029,76531,26108
+ Michigan,Cheboygan County,26031,62875,25865
+ Michigan,Chippewa County,26033,62217,36295
+ Michigan,Clare County,26035,49384,31218
+ Michigan,Clinton County,26037,88210,79626
+ Michigan,Crawford County,26039,60392,13369
+ Michigan,Delta County,26041,57809,36813
+ Michigan,Dickinson County,26043,65156,25954
+ Michigan,Eaton County,26045,79597,109130
+ Michigan,Emmet County,26047,78112,34125
+ Michigan,Genesee County,26049,62281,403305
+ Michigan,Gladwin County,26051,55349,25693
+ Michigan,Gogebic County,26053,52732,14319
+ Michigan,Grand Traverse County,26055,81647,96166
+ Michigan,Gratiot County,26057,63556,41385
+ Michigan,Hillsdale County,26059,64242,45654
+ Michigan,Houghton County,26061,58899,37693
+ Michigan,Huron County,26063,58870,31113
+ Michigan,Ingham County,26065,65526,283913
+ Michigan,Ionia County,26067,75611,66574
+ Michigan,Iosco County,26069,50066,25347
+ Michigan,Iron County,26071,55940,11667
+ Michigan,Isabella County,26073,55237,64565
+ Michigan,Jackson County,26075,66073,160060
+ Michigan,Kalamazoo County,26077,72532,262375
+ Michigan,Kalkaska County,26079,68578,18239
+ Michigan,Kent County,26081,82631,663150
+ Michigan,Keweenaw County,26083,52583,2133
+ Michigan,Lake County,26085,50805,12563
+ Michigan,Lapeer County,26087,77306,88837
+ Michigan,Leelanau County,26089,99422,22734
+ Michigan,Lenawee County,26091,70518,98415
+ Michigan,Livingston County,26093,103039,195833
+ Michigan,Luce County,26095,54893,6271
+ Michigan,Mackinac County,26097,63909,10957
+ Michigan,Macomb County,26099,77837,879853
+ Michigan,Manistee County,26101,63516,25350
+ Michigan,Marquette County,26103,65429,67112
+ Michigan,Mason County,26105,64748,29207
+ Michigan,Mecosta County,26107,60951,41242
+ Michigan,Menominee County,26109,56435,23247
+ Michigan,Midland County,26111,77705,83757
+ Michigan,Missaukee County,26113,66194,15207
+ Michigan,Monroe County,26115,77335,155505
+ Michigan,Montcalm County,26117,67344,67816
+ Michigan,Montmorency County,26119,49756,9516
+ Michigan,Muskegon County,26121,65024,175961
+ Michigan,Newaygo County,26123,63304,50792
+ Michigan,Oakland County,26125,97760,1279825
+ Michigan,Oceana County,26127,62417,26915
+ Michigan,Ogemaw County,26129,54666,20885
+ Michigan,Ontonagon County,26131,54398,5850
+ Michigan,Osceola County,26133,58267,23227
+ Michigan,Oscoda County,26135,49515,8425
+ Michigan,Otsego County,26137,68183,25584
+ Michigan,Ottawa County,26139,90502,301203
+ Michigan,Presque Isle County,26141,59321,13209
+ Michigan,Roscommon County,26143,55246,23737
+ Michigan,Saginaw County,26145,60622,188665
+ Michigan,St. Clair County,26147,71270,160221
+ Michigan,St. Joseph County,26149,66425,60969
+ Michigan,Sanilac County,26151,58863,40462
+ Michigan,Schoolcraft County,26153,56782,8128
+ Michigan,Shiawassee County,26155,67404,67991
+ Michigan,Tuscola County,26157,63811,52980
+ Michigan,Van Buren County,26159,68114,75795
+ Michigan,Washtenaw County,26161,89180,369822
+ Michigan,Wayne County,26163,60539,1772259
+ Michigan,Wexford County,26165,61085,34077
+ Minnesota,Aitkin County,27001,60833,16056
+ Minnesota,Anoka County,27003,101869,370349
+ Minnesota,Becker County,27005,71388,35343
+ Minnesota,Beltrami County,27007,68975,46512
+ Minnesota,Benton County,27009,74410,41593
+ Minnesota,Big Stone County,27011,70400,5127
+ Minnesota,Blue Earth County,27013,74477,69871
+ Minnesota,Brown County,27015,69378,25800
+ Minnesota,Carlton County,27017,80573,36518
+ Minnesota,Carver County,27019,125946,110041
+ Minnesota,Cass County,27021,68874,30992
+ Minnesota,Chippewa County,27023,71458,12377
+ Minnesota,Chisago County,27025,99400,57991
+ Minnesota,Clay County,27027,81172,66059
+ Minnesota,Clearwater County,27029,64475,8616
+ Minnesota,Cook County,27031,72638,5635
+ Minnesota,Cottonwood County,27033,72941,11458
+ Minnesota,Crow Wing County,27035,72589,67686
+ Minnesota,Dakota County,27037,106318,445771
+ Minnesota,Dodge County,27039,95739,21045
+ Minnesota,Douglas County,27041,79043,39575
+ Minnesota,Faribault County,27043,66815,13914
+ Minnesota,Fillmore County,27045,77512,21414
+ Minnesota,Freeborn County,27047,71023,30623
+ Minnesota,Goodhue County,27049,84171,47943
+ Minnesota,Grant County,27051,73917,6127
+ Minnesota,Hennepin County,27053,97653,1269496
+ Minnesota,Houston County,27055,79825,18653
+ Minnesota,Hubbard County,27057,71995,21831
+ Minnesota,Isanti County,27059,87440,42596
+ Minnesota,Itasca County,27061,68603,45275
+ Minnesota,Jackson County,27063,75743,9933
+ Minnesota,Kanabec County,27065,71460,16390
+ Minnesota,Kandiyohi County,27067,76592,44079
+ Minnesota,Kittson County,27069,76100,4084
+ Minnesota,Koochiching County,27071,66940,11833
+ Minnesota,Lac qui Parle County,27073,74432,6682
+ Minnesota,Lake County,27075,75541,10879
+ Minnesota,Lake of the Woods County,27077,77546,3821
+ Minnesota,Le Sueur County,27079,94968,29113
+ Minnesota,Lincoln County,27081,69694,5603
+ Minnesota,Lyon County,27083,75303,25503
+ Minnesota,McLeod County,27085,80084,36798
+ Minnesota,Mahnomen County,27087,59441,5358
+ Minnesota,Marshall County,27089,72543,8909
+ Minnesota,Martin County,27091,59507,19780
+ Minnesota,Meeker County,27093,75446,23468
+ Minnesota,Mille Lacs County,27095,72729,27125
+ Minnesota,Morrison County,27097,69446,34249
+ Minnesota,Mower County,27099,73074,40343
+ Minnesota,Murray County,27101,74033,8097
+ Minnesota,Nicollet County,27103,79756,34411
+ Minnesota,Nobles County,27105,66101,22041
+ Minnesota,Norman County,27107,72260,6367
+ Minnesota,Olmsted County,27109,95406,164498
+ Minnesota,Otter Tail County,27111,72255,60475
+ Minnesota,Pennington County,27113,77325,13791
+ Minnesota,Pine County,27115,71146,29640
+ Minnesota,Pipestone County,27117,69628,9284
+ Minnesota,Polk County,27119,73107,30705
+ Minnesota,Pope County,27121,76220,11418
+ Minnesota,Ramsey County,27123,81568,542945
+ Minnesota,Red Lake County,27125,77188,3915
+ Minnesota,Redwood County,27127,67866,15350
+ Minnesota,Renville County,27129,70625,14558
+ Minnesota,Rice County,27131,83181,67917
+ Minnesota,Rock County,27133,71295,9621
+ Minnesota,Roseau County,27135,74474,15302
+ Minnesota,St. Louis County,27137,70069,200123
+ Minnesota,Scott County,27139,119314,154557
+ Minnesota,Sherburne County,27141,105466,100560
+ Minnesota,Sibley County,27143,77634,15005
+ Minnesota,Stearns County,27145,77066,160865
+ Minnesota,Steele County,27147,84196,37439
+ Minnesota,Stevens County,27149,75733,9739
+ Minnesota,Swift County,27151,60412,9748
+ Minnesota,Todd County,27153,67662,25575
+ Minnesota,Traverse County,27155,62989,3243
+ Minnesota,Wabasha County,27157,82007,21565
+ Minnesota,Wadena County,27159,61467,14256
+ Minnesota,Waseca County,27161,76261,18885
+ Minnesota,Washington County,27163,115345,276238
+ Minnesota,Watonwan County,27165,71699,11205
+ Minnesota,Wilkin County,27167,71410,6371
+ Minnesota,Winona County,27169,70744,49779
+ Minnesota,Wright County,27171,107209,148269
+ Minnesota,Yellow Medicine County,27173,74000,9451
+ Mississippi,Adams County,28001,43644,28803
+ Mississippi,Alcorn County,28003,51260,34289
+ Mississippi,Amite County,28005,37222,12565
+ Mississippi,Attala County,28007,51639,17526
+ Mississippi,Benton County,28009,46016,7589
+ Mississippi,Bolivar County,28011,39585,29534
+ Mississippi,Calhoun County,28013,43125,12922
+ Mississippi,Carroll County,28015,59327,9686
+ Mississippi,Chickasaw County,28017,43586,16915
+ Mississippi,Choctaw County,28019,50919,8118
+ Mississippi,Claiborne County,28021,31897,8582
+ Mississippi,Clarke County,28023,46108,15314
+ Mississippi,Clay County,28025,43125,18383
+ Mississippi,Coahoma County,28027,37461,20540
+ Mississippi,Copiah County,28029,49089,27855
+ Mississippi,Covington County,28031,45051,18148
+ Mississippi,DeSoto County,28033,85297,191301
+ Mississippi,Forrest County,28035,53640,78272
+ Mississippi,Franklin County,28037,52939,7622
+ Mississippi,George County,28039,59758,25170
+ Mississippi,Greene County,28041,54276,13615
+ Mississippi,Grenada County,28043,48804,21217
+ Mississippi,Hancock County,28045,67708,46167
+ Mississippi,Harrison County,28047,59479,210891
+ Mississippi,Hinds County,28049,49402,218533
+ Mississippi,Holmes County,28051,32538,16191
+ Mississippi,Humphreys County,28053,33731,7395
+ Mississippi,Issaquena County,28055,31429,928
+ Mississippi,Itawamba County,28057,55546,24036
+ Mississippi,Jackson County,28059,66201,145249
+ Mississippi,Jasper County,28061,48660,16059
+ Mississippi,Jefferson County,28063,38305,7068
+ Mississippi,Jefferson Davis County,28065,38548,11117
+ Mississippi,Jones County,28067,52216,66472
+ Mississippi,Kemper County,28069,46431,8729
+ Mississippi,Lafayette County,28071,67185,58327
+ Mississippi,Lamar County,28073,70909,65713
+ Mississippi,Lauderdale County,28075,50817,71504
+ Mississippi,Lawrence County,28077,43531,11786
+ Mississippi,Leake County,28079,50728,21319
+ Mississippi,Lee County,28081,67863,83034
+ Mississippi,Leflore County,28083,35277,27141
+ Mississippi,Lincoln County,28085,51119,34877
+ Mississippi,Lowndes County,28087,53812,57838
+ Mississippi,Madison County,28089,83441,111647
+ Mississippi,Marion County,28091,45110,24193
+ Mississippi,Marshall County,28093,53458,33979
+ Mississippi,Monroe County,28095,51866,33747
+ Mississippi,Montgomery County,28097,41748,9602
+ Mississippi,Neshoba County,28099,57013,28932
+ Mississippi,Newton County,28101,50540,21093
+ Mississippi,Noxubee County,28103,33833,10025
+ Mississippi,Oktibbeha County,28105,46695,51771
+ Mississippi,Panola County,28107,45945,32808
+ Mississippi,Pearl River County,28109,58135,57458
+ Mississippi,Perry County,28111,49634,11449
+ Mississippi,Pike County,28113,43814,39602
+ Mississippi,Pontotoc County,28115,51484,31550
+ Mississippi,Prentiss County,28117,49724,25184
+ Mississippi,Quitman County,28119,32412,5774
+ Mississippi,Rankin County,28121,79357,158854
+ Mississippi,Scott County,28123,48786,27718
+ Mississippi,Sharkey County,28125,40000,3872
+ Mississippi,Simpson County,28127,56381,25691
+ Mississippi,Smith County,28129,60916,14132
+ Mississippi,Stone County,28131,61413,18894
+ Mississippi,Sunflower County,28133,39956,24333
+ Mississippi,Tallahatchie County,28135,37466,11764
+ Mississippi,Tate County,28137,69704,28321
+ Mississippi,Tippah County,28139,52542,21523
+ Mississippi,Tishomingo County,28141,53040,18660
+ Mississippi,Tunica County,28143,39364,9475
+ Mississippi,Union County,28145,55505,28122
+ Mississippi,Walthall County,28147,48905,13839
+ Mississippi,Warren County,28149,59401,43020
+ Mississippi,Washington County,28151,42165,42765
+ Mississippi,Wayne County,28153,37619,19718
+ Mississippi,Webster County,28155,58789,9972
+ Mississippi,Wilkinson County,28157,35311,8162
+ Mississippi,Winston County,28159,53031,17536
+ Mississippi,Yalobusha County,28161,49151,12419
+ Mississippi,Yazoo County,28163,39295,24835
+ Missouri,Adair County,29001,61536,25301
+ Missouri,Andrew County,29003,75625,18065
+ Missouri,Atchison County,29005,58750,5187
+ Missouri,Audrain County,29007,59448,24548
+ Missouri,Barry County,29009,58346,35033
+ Missouri,Barton County,29011,51635,11690
+ Missouri,Bates County,29013,60733,16186
+ Missouri,Benton County,29015,52567,20151
+ Missouri,Bollinger County,29017,63814,10559
+ Missouri,Boone County,29019,72758,188043
+ Missouri,Buchanan County,29021,62158,83568
+ Missouri,Butler County,29023,49089,42020
+ Missouri,Caldwell County,29025,64806,8927
+ Missouri,Callaway County,29027,74176,44741
+ Missouri,Camden County,29029,66387,43667
+ Missouri,Cape Girardeau County,29031,68464,82735
+ Missouri,Carroll County,29033,62154,8411
+ Missouri,Carter County,29035,50000,5297
+ Missouri,Cass County,29037,87535,110773
+ Missouri,Cedar County,29039,48181,14615
+ Missouri,Chariton County,29041,71520,7390
+ Missouri,Christian County,29043,83437,92915
+ Missouri,Clark County,29045,51781,6675
+ Missouri,Clay County,29047,88468,258122
+ Missouri,Clinton County,29049,70627,21414
+ Missouri,Cole County,29051,74876,77032
+ Missouri,Cooper County,29053,70625,16824
+ Missouri,Crawford County,29055,57629,22797
+ Missouri,Dade County,29057,53750,7641
+ Missouri,Dallas County,29059,53464,17551
+ Missouri,Daviess County,29061,63984,8477
+ Missouri,DeKalb County,29063,69826,10876
+ Missouri,Dent County,29065,56312,14539
+ Missouri,Douglas County,29067,45985,11965
+ Missouri,Dunklin County,29069,47849,27493
+ Missouri,Franklin County,29071,73165,105950
+ Missouri,Gasconade County,29073,64232,14746
+ Missouri,Gentry County,29075,55848,6245
+ Missouri,Greene County,29077,61479,303375
+ Missouri,Grundy County,29079,51975,9787
+ Missouri,Harrison County,29081,54367,8190
+ Missouri,Henry County,29083,57926,22328
+ Missouri,Hickory County,29085,39390,8585
+ Missouri,Holt County,29087,61187,4240
+ Missouri,Howard County,29089,65938,10147
+ Missouri,Howell County,29091,50993,40383
+ Missouri,Iron County,29093,48850,9446
+ Missouri,Jackson County,29095,68577,719976
+ Missouri,Jasper County,29097,60694,124357
+ Missouri,Jefferson County,29099,82851,229458
+ Missouri,Johnson County,29101,67272,54732
+ Missouri,Knox County,29103,57788,3756
+ Missouri,Laclede County,29105,53282,36390
+ Missouri,Lafayette County,29107,80612,33115
+ Missouri,Lawrence County,29109,61215,38593
+ Missouri,Lewis County,29111,59934,9924
+ Missouri,Lincoln County,29113,89278,63057
+ Missouri,Linn County,29115,61635,11852
+ Missouri,Livingston County,29117,63627,14364
+ Missouri,McDonald County,29119,52375,23701
+ Missouri,Macon County,29121,62357,15163
+ Missouri,Madison County,29123,54434,12729
+ Missouri,Maries County,29125,59455,8450
+ Missouri,Marion County,29127,62903,28457
+ Missouri,Mercer County,29129,62679,3482
+ Missouri,Miller County,29131,56736,25269
+ Missouri,Mississippi County,29133,48160,11902
+ Missouri,Moniteau County,29135,65715,15262
+ Missouri,Monroe County,29137,54516,8734
+ Missouri,Montgomery County,29139,65500,11426
+ Missouri,Morgan County,29141,53412,21717
+ Missouri,New Madrid County,29143,51881,15731
+ Missouri,Newton County,29145,66301,60118
+ Missouri,Nodaway County,29147,59315,20774
+ Missouri,Oregon County,29149,43069,8673
+ Missouri,Osage County,29151,76681,13402
+ Missouri,Ozark County,29153,44163,8873
+ Missouri,Pemiscot County,29155,40089,14958
+ Missouri,Perry County,29157,62981,18976
+ Missouri,Pettis County,29159,60430,43397
+ Missouri,Phelps County,29161,58396,45194
+ Missouri,Pike County,29163,54989,17711
+ Missouri,Platte County,29165,96227,110371
+ Missouri,Polk County,29167,59647,32444
+ Missouri,Pulaski County,29169,64466,53894
+ Missouri,Putnam County,29171,63510,4642
+ Missouri,Ralls County,29173,65388,10428
+ Missouri,Randolph County,29175,53033,24365
+ Missouri,Ray County,29177,74573,23145
+ Missouri,Reynolds County,29179,45028,6010
+ Missouri,Ripley County,29181,42037,10708
+ Missouri,St. Charles County,29183,104692,414535
+ Missouri,St. Clair County,29185,53043,9587
+ Missouri,Ste. Genevieve County,29186,66339,18571
+ Missouri,St. Francois County,29187,57477,66999
+ Missouri,St. Louis County,29189,82936,995569
+ Missouri,Saline County,29195,57931,23231
+ Missouri,Schuyler County,29197,61205,4038
+ Missouri,Scotland County,29199,68913,4686
+ Missouri,Scott County,29201,62782,37933
+ Missouri,Shannon County,29203,55222,7177
+ Missouri,Shelby County,29205,51594,5986
+ Missouri,Stoddard County,29207,57957,28470
+ Missouri,Stone County,29209,63520,32048
+ Missouri,Sullivan County,29211,56964,5857
+ Missouri,Taney County,29213,56497,56529
+ Missouri,Texas County,29215,50036,25161
+ Missouri,Vernon County,29217,52230,19687
+ Missouri,Warren County,29219,81209,37177
+ Missouri,Washington County,29221,56043,23470
+ Missouri,Wayne County,29223,47226,10862
+ Missouri,Webster County,29225,71155,40500
+ Missouri,Worth County,29227,47847,1934
+ Missouri,Wright County,29229,47909,18965
+ Missouri,St. Louis city,29510,56160,288512
+ Montana,Beaverhead County,30001,61268,9713
+ Montana,Big Horn County,30003,58750,12891
+ Montana,Blaine County,30005,64813,6949
+ Montana,Broadwater County,30007,70374,7668
+ Montana,Carbon County,30009,80261,11116
+ Montana,Carter County,30011,54167,1308
+ Montana,Cascade County,30013,67690,84606
+ Montana,Chouteau County,30015,58218,5906
+ Montana,Custer County,30017,70605,11961
+ Montana,Daniels County,30019,55625,1494
+ Montana,Dawson County,30021,71334,8827
+ Montana,Deer Lodge County,30023,57527,9597
+ Montana,Fallon County,30025,76250,2760
+ Montana,Fergus County,30027,63706,11687
+ Montana,Flathead County,30029,73925,110695
+ Montana,Gallatin County,30031,93528,124074
+ Montana,Garfield County,30033,69583,1094
+ Montana,Glacier County,30035,46875,13637
+ Montana,Golden Valley County,30037,58333,899
+ Montana,Granite County,30039,59265,3462
+ Montana,Hill County,30041,52798,16155
+ Montana,Jefferson County,30043,95490,12774
+ Montana,Judith Basin County,30045,59000,2071
+ Montana,Lake County,30047,63360,32561
+ Montana,Lewis and Clark County,30049,78237,73464
+ Montana,Liberty County,30051,57857,1952
+ Montana,Lincoln County,30053,47143,21175
+ Montana,McCone County,30055,69375,1670
+ Montana,Madison County,30057,75250,9223
+ Montana,Meagher County,30059,71932,2007
+ Montana,Mineral County,30061,63450,4959
+ Montana,Missoula County,30063,75598,120672
+ Montana,Musselshell County,30065,58920,5152
+ Montana,Park County,30067,70047,17710
+ Montana,Petroleum County,30069,60208,447
+ Montana,Phillips County,30071,53417,4221
+ Montana,Pondera County,30073,52338,6035
+ Montana,Powder River County,30075,67045,1815
+ Montana,Powell County,30077,66923,7053
+ Montana,Prairie County,30079,51250,1250
+ Montana,Ravalli County,30081,71283,46727
+ Montana,Richland County,30083,73084,11235
+ Montana,Roosevelt County,30085,57063,10526
+ Montana,Rosebud County,30087,49914,8165
+ Montana,Sanders County,30089,57476,13285
+ Montana,Sheridan County,30091,70147,3669
+ Montana,Silver Bow County,30093,61754,35785
+ Montana,Stillwater County,30095,84732,9182
+ Montana,Sweet Grass County,30097,77000,3720
+ Montana,Teton County,30099,70430,6353
+ Montana,Toole County,30101,57731,5061
+ Montana,Treasure County,30103,67917,732
+ Montana,Valley County,30105,71695,7519
+ Montana,Wheatland County,30107,49489,2056
+ Montana,Wibaux County,30109,67462,1193
+ Montana,Yellowstone County,30111,76570,168957
+ Nebraska,Adams County,31001,68365,31052
+ Nebraska,Antelope County,31003,66105,6305
+ Nebraska,Arthur County,31005,76250,484
+ Nebraska,Banner County,31007,78839,742
+ Nebraska,Blaine County,31009,69583,422
+ Nebraska,Boone County,31011,74947,5356
+ Nebraska,Box Butte County,31013,68892,10714
+ Nebraska,Boyd County,31015,67045,1688
+ Nebraska,Brown County,31017,54676,2869
+ Nebraska,Buffalo County,31019,75911,50579
+ Nebraska,Burt County,31021,63685,6740
+ Nebraska,Butler County,31023,79268,8424
+ Nebraska,Cass County,31025,91836,27161
+ Nebraska,Cedar County,31027,73578,8315
+ Nebraska,Chase County,31029,68173,3671
+ Nebraska,Cherry County,31031,66270,5498
+ Nebraska,Cheyenne County,31033,60348,9533
+ Nebraska,Clay County,31035,78986,6095
+ Nebraska,Colfax County,31037,82530,10641
+ Nebraska,Cuming County,31039,71104,8975
+ Nebraska,Custer County,31041,67906,10518
+ Nebraska,Dakota County,31043,70329,21354
+ Nebraska,Dawes County,31045,56280,8140
+ Nebraska,Dawson County,31047,69880,24202
+ Nebraska,Deuel County,31049,70096,1847
+ Nebraska,Dixon County,31051,72454,5545
+ Nebraska,Dodge County,31053,74329,37351
+ Nebraska,Douglas County,31055,80391,590736
+ Nebraska,Dundy County,31057,58922,1736
+ Nebraska,Fillmore County,31059,76295,5541
+ Nebraska,Franklin County,31061,60195,2846
+ Nebraska,Frontier County,31063,70132,2569
+ Nebraska,Furnas County,31065,61048,4568
+ Nebraska,Gage County,31067,67247,21629
+ Nebraska,Garden County,31069,41882,1761
+ Nebraska,Garfield County,31071,62804,1718
+ Nebraska,Gosper County,31073,77500,2040
+ Nebraska,Grant County,31075,70147,626
+ Nebraska,Greeley County,31077,63929,2202
+ Nebraska,Hall County,31079,69251,62536
+ Nebraska,Hamilton County,31081,83994,9464
+ Nebraska,Harlan County,31083,70625,2847
+ Nebraska,Hayes County,31085,69250,843
+ Nebraska,Hitchcock County,31087,51567,2569
+ Nebraska,Holt County,31089,68513,10102
+ Nebraska,Hooker County,31091,49464,647
+ Nebraska,Howard County,31093,76767,6534
+ Nebraska,Jefferson County,31095,59044,7161
+ Nebraska,Johnson County,31097,57632,5261
+ Nebraska,Kearney County,31099,78631,6713
+ Nebraska,Keith County,31101,60645,8219
+ Nebraska,Keya Paha County,31103,64000,822
+ Nebraska,Kimball County,31105,56712,3248
+ Nebraska,Knox County,31107,64636,8363
+ Nebraska,Lancaster County,31109,74793,326696
+ Nebraska,Lincoln County,31111,65148,33802
+ Nebraska,Logan County,31113,74271,773
+ Nebraska,Loup County,31115,71667,578
+ Nebraska,McPherson County,31117,58684,475
+ Nebraska,Madison County,31119,63128,35532
+ Nebraska,Merrick County,31121,68354,7724
+ Nebraska,Morrill County,31123,58500,4534
+ Nebraska,Nance County,31125,65179,3324
+ Nebraska,Nemaha County,31127,60924,7046
+ Nebraska,Nuckolls County,31129,73976,4087
+ Nebraska,Otoe County,31131,82188,16241
+ Nebraska,Pawnee County,31133,62188,2530
+ Nebraska,Perkins County,31135,72778,2821
+ Nebraska,Phelps County,31137,68919,9009
+ Nebraska,Pierce County,31139,72357,7325
+ Nebraska,Platte County,31141,71552,34716
+ Nebraska,Polk County,31143,69768,5225
+ Nebraska,Red Willow County,31145,63697,10557
+ Nebraska,Richardson County,31147,60108,7751
+ Nebraska,Rock County,31149,58125,1319
+ Nebraska,Saline County,31151,79910,14650
+ Nebraska,Sarpy County,31153,103321,197389
+ Nebraska,Saunders County,31155,94066,23048
+ Nebraska,Scotts Bluff County,31157,63614,35843
+ Nebraska,Seward County,31159,82444,17641
+ Nebraska,Sheridan County,31161,60121,5014
+ Nebraska,Sherman County,31163,63578,2967
+ Nebraska,Sioux County,31165,53929,1171
+ Nebraska,Stanton County,31167,80687,5796
+ Nebraska,Thayer County,31169,66213,4901
+ Nebraska,Thomas County,31171,65000,564
+ Nebraska,Thurston County,31173,69177,6627
+ Nebraska,Valley County,31175,61852,4066
+ Nebraska,Washington County,31177,94396,21106
+ Nebraska,Wayne County,31179,66215,9844
+ Nebraska,Webster County,31181,64347,3360
+ Nebraska,Wheeler County,31183,70250,847
+ Nebraska,York County,31185,77757,14286
+ Nevada,Churchill County,32001,79163,25805
+ Nevada,Clark County,32003,76472,2329548
+ Nevada,Douglas County,32005,90754,49623
+ Nevada,Elko County,32007,86487,54047
+ Nevada,Esmeralda County,32009,41715,1028
+ Nevada,Eureka County,32011,70473,1585
+ Nevada,Humboldt County,32013,81073,17289
+ Nevada,Lander County,32015,89014,5770
+ Nevada,Lincoln County,32017,72307,4405
+ Nevada,Lyon County,32019,80812,61680
+ Nevada,Mineral County,32021,54855,4542
+ Nevada,Nye County,32023,60714,54344
+ Nevada,Pershing County,32027,66902,6487
+ Nevada,Storey County,32029,93409,4140
+ Nevada,Washoe County,32031,88096,497200
+ Nevada,White Pine County,32033,72865,8735
+ Nevada,Carson City,32510,72355,58384
+ New Hampshire,Belknap County,33001,92783,64659
+ New Hampshire,Carroll County,33003,86463,51804
+ New Hampshire,Cheshire County,33005,83329,77297
+ New Hampshire,Coos County,33007,57677,31271
+ New Hampshire,Grafton County,33009,88261,92120
+ New Hampshire,Hillsborough County,33011,103545,426378
+ New Hampshire,Merrimack County,33013,97004,155967
+ New Hampshire,Rockingham County,33015,118331,319082
+ New Hampshire,Strafford County,33017,88570,132575
+ New Hampshire,Sullivan County,33019,80858,43715
+ New Jersey,Atlantic County,34001,78050,276270
+ New Jersey,Bergen County,34003,124884,962316
+ New Jersey,Burlington County,34005,108111,467805
+ New Jersey,Camden County,34007,88755,527257
+ New Jersey,Cape May County,34009,91128,94941
+ New Jersey,Cumberland County,34011,67436,153305
+ New Jersey,Essex County,34013,80789,863002
+ New Jersey,Gloucester County,34015,105115,306954
+ New Jersey,Hudson County,34017,91795,718323
+ New Jersey,Hunterdon County,34019,141715,130160
+ New Jersey,Mercer County,34021,100645,385864
+ New Jersey,Middlesex County,34023,111549,871290
+ New Jersey,Monmouth County,34025,124845,645353
+ New Jersey,Morris County,34027,137326,514528
+ New Jersey,Ocean County,34029,89863,654362
+ New Jersey,Passaic County,34031,87522,521012
+ New Jersey,Salem County,34033,79960,65275
+ New Jersey,Somerset County,34035,140374,349846
+ New Jersey,Sussex County,34037,116186,145807
+ New Jersey,Union County,34039,103202,579290
+ New Jersey,Warren County,34041,100869,110849
+ New Mexico,Bernalillo County,35001,69473,673930
+ New Mexico,Catron County,35003,49864,3743
+ New Mexico,Chaves County,35005,52938,64217
+ New Mexico,Cibola County,35006,50759,26845
+ New Mexico,Colfax County,35007,53554,12322
+ New Mexico,Curry County,35009,57309,47638
+ New Mexico,De Baca County,35011,-666666666,1576
+ New Mexico,Doña Ana County,35013,56848,224266
+ New Mexico,Eddy County,35015,78426,61105
+ New Mexico,Grant County,35017,44958,27775
+ New Mexico,Guadalupe County,35019,42750,4381
+ New Mexico,Harding County,35021,48553,741
+ New Mexico,Hidalgo County,35023,48882,4041
+ New Mexico,Lea County,35025,68015,73733
+ New Mexico,Lincoln County,35027,53303,20224
+ New Mexico,Los Alamos County,35028,147139,19435
+ New Mexico,Luna County,35029,36419,25611
+ New Mexico,McKinley County,35031,47668,70431
+ New Mexico,Mora County,35033,53663,4149
+ New Mexico,Otero County,35035,55876,68816
+ New Mexico,Quay County,35037,41946,8564
+ New Mexico,Rio Arriba County,35039,57155,40070
+ New Mexico,Roosevelt County,35041,52685,18928
+ New Mexico,Sandoval County,35043,86636,153604
+ New Mexico,San Juan County,35045,55872,120942
+ New Mexico,San Miguel County,35047,49431,26850
+ New Mexico,Santa Fe County,35049,79071,156105
+ New Mexico,Sierra County,35051,41600,11500
+ New Mexico,Socorro County,35053,36570,16200
+ New Mexico,Taos County,35055,58950,34543
+ New Mexico,Torrance County,35057,57842,15490
+ New Mexico,Union County,35059,46694,4013
+ New Mexico,Valencia County,35061,58933,78458
+ New York,Albany County,36001,85333,317018
+ New York,Allegany County,36003,62869,47159
+ New York,Bronx County,36005,48676,1404779
+ New York,Broome County,36007,62616,197378
+ New York,Cattaraugus County,36009,59540,76145
+ New York,Cayuga County,36011,67904,75102
+ New York,Chautauqua County,36013,58351,125544
+ New York,Chemung County,36015,63716,82147
+ New York,Chenango County,36017,62948,46321
+ New York,Clinton County,36019,71224,78493
+ New York,Columbia County,36021,81528,61100
+ New York,Cortland County,36023,70418,46246
+ New York,Delaware County,36025,63337,44487
+ New York,Dutchess County,36027,99478,298220
+ New York,Erie County,36029,72839,950622
+ New York,Essex County,36031,71661,36973
+ New York,Franklin County,36033,65151,46696
+ New York,Fulton County,36035,66533,52487
+ New York,Genesee County,36037,73314,57787
+ New York,Greene County,36039,77945,47409
+ New York,Hamilton County,36041,68835,5089
+ New York,Herkimer County,36043,68515,59757
+ New York,Jefferson County,36045,66301,115040
+ New York,Kings County,36047,80263,2631580
+ New York,Lewis County,36049,68182,26607
+ New York,Livingston County,36051,74001,61498
+ New York,Madison County,36053,75499,67328
+ New York,Monroe County,36055,76382,753753
+ New York,Montgomery County,36057,64943,49528
+ New York,Nassau County,36059,146202,1389591
+ New York,New York County,36061,103931,1629477
+ New York,Niagara County,36063,69633,210721
+ New York,Oneida County,36065,70154,229124
+ New York,Onondaga County,36067,76945,471129
+ New York,Ontario County,36069,82324,112625
+ New York,Orange County,36071,97178,406616
+ New York,Orleans County,36073,65969,39608
+ New York,Oswego County,36075,69183,117953
+ New York,Otsego County,36077,68885,60108
+ New York,Putnam County,36079,126257,98107
+ New York,Queens County,36081,86136,2323052
+ New York,Rensselaer County,36083,87915,160332
+ New York,Richmond County,36085,98333,494956
+ New York,Rockland County,36087,109959,341883
+ New York,St. Lawrence County,36089,62850,107226
+ New York,Saratoga County,36091,100787,238284
+ New York,Schenectady County,36093,79623,160369
+ New York,Schoharie County,36095,70133,30049
+ New York,Schuyler County,36097,67663,17562
+ New York,Seneca County,36099,68089,32920
+ New York,Steuben County,36101,65887,92588
+ New York,Suffolk County,36103,130686,1530146
+ New York,Sullivan County,36105,72382,79721
+ New York,Tioga County,36107,72739,47864
+ New York,Tompkins County,36109,74024,104537
+ New York,Ulster County,36111,86271,182601
+ New York,Warren County,36113,78442,65517
+ New York,Washington County,36115,73495,60522
+ New York,Wayne County,36117,74506,90929
+ New York,Westchester County,36119,118976,999677
+ New York,Wyoming County,36121,69110,39753
+ New York,Yates County,36123,69701,24526
+ North Carolina,Alamance County,37001,65651,176893
+ North Carolina,Alexander County,37003,65354,36412
+ North Carolina,Alleghany County,37005,47172,11174
+ North Carolina,Anson County,37007,47302,22289
+ North Carolina,Ashe County,37009,56866,26950
+ North Carolina,Avery County,37011,61428,17680
+ North Carolina,Beaufort County,37013,58357,44499
+ North Carolina,Bertie County,37015,48750,17170
+ North Carolina,Bladen County,37017,42422,29566
+ North Carolina,Brunswick County,37019,77024,152568
+ North Carolina,Buncombe County,37021,74436,274360
+ North Carolina,Burke County,37023,58592,87795
+ North Carolina,Cabarrus County,37025,89005,236133
+ North Carolina,Caldwell County,37027,56425,80536
+ North Carolina,Camden County,37029,91078,10927
+ North Carolina,Carteret County,37031,72322,69148
+ North Carolina,Caswell County,37033,59755,22404
+ North Carolina,Catawba County,37035,67864,163573
+ North Carolina,Chatham County,37037,94317,80151
+ North Carolina,Cherokee County,37039,53628,29562
+ North Carolina,Chowan County,37041,53864,13836
+ North Carolina,Clay County,37043,56971,11610
+ North Carolina,Cleveland County,37045,58534,100991
+ North Carolina,Columbus County,37047,49442,50140
+ North Carolina,Craven County,37049,65873,102612
+ North Carolina,Cumberland County,37051,61291,338545
+ North Carolina,Currituck County,37053,93511,30601
+ North Carolina,Dare County,37055,88994,37875
+ North Carolina,Davidson County,37057,64172,172954
+ North Carolina,Davie County,37059,75057,44122
+ North Carolina,Duplin County,37061,55148,49335
+ North Carolina,Durham County,37063,82316,332353
+ North Carolina,Edgecombe County,37065,51265,48736
+ North Carolina,Forsyth County,37067,67165,389977
+ North Carolina,Franklin County,37069,74240,74386
+ North Carolina,Gaston County,37071,67478,234881
+ North Carolina,Gates County,37073,66333,10376
+ North Carolina,Graham County,37075,49684,8072
+ North Carolina,Granville County,37077,71111,60877
+ North Carolina,Greene County,37079,53244,20486
+ North Carolina,Guilford County,37081,68642,547940
+ North Carolina,Halifax County,37083,45590,47675
+ North Carolina,Harnett County,37085,71287,139150
+ North Carolina,Haywood County,37087,61912,62662
+ North Carolina,Henderson County,37089,68187,118484
+ North Carolina,Hertford County,37091,45537,19908
+ North Carolina,Hoke County,37093,64912,53835
+ North Carolina,Hyde County,37095,53713,4592
+ North Carolina,Iredell County,37097,81419,196544
+ North Carolina,Jackson County,37099,55815,43771
+ North Carolina,Johnston County,37101,83384,234263
+ North Carolina,Jones County,37103,59641,9302
+ North Carolina,Lee County,37105,65387,65816
+ North Carolina,Lenoir County,37107,45143,54919
+ North Carolina,Lincoln County,37109,80016,92716
+ North Carolina,McDowell County,37111,57168,44817
+ North Carolina,Macon County,37113,59061,37941
+ North Carolina,Madison County,37115,58531,21867
+ North Carolina,Martin County,37117,48578,21644
+ North Carolina,Mecklenburg County,37119,87005,1154681
+ North Carolina,Mitchell County,37121,57602,14992
+ North Carolina,Montgomery County,37123,57766,26007
+ North Carolina,Moore County,37125,86080,104876
+ North Carolina,Nash County,37127,62426,96216
+ North Carolina,New Hanover County,37129,75166,235229
+ North Carolina,Northampton County,37131,50086,16931
+ North Carolina,Onslow County,37133,68148,207906
+ North Carolina,Orange County,37135,90089,149678
+ North Carolina,Pamlico County,37137,59717,12390
+ North Carolina,Pasquotank County,37139,66589,40834
+ North Carolina,Pender County,37141,80396,65550
+ North Carolina,Perquimans County,37143,67917,13244
+ North Carolina,Person County,37145,63300,39542
+ North Carolina,Pitt County,37147,58188,177193
+ North Carolina,Polk County,37149,67758,19891
+ North Carolina,Randolph County,37151,61022,146348
+ North Carolina,Richmond County,37153,44883,42344
+ North Carolina,Robeson County,37155,41978,116902
+ North Carolina,Rockingham County,37157,57053,92131
+ North Carolina,Rowan County,37159,65725,149875
+ North Carolina,Rutherford County,37161,51410,64930
+ North Carolina,Sampson County,37163,52432,59470
+ North Carolina,Scotland County,37165,45730,33590
+ North Carolina,Stanly County,37167,60704,64651
+ North Carolina,Stokes County,37169,62969,45139
+ North Carolina,Surry County,37171,55656,71425
+ North Carolina,Swain County,37173,52349,14013
+ North Carolina,Transylvania County,37175,66184,33691
+ North Carolina,Tyrrell County,37177,41685,3423
+ North Carolina,Union County,37179,102900,250958
+ North Carolina,Vance County,37181,50465,42322
+ North Carolina,Wake County,37183,105768,1178653
+ North Carolina,Warren County,37185,50638,18795
+ North Carolina,Washington County,37187,41813,10812
+ North Carolina,Watauga County,37189,51693,55123
+ North Carolina,Wayne County,37191,59733,118652
+ North Carolina,Wilkes County,37193,51721,65935
+ North Carolina,Wilson County,37195,56423,79290
+ North Carolina,Yadkin County,37197,62932,37574
+ North Carolina,Yancey County,37199,58709,18797
+ North Dakota,Adams County,38001,62500,2145
+ North Dakota,Barnes County,38003,68038,10773
+ North Dakota,Benson County,38005,64033,5808
+ North Dakota,Billings County,38007,86806,1024
+ North Dakota,Bottineau County,38009,85000,6378
+ North Dakota,Bowman County,38011,72109,2906
+ North Dakota,Burke County,38013,91591,2156
+ North Dakota,Burleigh County,38015,86851,100600
+ North Dakota,Cass County,38017,75555,193400
+ North Dakota,Cavalier County,38019,69531,3633
+ North Dakota,Dickey County,38021,68654,4935
+ North Dakota,Divide County,38023,91852,2167
+ North Dakota,Dunn County,38025,97689,4040
+ North Dakota,Eddy County,38027,50850,2307
+ North Dakota,Emmons County,38029,66538,3254
+ North Dakota,Foster County,38031,87831,3358
+ North Dakota,Golden Valley County,38033,68021,1653
+ North Dakota,Grand Forks County,38035,68075,72923
+ North Dakota,Grant County,38037,57875,2269
+ North Dakota,Griggs County,38039,61711,2245
+ North Dakota,Hettinger County,38041,73026,2432
+ North Dakota,Kidder County,38043,65610,2377
+ North Dakota,LaMoure County,38045,80664,4118
+ North Dakota,Logan County,38047,62750,1819
+ North Dakota,McHenry County,38049,80733,5207
+ North Dakota,McIntosh County,38051,64419,2497
+ North Dakota,McKenzie County,38053,93404,14321
+ North Dakota,McLean County,38055,83583,9823
+ North Dakota,Mercer County,38057,80946,8337
+ North Dakota,Morton County,38059,79382,33777
+ North Dakota,Mountrail County,38061,80717,9507
+ North Dakota,Nelson County,38063,67193,3016
+ North Dakota,Oliver County,38065,77240,1839
+ North Dakota,Pembina County,38067,68393,6727
+ North Dakota,Pierce County,38069,59365,3928
+ North Dakota,Ramsey County,38071,61006,11556
+ North Dakota,Ransom County,38073,75736,5643
+ North Dakota,Renville County,38075,74301,2304
+ North Dakota,Richland County,38077,75432,16584
+ North Dakota,Rolette County,38079,59517,11924
+ North Dakota,Sargent County,38081,77946,3804
+ North Dakota,Sheridan County,38083,62639,1303
+ North Dakota,Sioux County,38085,42083,3740
+ North Dakota,Slope County,38087,71250,766
+ North Dakota,Stark County,38089,84449,33302
+ North Dakota,Steele County,38091,77500,1804
+ North Dakota,Stutsman County,38093,61856,21549
+ North Dakota,Towner County,38095,67350,2079
+ North Dakota,Traill County,38097,87004,7970
+ North Dakota,Walsh County,38099,71944,10396
+ North Dakota,Ward County,38101,78238,68973
+ North Dakota,Wells County,38103,66114,3890
+ North Dakota,Williams County,38105,85595,39555
+ Ohio,Adams County,39001,50264,27540
+ Ohio,Allen County,39003,64038,101348
+ Ohio,Ashland County,39005,69860,52256
+ Ohio,Ashtabula County,39007,57728,97167
+ Ohio,Athens County,39009,56001,61737
+ Ohio,Auglaize County,39011,78660,46125
+ Ohio,Belmont County,39013,57017,65473
+ Ohio,Brown County,39015,71270,43845
+ Ohio,Butler County,39017,81590,392876
+ Ohio,Carroll County,39019,64835,26659
+ Ohio,Champaign County,39021,75556,38804
+ Ohio,Clark County,39023,63132,135158
+ Ohio,Clermont County,39025,85510,211181
+ Ohio,Clinton County,39027,70407,42012
+ Ohio,Columbiana County,39029,58180,100704
+ Ohio,Coshocton County,39031,55577,36744
+ Ohio,Crawford County,39033,58044,41711
+ Ohio,Cuyahoga County,39035,64468,1245873
+ Ohio,Darke County,39037,64486,51594
+ Ohio,Defiance County,39039,73064,38343
+ Ohio,Delaware County,39041,133540,226834
+ Ohio,Erie County,39043,71993,74581
+ Ohio,Fairfield County,39045,90966,163453
+ Ohio,Fayette County,39047,63275,28876
+ Ohio,Franklin County,39049,75176,1333048
+ Ohio,Fulton County,39051,72864,42240
+ Ohio,Gallia County,39053,56830,29068
+ Ohio,Geauga County,39055,107860,95481
+ Ohio,Greene County,39057,87309,169688
+ Ohio,Guernsey County,39059,58478,38223
+ Ohio,Hamilton County,39061,72470,830774
+ Ohio,Hancock County,39063,73141,74866
+ Ohio,Hardin County,39065,62484,30475
+ Ohio,Harrison County,39067,54414,14306
+ Ohio,Henry County,39069,80099,27567
+ Ohio,Highland County,39071,65785,43517
+ Ohio,Hocking County,39073,62960,27799
+ Ohio,Holmes County,39075,76140,44418
+ Ohio,Huron County,39077,67878,58319
+ Ohio,Jackson County,39079,57106,32650
+ Ohio,Jefferson County,39081,59055,64518
+ Ohio,Knox County,39083,73878,63142
+ Ohio,Lake County,39085,80925,232216
+ Ohio,Lawrence County,39087,58325,56819
+ Ohio,Licking County,39089,84426,181837
+ Ohio,Logan County,39091,71551,46089
+ Ohio,Lorain County,39093,73347,317129
+ Ohio,Lucas County,39095,62224,428018
+ Ohio,Madison County,39097,87045,44423
+ Ohio,Mahoning County,39099,56942,226491
+ Ohio,Marion County,39101,59371,65020
+ Ohio,Medina County,39103,94968,183660
+ Ohio,Meigs County,39105,46873,21896
+ Ohio,Mercer County,39107,76782,42484
+ Ohio,Miami County,39109,76817,110296
+ Ohio,Monroe County,39111,60134,13227
+ Ohio,Montgomery County,39113,66139,536096
+ Ohio,Morgan County,39115,59351,13651
+ Ohio,Morrow County,39117,75283,35404
+ Ohio,Muskingum County,39119,60780,86411
+ Ohio,Noble County,39121,56098,14282
+ Ohio,Ottawa County,39123,76101,39994
+ Ohio,Paulding County,39125,67731,18791
+ Ohio,Perry County,39127,67460,35535
+ Ohio,Pickaway County,39129,74040,60131
+ Ohio,Pike County,39131,52736,27044
+ Ohio,Portage County,39133,75766,161956
+ Ohio,Preble County,39135,69223,40765
+ Ohio,Putnam County,39137,84928,34314
+ Ohio,Richland County,39139,59509,125099
+ Ohio,Ross County,39141,61303,76492
+ Ohio,Sandusky County,39143,62295,58778
+ Ohio,Scioto County,39145,50609,72627
+ Ohio,Seneca County,39147,66025,54770
+ Ohio,Shelby County,39149,73978,47929
+ Ohio,Stark County,39151,67934,373713
+ Ohio,Summit County,39153,71622,537864
+ Ohio,Trumbull County,39155,56435,200929
+ Ohio,Tuscarawas County,39157,65044,92385
+ Ohio,Union County,39159,112322,67324
+ Ohio,Van Wert County,39161,67917,28826
+ Ohio,Vinton County,39163,55336,12630
+ Ohio,Warren County,39165,110132,250008
+ Ohio,Washington County,39167,63603,58978
+ Ohio,Wayne County,39169,73574,116588
+ Ohio,Williams County,39171,61048,36719
+ Ohio,Wood County,39173,74216,132064
+ Ohio,Wyandot County,39175,69768,21598
+ Oklahoma,Adair County,40001,48041,19575
+ Oklahoma,Alfalfa County,40003,64615,5696
+ Oklahoma,Atoka County,40005,54785,14379
+ Oklahoma,Beaver County,40007,64276,5028
+ Oklahoma,Beckham County,40009,53328,22148
+ Oklahoma,Blaine County,40011,61642,8570
+ Oklahoma,Bryan County,40013,57225,48253
+ Oklahoma,Caddo County,40015,55353,26447
+ Oklahoma,Canadian County,40017,87751,168985
+ Oklahoma,Carter County,40019,60723,48555
+ Oklahoma,Cherokee County,40021,53218,47942
+ Oklahoma,Choctaw County,40023,44081,14297
+ Oklahoma,Cimarron County,40025,62188,2218
+ Oklahoma,Cleveland County,40027,77068,300047
+ Oklahoma,Coal County,40029,50423,5320
+ Oklahoma,Comanche County,40031,60761,121825
+ Oklahoma,Cotton County,40033,58425,5485
+ Oklahoma,Craig County,40035,51922,14302
+ Oklahoma,Creek County,40037,62338,72830
+ Oklahoma,Custer County,40039,59738,28259
+ Oklahoma,Delaware County,40041,56676,41279
+ Oklahoma,Dewey County,40043,62569,4360
+ Oklahoma,Ellis County,40045,61016,3683
+ Oklahoma,Garfield County,40047,66182,62146
+ Oklahoma,Garvin County,40049,58556,25860
+ Oklahoma,Grady County,40051,75419,56606
+ Oklahoma,Grant County,40053,60758,4131
+ Oklahoma,Greer County,40055,59406,5489
+ Oklahoma,Harmon County,40057,43333,2406
+ Oklahoma,Harper County,40059,64053,3203
+ Oklahoma,Haskell County,40061,49806,11683
+ Oklahoma,Hughes County,40063,51581,13389
+ Oklahoma,Jackson County,40065,62799,24678
+ Oklahoma,Jefferson County,40067,48668,5380
+ Oklahoma,Johnston County,40069,52688,10278
+ Oklahoma,Kay County,40071,58423,43625
+ Oklahoma,Kingfisher County,40073,71975,15430
+ Oklahoma,Kiowa County,40075,44962,8383
+ Oklahoma,Latimer County,40077,41405,9518
+ Oklahoma,Le Flore County,40079,51565,49053
+ Oklahoma,Lincoln County,40081,62216,34219
+ Oklahoma,Logan County,40083,83899,51938
+ Oklahoma,Love County,40085,66580,10261
+ Oklahoma,McClain County,40087,84552,45273
+ Oklahoma,McCurtain County,40089,51929,30863
+ Oklahoma,McIntosh County,40091,46281,19400
+ Oklahoma,Major County,40093,71266,7628
+ Oklahoma,Marshall County,40095,57245,15792
+ Oklahoma,Mayes County,40097,60305,39604
+ Oklahoma,Murray County,40099,66322,13753
+ Oklahoma,Muskogee County,40101,53619,66444
+ Oklahoma,Noble County,40103,66365,10897
+ Oklahoma,Nowata County,40105,54333,9435
+ Oklahoma,Okfuskee County,40107,48363,11278
+ Oklahoma,Oklahoma County,40109,66679,806199
+ Oklahoma,Okmulgee County,40111,54029,36899
+ Oklahoma,Osage County,40113,62847,45997
+ Oklahoma,Ottawa County,40115,49947,30341
+ Oklahoma,Pawnee County,40117,58738,15795
+ Oklahoma,Payne County,40119,49809,82972
+ Oklahoma,Pittsburg County,40121,55310,43561
+ Oklahoma,Pontotoc County,40123,63017,38235
+ Oklahoma,Pottawatomie County,40125,61398,73463
+ Oklahoma,Pushmataha County,40127,47940,10790
+ Oklahoma,Roger Mills County,40129,66094,3359
+ Oklahoma,Rogers County,40131,80067,98610
+ Oklahoma,Seminole County,40133,48062,23494
+ Oklahoma,Sequoyah County,40135,51093,39860
+ Oklahoma,Stephens County,40137,61620,43551
+ Oklahoma,Texas County,40139,60069,20774
+ Oklahoma,Tillman County,40141,48939,6910
+ Oklahoma,Tulsa County,40143,69009,680794
+ Oklahoma,Wagoner County,40145,81207,86609
+ Oklahoma,Washington County,40147,60162,53326
+ Oklahoma,Washita County,40149,63501,10815
+ Oklahoma,Woods County,40151,53275,8596
+ Oklahoma,Woodward County,40153,61417,20158
+ Oregon,Baker County,41001,60936,16840
+ Oregon,Benton County,41003,77702,96303
+ Oregon,Clackamas County,41005,103517,423975
+ Oregon,Clatsop County,41007,71822,41363
+ Oregon,Columbia County,41009,87458,53493
+ Oregon,Coos County,41011,62143,64827
+ Oregon,Crook County,41013,81965,26277
+ Oregon,Curry County,41015,62244,23381
+ Oregon,Deschutes County,41017,92758,206334
+ Oregon,Douglas County,41019,61310,112072
+ Oregon,Gilliam County,41021,66917,1971
+ Oregon,Grant County,41023,59450,7209
+ Oregon,Harney County,41025,55208,7499
+ Oregon,Hood River County,41027,88947,23905
+ Oregon,Jackson County,41029,73999,222645
+ Oregon,Jefferson County,41031,76260,25203
+ Oregon,Josephine County,41033,60098,88179
+ Oregon,Klamath County,41035,58830,70247
+ Oregon,Lake County,41037,62787,8267
+ Oregon,Lane County,41039,71544,384207
+ Oregon,Lincoln County,41041,63165,50964
+ Oregon,Linn County,41043,76329,130706
+ Oregon,Malheur County,41045,54519,31954
+ Oregon,Marion County,41047,77351,349244
+ Oregon,Morrow County,41049,75448,12300
+ Oregon,Multnomah County,41051,88766,801477
+ Oregon,Polk County,41053,85118,89662
+ Oregon,Sherman County,41055,60161,1938
+ Oregon,Tillamook County,41057,69105,27496
+ Oregon,Umatilla County,41059,67728,79940
+ Oregon,Union County,41061,65661,26144
+ Oregon,Wallowa County,41063,67112,7553
+ Oregon,Wasco County,41065,64175,26552
+ Oregon,Washington County,41067,107772,603947
+ Oregon,Wheeler County,41069,55284,1485
+ Oregon,Yamhill County,41071,90063,108734
+ Pennsylvania,Adams County,42001,84092,106115
+ Pennsylvania,Allegheny County,42003,78548,1238177
+ Pennsylvania,Armstrong County,42005,65008,64622
+ Pennsylvania,Beaver County,42007,71089,166324
+ Pennsylvania,Bedford County,42009,59992,47513
+ Pennsylvania,Berks County,42011,79777,433015
+ Pennsylvania,Blair County,42013,62382,121277
+ Pennsylvania,Bradford County,42015,63675,59858
+ Pennsylvania,Bucks County,42017,114764,647461
+ Pennsylvania,Butler County,42019,89843,197254
+ Pennsylvania,Cambria County,42021,58418,131538
+ Pennsylvania,Cameron County,42023,50573,4427
+ Pennsylvania,Carbon County,42025,67554,65382
+ Pennsylvania,Centre County,42027,74291,158576
+ Pennsylvania,Chester County,42029,127208,547840
+ Pennsylvania,Clarion County,42031,62649,37179
+ Pennsylvania,Clearfield County,42033,62152,78635
+ Pennsylvania,Clinton County,42035,60816,37798
+ Pennsylvania,Columbia County,42037,64644,65362
+ Pennsylvania,Crawford County,42039,60476,82716
+ Pennsylvania,Cumberland County,42041,87494,268323
+ Pennsylvania,Dauphin County,42043,76242,289593
+ Pennsylvania,Delaware County,42045,89546,579222
+ Pennsylvania,Elk County,42047,66380,30506
+ Pennsylvania,Erie County,42049,63354,269052
+ Pennsylvania,Fayette County,42051,58236,125997
+ Pennsylvania,Forest County,42053,52191,6715
+ Pennsylvania,Franklin County,42055,77003,157379
+ Pennsylvania,Fulton County,42057,65836,14531
+ Pennsylvania,Greene County,42059,68041,34835
+ Pennsylvania,Huntingdon County,42061,65557,43653
+ Pennsylvania,Indiana County,42063,60208,83042
+ Pennsylvania,Jefferson County,42065,58686,43864
+ Pennsylvania,Juniata County,42067,66318,23379
+ Pennsylvania,Lackawanna County,42069,66223,216146
+ Pennsylvania,Lancaster County,42071,86959,557931
+ Pennsylvania,Lawrence County,42073,61931,85024
+ Pennsylvania,Lebanon County,42075,78425,144186
+ Pennsylvania,Lehigh County,42077,80079,378792
+ Pennsylvania,Luzerne County,42079,63691,327675
+ Pennsylvania,Lycoming County,42081,63917,113489
+ Pennsylvania,McKean County,42083,62905,39904
+ Pennsylvania,Mercer County,42085,59976,109257
+ Pennsylvania,Mifflin County,42087,63953,46041
+ Pennsylvania,Monroe County,42089,83565,167515
+ Pennsylvania,Montgomery County,42091,113915,867573
+ Pennsylvania,Montour County,42093,76976,18103
+ Pennsylvania,Northampton County,42095,89184,318580
+ Pennsylvania,Northumberland County,42097,60583,90560
+ Pennsylvania,Perry County,42099,79444,46239
+ Pennsylvania,Philadelphia County,42101,61953,1579706
+ Pennsylvania,Pike County,42103,81323,60621
+ Pennsylvania,Potter County,42105,59020,16188
+ Pennsylvania,Schuylkill County,42107,68313,143558
+ Pennsylvania,Snyder County,42109,66876,39668
+ Pennsylvania,Somerset County,42111,61446,72799
+ Pennsylvania,Sullivan County,42113,69764,5888
+ Pennsylvania,Susquehanna County,42115,68487,38219
+ Pennsylvania,Tioga County,42117,64899,40945
+ Pennsylvania,Union County,42119,76404,42456
+ Pennsylvania,Venango County,42121,61522,49801
+ Pennsylvania,Warren County,42123,60480,37920
+ Pennsylvania,Washington County,42125,78958,210042
+ Pennsylvania,Wayne County,42127,62381,51262
+ Pennsylvania,Westmoreland County,42129,74109,352500
+ Pennsylvania,Wyoming County,42131,72460,25967
+ Pennsylvania,York County,42133,84829,462924
+ Rhode Island,Bristol County,44001,114490,50490
+ Rhode Island,Kent County,44003,94345,171456
+ Rhode Island,Newport County,44005,103514,84657
+ Rhode Island,Providence County,44007,78787,664854
+ Rhode Island,Washington County,44009,106638,130344
+ South Carolina,Abbeville County,45001,52935,24420
+ South Carolina,Aiken County,45003,70609,174160
+ South Carolina,Allendale County,45005,32328,7661
+ South Carolina,Anderson County,45007,66651,210478
+ South Carolina,Bamberg County,45009,44370,13042
+ South Carolina,Barnwell County,45011,46626,20521
+ South Carolina,Beaufort County,45013,86573,195289
+ South Carolina,Berkeley County,45015,84358,246802
+ South Carolina,Calhoun County,45017,58682,14182
+ South Carolina,Charleston County,45019,88494,420264
+ South Carolina,Cherokee County,45021,50288,56647
+ South Carolina,Chester County,45023,52458,32182
+ South Carolina,Chesterfield County,45025,49235,43784
+ South Carolina,Clarendon County,45027,52401,30986
+ South Carolina,Colleton County,45029,51114,38783
+ South Carolina,Darlington County,45031,48581,62558
+ South Carolina,Dillon County,45033,46605,27862
+ South Carolina,Dorchester County,45035,78198,167201
+ South Carolina,Edgefield County,45037,73029,27476
+ South Carolina,Fairfield County,45039,47885,20550
+ South Carolina,Florence County,45041,58305,137117
+ South Carolina,Georgetown County,45043,68713,64811
+ South Carolina,Greenville County,45045,76932,548166
+ South Carolina,Greenwood County,45047,52830,69489
+ South Carolina,Hampton County,45049,44711,18254
+ South Carolina,Horry County,45051,66880,383016
+ South Carolina,Jasper County,45053,65613,32166
+ South Carolina,Kershaw County,45055,68231,68314
+ South Carolina,Lancaster County,45057,78869,104475
+ South Carolina,Laurens County,45059,57623,68666
+ South Carolina,Lee County,45061,44760,16166
+ South Carolina,Lexington County,45063,77408,304887
+ South Carolina,McCormick County,45065,55798,9760
+ South Carolina,Marion County,45067,36301,28664
+ South Carolina,Marlboro County,45069,34301,25975
+ South Carolina,Newberry County,45071,61780,38435
+ South Carolina,Oconee County,45073,62388,80469
+ South Carolina,Orangeburg County,45075,45675,83253
+ South Carolina,Pickens County,45077,61064,134629
+ South Carolina,Richland County,45079,63784,422117
+ South Carolina,Saluda County,45081,51009,19131
+ South Carolina,Spartanburg County,45083,66234,347852
+ South Carolina,Sumter County,45085,56693,104725
+ South Carolina,Union County,45087,41621,26885
+ South Carolina,Williamsburg County,45089,46213,30282
+ South Carolina,York County,45091,89095,293673
+ South Dakota,Aurora County,46003,72885,2642
+ South Dakota,Beadle County,46005,67681,19309
+ South Dakota,Bennett County,46007,53750,3345
+ South Dakota,Bon Homme County,46009,64435,7044
+ South Dakota,Brookings County,46011,70064,35353
+ South Dakota,Brown County,46013,70898,37877
+ South Dakota,Brule County,46015,73720,5283
+ South Dakota,Buffalo County,46017,47045,1808
+ South Dakota,Butte County,46019,75652,10676
+ South Dakota,Campbell County,46021,68929,1593
+ South Dakota,Charles Mix County,46023,64038,9281
+ South Dakota,Clark County,46025,70726,3917
+ South Dakota,Clay County,46027,56850,15219
+ South Dakota,Codington County,46029,72727,28767
+ South Dakota,Corson County,46031,46406,3806
+ South Dakota,Custer County,46033,84112,8892
+ South Dakota,Davison County,46035,66208,19952
+ South Dakota,Day County,46037,66033,5437
+ South Dakota,Deuel County,46039,83112,4328
+ South Dakota,Dewey County,46041,54104,5205
+ South Dakota,Douglas County,46043,86442,2828
+ South Dakota,Edmunds County,46045,81630,4048
+ South Dakota,Fall River County,46047,67917,7258
+ South Dakota,Faulk County,46049,57750,2126
+ South Dakota,Grant County,46051,75028,7563
+ South Dakota,Gregory County,46053,62917,4016
+ South Dakota,Haakon County,46055,65625,1722
+ South Dakota,Hamlin County,46057,87101,6373
+ South Dakota,Hand County,46059,74635,3140
+ South Dakota,Hanson County,46061,81071,3472
+ South Dakota,Harding County,46063,80441,1148
+ South Dakota,Hughes County,46065,81395,17664
+ South Dakota,Hutchinson County,46067,73977,7404
+ South Dakota,Hyde County,46069,73472,1191
+ South Dakota,Jackson County,46071,35417,2802
+ South Dakota,Jerauld County,46073,73750,1772
+ South Dakota,Jones County,46075,65119,1004
+ South Dakota,Kingsbury County,46077,74000,5244
+ South Dakota,Lake County,46079,76808,10972
+ South Dakota,Lawrence County,46081,73384,27233
+ South Dakota,Lincoln County,46083,99166,70638
+ South Dakota,Lyman County,46085,67143,3724
+ South Dakota,McCook County,46087,83852,5751
+ South Dakota,McPherson County,46089,66906,2145
+ South Dakota,Marshall County,46091,78156,4344
+ South Dakota,Meade County,46093,74790,30546
+ South Dakota,Mellette County,46095,54076,1943
+ South Dakota,Miner County,46097,76140,2300
+ South Dakota,Minnehaha County,46099,76880,203289
+ South Dakota,Moody County,46101,78427,6397
+ South Dakota,Oglala Lakota County,46102,41417,13491
+ South Dakota,Pennington County,46103,74517,113512
+ South Dakota,Perkins County,46105,66908,3001
+ South Dakota,Potter County,46107,72045,2388
+ South Dakota,Roberts County,46109,65130,10221
+ South Dakota,Sanborn County,46111,78750,2384
+ South Dakota,Spink County,46115,70139,6219
+ South Dakota,Stanley County,46117,87712,3015
+ South Dakota,Sully County,46119,72578,1526
+ South Dakota,Todd County,46121,42075,9244
+ South Dakota,Tripp County,46123,58987,5611
+ South Dakota,Turner County,46125,75771,8882
+ South Dakota,Union County,46127,89636,17081
+ South Dakota,Walworth County,46129,65026,5271
+ South Dakota,Yankton County,46135,72821,23414
+ South Dakota,Ziebach County,46137,53958,2377
+ Tennessee,Anderson County,47001,66183,79153
+ Tennessee,Bedford County,47003,67225,52237
+ Tennessee,Benton County,47005,51746,16006
+ Tennessee,Bledsoe County,47007,54720,15032
+ Tennessee,Blount County,47009,77365,139333
+ Tennessee,Bradley County,47011,66552,111065
+ Tennessee,Campbell County,47013,51557,39761
+ Tennessee,Cannon County,47015,59443,14818
+ Tennessee,Carroll County,47017,51787,28641
+ Tennessee,Carter County,47019,50135,56712
+ Tennessee,Cheatham County,47021,89852,41829
+ Tennessee,Chester County,47023,59341,17611
+ Tennessee,Claiborne County,47025,49379,32466
+ Tennessee,Clay County,47027,39972,7670
+ Tennessee,Cocke County,47029,48016,36813
+ Tennessee,Coffee County,47031,61505,59710
+ Tennessee,Crockett County,47033,62165,13944
+ Tennessee,Cumberland County,47035,60375,63553
+ Tennessee,Davidson County,47037,77853,715388
+ Tennessee,Decatur County,47039,45375,11579
+ Tennessee,DeKalb County,47041,53153,20959
+ Tennessee,Dickson County,47043,75003,55983
+ Tennessee,Dyer County,47045,58154,36508
+ Tennessee,Fayette County,47047,88456,43267
+ Tennessee,Fentress County,47049,51149,19309
+ Tennessee,Franklin County,47051,63494,43990
+ Tennessee,Gibson County,47053,62755,50869
+ Tennessee,Giles County,47055,62307,30620
+ Tennessee,Grainger County,47057,50538,24266
+ Tennessee,Greene County,47059,56194,71628
+ Tennessee,Grundy County,47061,47593,13819
+ Tennessee,Hamblen County,47063,55454,65669
+ Tennessee,Hamilton County,47065,76183,376192
+ Tennessee,Hancock County,47067,34960,6852
+ Tennessee,Hardeman County,47069,46069,25433
+ Tennessee,Hardin County,47071,49956,27249
+ Tennessee,Hawkins County,47073,56936,57964
+ Tennessee,Haywood County,47075,50472,17475
+ Tennessee,Henderson County,47077,55136,27980
+ Tennessee,Henry County,47079,50613,32412
+ Tennessee,Hickman County,47081,68247,25436
+ Tennessee,Houston County,47083,59576,8353
+ Tennessee,Humphreys County,47085,60616,19214
+ Tennessee,Jackson County,47087,47951,12029
+ Tennessee,Jefferson County,47089,66114,56864
+ Tennessee,Johnson County,47091,53129,18196
+ Tennessee,Knox County,47093,74222,494148
+ Tennessee,Lake County,47095,28814,6579
+ Tennessee,Lauderdale County,47097,49879,24784
+ Tennessee,Lawrence County,47099,54706,45385
+ Tennessee,Lewis County,47101,56285,12992
+ Tennessee,Lincoln County,47103,64667,35946
+ Tennessee,Loudon County,47105,84185,58580
+ Tennessee,McMinn County,47107,61470,54884
+ Tennessee,McNairy County,47109,53473,25970
+ Tennessee,Macon County,47111,59177,26240
+ Tennessee,Madison County,47113,60042,99295
+ Tennessee,Marion County,47115,61824,29250
+ Tennessee,Marshall County,47117,71049,36049
+ Tennessee,Maury County,47119,76130,107791
+ Tennessee,Meigs County,47121,61375,13343
+ Tennessee,Monroe County,47123,56895,47695
+ Tennessee,Montgomery County,47125,75613,234153
+ Tennessee,Moore County,47127,66469,6674
+ Tennessee,Morgan County,47129,65954,21361
+ Tennessee,Obion County,47131,54613,30453
+ Tennessee,Overton County,47133,48959,23065
+ Tennessee,Perry County,47135,55972,8697
+ Tennessee,Pickett County,47137,49030,5079
+ Tennessee,Polk County,47139,62522,17898
+ Tennessee,Putnam County,47141,58912,82558
+ Tennessee,Rhea County,47143,55033,33992
+ Tennessee,Roane County,47145,71885,55208
+ Tennessee,Robertson County,47147,83047,75539
+ Tennessee,Rutherford County,47149,85470,360646
+ Tennessee,Scott County,47151,44711,22113
+ Tennessee,Sequatchie County,47153,58750,16809
+ Tennessee,Sevier County,47155,62581,99652
+ Tennessee,Shelby County,47157,63767,919173
+ Tennessee,Smith County,47159,66293,20389
+ Tennessee,Stewart County,47161,63114,14027
+ Tennessee,Sullivan County,47163,58807,160624
+ Tennessee,Sumner County,47165,90301,204424
+ Tennessee,Tipton County,47167,74127,61553
+ Tennessee,Trousdale County,47169,72747,11957
+ Tennessee,Unicoi County,47171,52218,17756
+ Tennessee,Union County,47173,62727,20431
+ Tennessee,Van Buren County,47175,54931,6437
+ Tennessee,Warren County,47177,55487,42166
+ Tennessee,Washington County,47179,62809,136261
+ Tennessee,Wayne County,47181,52294,16168
+ Tennessee,Weakley County,47183,51880,33016
+ Tennessee,White County,47185,52188,28160
+ Tennessee,Williamson County,47187,135594,260351
+ Tennessee,Wilson County,47189,95839,158805
+ Texas,Anderson County,48001,62068,58439
+ Texas,Andrews County,48003,72242,18610
+ Texas,Angelina County,48005,60960,87275
+ Texas,Aransas County,48007,69466,24876
+ Texas,Archer County,48009,72159,8867
+ Texas,Armstrong County,48011,72750,1822
+ Texas,Atascosa County,48013,70770,51008
+ Texas,Austin County,48015,75789,31170
+ Texas,Bailey County,48017,61420,6913
+ Texas,Bandera County,48019,75813,22021
+ Texas,Bastrop County,48021,86226,106582
+ Texas,Baylor County,48023,45370,3485
+ Texas,Bee County,48025,57673,31083
+ Texas,Bell County,48027,68865,386897
+ Texas,Bexar County,48029,72341,2067341
+ Texas,Blanco County,48031,92425,12446
+ Texas,Borden County,48033,65625,713
+ Texas,Bosque County,48035,68914,18687
+ Texas,Bowie County,48037,59803,92115
+ Texas,Brazoria County,48039,97993,391255
+ Texas,Brazos County,48041,58553,242311
+ Texas,Brewster County,48043,56212,9503
+ Texas,Briscoe County,48045,45417,1301
+ Texas,Brooks County,48047,47764,6943
+ Texas,Brown County,48049,57470,38347
+ Texas,Burleson County,48051,70000,18857
+ Texas,Burnet County,48053,78732,52652
+ Texas,Caldwell County,48055,69758,48669
+ Texas,Calhoun County,48057,79959,19868
+ Texas,Callahan County,48059,72436,14241
+ Texas,Cameron County,48061,52601,426120
+ Texas,Camp County,48063,58843,12798
+ Texas,Carson County,48065,85231,5801
+ Texas,Cass County,48067,53813,28568
+ Texas,Castro County,48069,56776,7344
+ Texas,Chambers County,48071,109804,51498
+ Texas,Cherokee County,48073,61261,51886
+ Texas,Childress County,48075,58654,6743
+ Texas,Clay County,48077,80114,10495
+ Texas,Cochran County,48079,45313,2550
+ Texas,Coke County,48081,43333,3353
+ Texas,Coleman County,48083,49159,7833
+ Texas,Collin County,48085,121600,1163337
+ Texas,Collingsworth County,48087,61280,2588
+ Texas,Colorado County,48089,66377,21006
+ Texas,Comal County,48091,101889,183826
+ Texas,Comanche County,48093,59635,13950
+ Texas,Concho County,48095,65795,3328
+ Texas,Cooke County,48097,73932,43046
+ Texas,Coryell County,48099,71301,84748
+ Texas,Cottle County,48101,59063,1368
+ Texas,Crane County,48103,62212,4610
+ Texas,Crockett County,48105,81022,2822
+ Texas,Crosby County,48107,52188,5041
+ Texas,Culberson County,48109,58777,2195
+ Texas,Dallam County,48111,71500,7298
+ Texas,Dallas County,48113,76547,2621179
+ Texas,Dawson County,48115,54360,12134
+ Texas,Deaf Smith County,48117,60799,18460
+ Texas,Delta County,48119,66575,5438
+ Texas,Denton County,48121,111498,979561
+ Texas,DeWitt County,48123,63730,20016
+ Texas,Dickens County,48125,49335,1747
+ Texas,Dimmit County,48127,38808,8380
+ Texas,Donley County,48129,58750,3257
+ Texas,Duval County,48131,49038,9742
+ Texas,Eastland County,48133,53549,18011
+ Texas,Ector County,48135,71536,164654
+ Texas,Edwards County,48137,40313,1290
+ Texas,Ellis County,48139,99595,213160
+ Texas,El Paso County,48141,59806,870779
+ Texas,Erath County,48143,65115,43794
+ Texas,Falls County,48145,57247,17291
+ Texas,Fannin County,48147,72295,37326
+ Texas,Fayette County,48149,75854,25042
+ Texas,Fisher County,48151,65533,3655
+ Texas,Floyd County,48153,58462,5216
+ Texas,Foard County,48155,61563,991
+ Texas,Fort Bend County,48157,114041,893767
+ Texas,Franklin County,48159,72360,10632
+ Texas,Freestone County,48161,59960,20049
+ Texas,Frio County,48163,66010,18582
+ Texas,Gaines County,48165,74132,22232
+ Texas,Galveston County,48167,86105,358990
+ Texas,Garza County,48169,46314,5118
+ Texas,Gillespie County,48171,76162,27524
+ Texas,Glasscock County,48173,101250,1068
+ Texas,Goliad County,48175,59359,7141
+ Texas,Gonzales County,48177,58672,19851
+ Texas,Gray County,48179,59614,21045
+ Texas,Grayson County,48181,72182,143337
+ Texas,Gregg County,48183,66550,125480
+ Texas,Grimes County,48185,69803,31340
+ Texas,Guadalupe County,48187,92375,183642
+ Texas,Hale County,48189,51897,32131
+ Texas,Hall County,48191,48459,2820
+ Texas,Hamilton County,48193,58219,8406
+ Texas,Hansford County,48195,69441,5119
+ Texas,Hardeman County,48197,63333,3501
+ Texas,Hardin County,48199,75808,57642
+ Texas,Harris County,48201,74983,4838303
+ Texas,Harrison County,48203,66103,70155
+ Texas,Hartley County,48205,75841,5215
+ Texas,Haskell County,48207,60653,5421
+ Texas,Hays County,48209,89097,268638
+ Texas,Hemphill County,48211,61563,3234
+ Texas,Henderson County,48213,65179,84862
+ Texas,Hidalgo County,48215,54338,891977
+ Texas,Hill County,48217,64591,37328
+ Texas,Hockley County,48219,63140,21363
+ Texas,Hood County,48221,88160,65894
+ Texas,Hopkins County,48223,70888,37784
+ Texas,Houston County,48225,56531,22051
+ Texas,Howard County,48227,69649,32290
+ Texas,Hudspeth County,48229,48600,3403
+ Texas,Hunt County,48231,71938,108972
+ Texas,Hutchinson County,48233,67228,20184
+ Texas,Irion County,48235,70357,1409
+ Texas,Jack County,48237,68079,8882
+ Texas,Jackson County,48239,65414,15152
+ Texas,Jasper County,48241,56723,32727
+ Texas,Jeff Davis County,48243,59286,1865
+ Texas,Jefferson County,48245,60026,253878
+ Texas,Jim Hogg County,48247,42211,4727
+ Texas,Jim Wells County,48249,51896,38850
+ Texas,Johnson County,48251,84859,195597
+ Texas,Jones County,48253,59464,20304
+ Texas,Karnes County,48255,60214,14968
+ Texas,Kaufman County,48257,89485,172604
+ Texas,Kendall County,48259,114962,48567
+ Texas,Kenedy County,48261,38882,145
+ Texas,Kent County,48263,72889,734
+ Texas,Kerr County,48265,69395,53489
+ Texas,Kimble County,48267,69455,4389
+ Texas,King County,48269,46645,211
+ Texas,Kinney County,48271,70000,3157
+ Texas,Kleberg County,48273,61292,30579
+ Texas,Knox County,48275,56667,3307
+ Texas,Lamar County,48277,61880,50669
+ Texas,Lamb County,48279,60760,12828
+ Texas,Lampasas County,48281,81736,22715
+ Texas,La Salle County,48283,57716,6839
+ Texas,Lavaca County,48285,63240,20552
+ Texas,Lee County,48287,76371,17971
+ Texas,Leon County,48289,61449,16263
+ Texas,Liberty County,48291,68703,103380
+ Texas,Limestone County,48293,60573,22283
+ Texas,Lipscomb County,48295,72560,2918
+ Texas,Live Oak County,48297,57150,11620
+ Texas,Llano County,48299,67530,22424
+ Texas,Loving County,48301,51250,33
+ Texas,Lubbock County,48303,64155,318884
+ Texas,Lynn County,48305,73679,5752
+ Texas,McCulloch County,48307,54043,7514
+ Texas,McLennan County,48309,66643,266067
+ Texas,McMullen County,48311,43875,700
+ Texas,Madison County,48313,74596,13648
+ Texas,Marion County,48315,49672,9737
+ Texas,Martin County,48317,93734,5218
+ Texas,Mason County,48319,74180,3955
+ Texas,Matagorda County,48321,58628,36329
+ Texas,Maverick County,48323,49568,58082
+ Texas,Medina County,48325,78074,53547
+ Texas,Menard County,48327,53043,1955
+ Texas,Midland County,48329,92874,174801
+ Texas,Milam County,48331,66141,25567
+ Texas,Mills County,48333,67620,4511
+ Texas,Mitchell County,48335,60550,9018
+ Texas,Montague County,48337,64545,21046
+ Texas,Montgomery County,48339,97701,684432
+ Texas,Moore County,48341,61762,21373
+ Texas,Morris County,48343,58645,12076
+ Texas,Motley County,48345,61154,1183
+ Texas,Nacogdoches County,48347,53555,65162
+ Texas,Navarro County,48349,63111,54711
+ Texas,Newton County,48351,42618,12093
+ Texas,Nolan County,48353,50747,14454
+ Texas,Nueces County,48355,66897,352955
+ Texas,Ochiltree County,48357,70183,9786
+ Texas,Oldham County,48359,79900,2249
+ Texas,Orange County,48361,72104,85307
+ Texas,Palo Pinto County,48363,67674,29295
+ Texas,Panola County,48365,64894,22726
+ Texas,Parker County,48367,104443,165168
+ Texas,Parmer County,48369,69735,9731
+ Texas,Pecos County,48371,72750,14896
+ Texas,Polk County,48373,62259,52800
+ Texas,Potter County,48375,53249,115975
+ Texas,Presidio County,48377,43802,5930
+ Texas,Rains County,48379,65413,12775
+ Texas,Randall County,48381,83864,146070
+ Texas,Reagan County,48383,57813,3232
+ Texas,Real County,48385,39605,2802
+ Texas,Red River County,48387,48491,11611
+ Texas,Reeves County,48389,64297,12664
+ Texas,Refugio County,48391,60181,6707
+ Texas,Roberts County,48393,67868,832
+ Texas,Robertson County,48395,72236,17167
+ Texas,Rockwall County,48397,127981,123617
+ Texas,Runnels County,48399,62632,9874
+ Texas,Rusk County,48401,68658,52842
+ Texas,Sabine County,48403,66585,10023
+ Texas,San Augustine County,48405,50408,7874
+ Texas,San Jacinto County,48407,65364,28441
+ Texas,San Patricio County,48409,69704,70181
+ Texas,San Saba County,48411,55819,5696
+ Texas,Schleicher County,48413,86694,2381
+ Texas,Scurry County,48415,60039,16488
+ Texas,Shackelford County,48417,73047,3175
+ Texas,Shelby County,48419,49776,24155
+ Texas,Sherman County,48421,61250,2295
+ Texas,Smith County,48423,74192,241740
+ Texas,Somervell County,48425,79825,9691
+ Texas,Starr County,48427,37639,66067
+ Texas,Stephens County,48429,58008,9351
+ Texas,Sterling County,48431,64954,1468
+ Texas,Stonewall County,48433,56875,1227
+ Texas,Sutton County,48435,78906,3277
+ Texas,Swisher County,48437,36165,6937
+ Texas,Tarrant County,48439,84207,2167390
+ Texas,Taylor County,48441,67139,145863
+ Texas,Terrell County,48443,44886,835
+ Texas,Terry County,48445,44100,11629
+ Texas,Throckmorton County,48447,59216,1639
+ Texas,Titus County,48449,58425,31363
+ Texas,Tom Green County,48451,68370,119577
+ Texas,Travis County,48453,99611,1330015
+ Texas,Trinity County,48455,52018,14046
+ Texas,Tyler County,48457,55396,20238
+ Texas,Upshur County,48459,66208,42567
+ Texas,Upton County,48461,49167,3191
+ Texas,Uvalde County,48463,53801,24881
+ Texas,Val Verde County,48465,66100,47741
+ Texas,Van Zandt County,48467,69475,62649
+ Texas,Victoria County,48469,70896,91413
+ Texas,Walker County,48471,52324,80209
+ Texas,Waller County,48473,80397,61552
+ Texas,Ward County,48475,65952,11144
+ Texas,Washington County,48477,77825,36647
+ Texas,Webb County,48479,63058,269294
+ Texas,Wharton County,48481,66924,41794
+ Texas,Wheeler County,48483,60167,4862
+ Texas,Wichita County,48485,63524,129996
+ Texas,Wilbarger County,48487,54102,12616
+ Texas,Willacy County,48489,54180,20139
+ Texas,Williamson County,48491,111340,672688
+ Texas,Wilson County,48493,94565,52781
+ Texas,Winkler County,48495,86900,7454
+ Texas,Wise County,48497,93421,75005
+ Texas,Wood County,48499,60300,46961
+ Texas,Yoakum County,48501,84925,7571
+ Texas,Young County,48503,68010,18029
+ Texas,Zapata County,48505,39239,13841
+ Texas,Zavala County,48507,36749,9412
+ Utah,Beaver County,49001,79360,7273
+ Utah,Box Elder County,49003,84550,61246
+ Utah,Cache County,49005,81665,140046
+ Utah,Carbon County,49007,58377,20517
+ Utah,Daggett County,49009,66000,783
+ Utah,Davis County,49011,110884,370924
+ Utah,Duchesne County,49013,78445,20185
+ Utah,Emery County,49015,74291,10046
+ Utah,Garfield County,49017,61875,5219
+ Utah,Grand County,49019,67106,9754
+ Utah,Iron County,49021,66247,62252
+ Utah,Juab County,49023,101786,12586
+ Utah,Kane County,49025,77092,8170
+ Utah,Millard County,49027,73639,13315
+ Utah,Morgan County,49029,130929,12802
+ Utah,Piute County,49031,48393,1694
+ Utah,Rich County,49033,79009,2631
+ Utah,Salt Lake County,49035,97494,1196523
+ Utah,San Juan County,49037,64481,14483
+ Utah,Sanpete County,49039,70083,29719
+ Utah,Sevier County,49041,74884,22085
+ Utah,Summit County,49043,138114,42970
+ Utah,Tooele County,49045,106587,79347
+ Utah,Uintah County,49047,73746,37056
+ Utah,Utah County,49049,100671,705400
+ Utah,Wasatch County,49051,117608,36642
+ Utah,Washington County,49053,80632,196431
+ Utah,Wayne County,49055,76607,2584
+ Utah,Weber County,49057,90005,269648
+ Vermont,Addison County,50001,89639,37664
+ Vermont,Bennington County,50003,73325,37269
+ Vermont,Caledonia County,50005,69970,30475
+ Vermont,Chittenden County,50007,96759,169758
+ Vermont,Essex County,50009,59294,5982
+ Vermont,Franklin County,50011,81313,50638
+ Vermont,Grand Isle County,50013,97396,7450
+ Vermont,Lamoille County,50015,74908,26148
+ Vermont,Orange County,50017,82232,29761
+ Vermont,Orleans County,50019,70103,27606
+ Vermont,Rutland County,50021,68616,60425
+ Vermont,Washington County,50023,83449,60017
+ Vermont,Windham County,50025,72217,45923
+ Vermont,Windsor County,50027,77594,57990
+ Virginia,Accomack County,51001,58993,33335
+ Virginia,Albemarle County,51003,104392,114919
+ Virginia,Alleghany County,51005,56188,14859
+ Virginia,Amelia County,51007,76717,13462
+ Virginia,Amherst County,51009,68724,31485
+ Virginia,Appomattox County,51011,62853,16610
+ Virginia,Arlington County,51013,142114,236254
+ Virginia,Augusta County,51015,82049,78033
+ Virginia,Bath County,51017,56184,4100
+ Virginia,Bedford County,51019,78937,80894
+ Virginia,Bland County,51021,61216,6199
+ Virginia,Botetourt County,51023,81213,34004
+ Virginia,Brunswick County,51025,53084,15841
+ Virginia,Buchanan County,51027,42886,19415
+ Virginia,Buckingham County,51029,60828,16976
+ Virginia,Campbell County,51031,66165,55312
+ Virginia,Caroline County,51033,87407,32098
+ Virginia,Carroll County,51035,54484,29157
+ Virginia,Charles City County,51036,75417,6627
+ Virginia,Charlotte County,51037,58000,11422
+ Virginia,Chesterfield County,51041,101931,377869
+ Virginia,Clarke County,51043,117111,15216
+ Virginia,Craig County,51045,69057,4856
+ Virginia,Culpeper County,51047,100049,54397
+ Virginia,Cumberland County,51049,55325,9818
+ Virginia,Dickenson County,51051,47254,13733
+ Virginia,Dinwiddie County,51053,83704,28191
+ Virginia,Essex County,51057,56520,10623
+ Virginia,Fairfax County,51059,153637,1147837
+ Virginia,Fauquier County,51061,130189,74577
+ Virginia,Floyd County,51063,62191,15593
+ Virginia,Fluvanna County,51065,96768,28092
+ Virginia,Franklin County,51067,68849,55130
+ Virginia,Frederick County,51069,97606,95008
+ Virginia,Giles County,51071,65691,16557
+ Virginia,Gloucester County,51073,84306,39526
+ Virginia,Goochland County,51075,118931,26410
+ Virginia,Grayson County,51077,47730,15287
+ Virginia,Greene County,51079,89808,21155
+ Virginia,Greensville County,51081,54668,11275
+ Virginia,Halifax County,51083,52013,33639
+ Virginia,Hanover County,51085,112805,112879
+ Virginia,Henrico County,51087,88783,335744
+ Virginia,Henry County,51089,50760,49980
+ Virginia,Highland County,51091,65625,2296
+ Virginia,Isle of Wight County,51093,95241,39974
+ Virginia,James City County,51095,109985,81013
+ Virginia,King and Queen County,51097,70469,6695
+ Virginia,King George County,51099,116884,27896
+ Virginia,King William County,51101,86056,18593
+ Virginia,Lancaster County,51103,69713,10936
+ Virginia,Lee County,51105,41827,21900
+ Virginia,Loudoun County,51107,181765,432998
+ Virginia,Louisa County,51109,86689,39980
+ Virginia,Lunenburg County,51111,54842,12016
+ Virginia,Madison County,51113,84323,14044
+ Virginia,Mathews County,51115,75880,8540
+ Virginia,Mecklenburg County,51117,57045,30516
+ Virginia,Middlesex County,51119,75060,10847
+ Virginia,Montgomery County,51121,72715,99101
+ Virginia,Nelson County,51125,72589,14732
+ Virginia,New Kent County,51127,123314,25105
+ Virginia,Northampton County,51131,61632,12059
+ Virginia,Northumberland County,51133,66480,12188
+ Virginia,Nottoway County,51135,63261,15597
+ Virginia,Orange County,51137,94008,37822
+ Virginia,Page County,51139,57037,23727
+ Virginia,Patrick County,51141,53038,17512
+ Virginia,Pittsylvania County,51143,54085,59856
+ Virginia,Powhatan County,51145,110537,31555
+ Virginia,Prince Edward County,51147,56315,21996
+ Virginia,Prince George County,51149,84897,43146
+ Virginia,Prince William County,51153,131402,488880
+ Virginia,Pulaski County,51155,62028,33687
+ Virginia,Rappahannock County,51157,83380,7427
+ Virginia,Richmond County,51159,66304,9095
+ Virginia,Roanoke County,51161,83709,97023
+ Virginia,Rockbridge County,51163,65469,22531
+ Virginia,Rockingham County,51165,80693,85600
+ Virginia,Russell County,51167,50012,25538
+ Virginia,Scott County,51169,46349,21479
+ Virginia,Shenandoah County,51171,67191,44925
+ Virginia,Smyth County,51173,49883,29420
+ Virginia,Southampton County,51175,70795,17964
+ Virginia,Spotsylvania County,51177,112738,146603
+ Virginia,Stafford County,51179,137807,163466
+ Virginia,Surry County,51181,78041,6549
+ Virginia,Sussex County,51183,63530,10765
+ Virginia,Tazewell County,51185,47313,39624
+ Virginia,Warren County,51187,84682,41531
+ Virginia,Washington County,51191,64552,53926
+ Virginia,Westmoreland County,51193,63398,18826
+ Virginia,Wise County,51195,52943,35448
+ Virginia,Wythe County,51197,57745,28188
+ Virginia,York County,51199,109956,71005
+ Virginia,Alexandria city,51510,119681,156976
+ Virginia,Bristol city,51520,50404,16849
+ Virginia,Buena Vista city,51530,57833,6593
+ Virginia,Charlottesville city,51540,74824,45437
+ Virginia,Chesapeake city,51550,95373,252583
+ Virginia,Colonial Heights city,51570,76505,18352
+ Virginia,Covington city,51580,41944,5680
+ Virginia,Danville city,51590,44423,42214
+ Virginia,Emporia city,51595,51899,5547
+ Virginia,Fairfax city,51600,132348,25026
+ Virginia,Falls Church city,51610,143262,14710
+ Virginia,Franklin city,51620,63245,8250
+ Virginia,Fredericksburg city,51630,86071,28873
+ Virginia,Galax city,51640,38675,6726
+ Virginia,Hampton city,51650,69621,137557
+ Virginia,Harrisonburg city,51660,62254,51392
+ Virginia,Hopewell city,51670,54729,22959
+ Virginia,Lexington city,51678,84517,7525
+ Virginia,Lynchburg city,51680,57947,79497
+ Virginia,Manassas city,51683,113590,42976
+ Virginia,Manassas Park city,51685,103250,16798
+ Virginia,Martinsville city,51690,46727,13658
+ Virginia,Newport News city,51700,69634,184216
+ Virginia,Norfolk city,51710,66109,233596
+ Virginia,Norton city,51720,41495,3577
+ Virginia,Petersburg city,51730,50698,33537
+ Virginia,Poquoson city,51735,120972,12639
+ Virginia,Portsmouth city,51740,60491,97190
+ Virginia,Radford city,51750,57348,16726
+ Virginia,Richmond city,51760,64587,229359
+ Virginia,Roanoke city,51770,55378,98355
+ Virginia,Salem city,51775,66725,25618
+ Virginia,Staunton city,51790,65581,25948
+ Virginia,Suffolk city,51800,92666,98796
+ Virginia,Virginia Beach city,51810,92968,456349
+ Virginia,Waynesboro city,51820,59994,22841
+ Virginia,Williamsburg city,51830,75604,15798
+ Virginia,Winchester city,51840,63974,27913
+ Washington,Adams County,53001,66136,20800
+ Washington,Asotin County,53003,72283,22467
+ Washington,Benton County,53005,89874,212905
+ Washington,Chelan County,53007,82381,80172
+ Washington,Clallam County,53009,70370,77813
+ Washington,Clark County,53011,97536,516959
+ Washington,Columbia County,53013,71810,4014
+ Washington,Cowlitz County,53015,76531,112360
+ Washington,Douglas County,53017,80363,44366
+ Washington,Ferry County,53019,55614,7387
+ Washington,Franklin County,53021,86714,98902
+ Washington,Garfield County,53023,64884,2353
+ Washington,Grant County,53025,73267,101799
+ Washington,Grays Harbor County,53027,64414,77053
+ Washington,Island County,53029,90551,86836
+ Washington,Jefferson County,53031,74048,33577
+ Washington,King County,53033,124746,2287171
+ Washington,Kitsap County,53035,104158,277881
+ Washington,Kittitas County,53037,73804,47172
+ Washington,Klickitat County,53039,71042,23411
+ Washington,Lewis County,53041,74796,85154
+ Washington,Lincoln County,53043,71512,11489
+ Washington,Mason County,53045,83270,67982
+ Washington,Okanogan County,53047,63207,43425
+ Washington,Pacific County,53049,67081,23994
+ Washington,Pend Oreille County,53051,67436,14050
+ Washington,Pierce County,53053,99564,930319
+ Washington,San Juan County,53055,84800,18478
+ Washington,Skagit County,53057,89263,131328
+ Washington,Skamania County,53059,93265,12402
+ Washington,Snohomish County,53061,111246,844430
+ Washington,Spokane County,53063,78582,549056
+ Washington,Stevens County,53065,69327,48067
+ Washington,Thurston County,53067,96563,299067
+ Washington,Wahkiakum County,53069,62653,4658
+ Washington,Walla Walla County,53071,74202,62161
+ Washington,Whatcom County,53073,81784,230503
+ Washington,Whitman County,53075,55406,47003
+ Washington,Yakima County,53077,70656,257152
+ West Virginia,Barbour County,54001,51394,15424
+ West Virginia,Berkeley County,54003,80815,129514
+ West Virginia,Boone County,54005,57093,21026
+ West Virginia,Braxton County,54007,50331,12208
+ West Virginia,Brooke County,54009,54316,21805
+ West Virginia,Cabell County,54011,55832,92739
+ West Virginia,Calhoun County,54013,43980,6048
+ West Virginia,Clay County,54015,42318,7835
+ West Virginia,Doddridge County,54017,57401,7711
+ West Virginia,Fayette County,54019,53194,39519
+ West Virginia,Gilmer County,54021,47981,7288
+ West Virginia,Grant County,54023,62361,10983
+ West Virginia,Greenbrier County,54025,48218,32386
+ West Virginia,Hampshire County,54027,63116,23465
+ West Virginia,Hancock County,54029,61466,28431
+ West Virginia,Hardy County,54031,49272,14243
+ West Virginia,Harrison County,54033,60377,64984
+ West Virginia,Jackson County,54035,58845,27705
+ West Virginia,Jefferson County,54037,98806,59260
+ West Virginia,Kanawha County,54039,60943,176537
+ West Virginia,Lewis County,54041,56477,16740
+ West Virginia,Lincoln County,54043,46205,19902
+ West Virginia,Logan County,54045,49723,31418
+ West Virginia,McDowell County,54047,31559,17943
+ West Virginia,Marion County,54049,67370,55909
+ West Virginia,Marshall County,54051,59169,29865
+ West Virginia,Mason County,54053,49761,25043
+ West Virginia,Mercer County,54055,53210,58563
+ West Virginia,Mineral County,54057,69375,26854
+ West Virginia,Mingo County,54059,38119,22542
+ West Virginia,Monongalia County,54061,65346,107163
+ West Virginia,Monroe County,54063,56750,12386
+ West Virginia,Morgan County,54065,72179,17426
+ West Virginia,Nicholas County,54067,54639,24277
+ West Virginia,Ohio County,54069,57094,41582
+ West Virginia,Pendleton County,54071,64931,6043
+ West Virginia,Pleasants County,54073,60932,7521
+ West Virginia,Pocahontas County,54075,42119,7784
+ West Virginia,Preston County,54077,61880,34160
+ West Virginia,Putnam County,54079,79527,57177
+ West Virginia,Raleigh County,54081,52150,73195
+ West Virginia,Randolph County,54083,52757,27576
+ West Virginia,Ritchie County,54085,50582,8286
+ West Virginia,Roane County,54087,45778,13786
+ West Virginia,Summers County,54089,40699,11729
+ West Virginia,Taylor County,54091,57795,16487
+ West Virginia,Tucker County,54093,53358,6654
+ West Virginia,Tyler County,54095,63693,8064
+ West Virginia,Upshur County,54097,54338,23712
+ West Virginia,Wayne County,54099,58878,38164
+ West Virginia,Webster County,54101,43839,8144
+ West Virginia,Wetzel County,54103,56836,14078
+ West Virginia,Wirt County,54105,49867,5053
+ West Virginia,Wood County,54107,57810,83407
+ West Virginia,Wyoming County,54109,48440,20629
+ Wisconsin,Adams County,55001,59442,21123
+ Wisconsin,Ashland County,55003,62462,16080
+ Wisconsin,Barron County,55005,65933,46797
+ Wisconsin,Bayfield County,55007,71151,16575
+ Wisconsin,Brown County,55009,79649,270892
+ Wisconsin,Buffalo County,55011,70479,13393
+ Wisconsin,Burnett County,55013,62819,16916
+ Wisconsin,Calumet County,55015,88810,52942
+ Wisconsin,Chippewa County,55017,74680,66799
+ Wisconsin,Clark County,55019,67400,34739
+ Wisconsin,Columbia County,55021,85351,58272
+ Wisconsin,Crawford County,55023,64094,16042
+ Wisconsin,Dane County,55025,89975,572674
+ Wisconsin,Dodge County,55027,75929,88742
+ Wisconsin,Door County,55029,74795,30445
+ Wisconsin,Douglas County,55031,75099,44229
+ Wisconsin,Dunn County,55033,74824,45527
+ Wisconsin,Eau Claire County,55035,74546,107116
+ Wisconsin,Florence County,55037,61086,4646
+ Wisconsin,Fond du Lac County,55039,74275,104137
+ Wisconsin,Forest County,55041,61071,9369
+ Wisconsin,Grant County,55043,66858,51770
+ Wisconsin,Green County,55045,82852,37017
+ Wisconsin,Green Lake County,55047,68196,19263
+ Wisconsin,Iowa County,55049,82182,23867
+ Wisconsin,Iron County,55051,60625,6210
+ Wisconsin,Jackson County,55053,68110,20981
+ Wisconsin,Jefferson County,55055,83750,86003
+ Wisconsin,Juneau County,55057,67270,26689
+ Wisconsin,Kenosha County,55059,81239,168438
+ Wisconsin,Kewaunee County,55061,82725,20664
+ Wisconsin,La Crosse County,55063,73013,120488
+ Wisconsin,Lafayette County,55065,76462,16942
+ Wisconsin,Langlade County,55067,55878,19490
+ Wisconsin,Lincoln County,55069,68164,28426
+ Wisconsin,Manitowoc County,55071,69148,81406
+ Wisconsin,Marathon County,55073,77884,138403
+ Wisconsin,Marinette County,55075,63809,42046
+ Wisconsin,Marquette County,55077,65681,15746
+ Wisconsin,Menominee County,55078,62108,4252
+ Wisconsin,Milwaukee County,55079,64435,926331
+ Wisconsin,Monroe County,55081,69467,46208
+ Wisconsin,Oconto County,55083,75049,39589
+ Wisconsin,Oneida County,55085,69371,38167
+ Wisconsin,Outagamie County,55087,85069,192826
+ Wisconsin,Ozaukee County,55089,96996,92966
+ Wisconsin,Pepin County,55091,75256,7431
+ Wisconsin,Pierce County,55093,92109,42584
+ Wisconsin,Polk County,55095,77219,45555
+ Wisconsin,Portage County,55097,76070,70832
+ Wisconsin,Price County,55099,60546,14092
+ Wisconsin,Racine County,55101,78096,197532
+ Wisconsin,Richland County,55103,66420,17205
+ Wisconsin,Rock County,55105,75673,164350
+ Wisconsin,Rusk County,55107,59944,14179
+ Wisconsin,St. Croix County,55109,103046,96033
+ Wisconsin,Sauk County,55111,79541,66009
+ Wisconsin,Sawyer County,55113,60801,18476
+ Wisconsin,Shawano County,55115,66479,41039
+ Wisconsin,Sheboygan County,55117,73094,117991
+ Wisconsin,Taylor County,55119,69350,20024
+ Wisconsin,Trempealeau County,55121,76313,30839
+ Wisconsin,Vernon County,55123,71893,31049
+ Wisconsin,Vilas County,55125,68431,23647
+ Wisconsin,Walworth County,55127,80520,105657
+ Wisconsin,Washburn County,55129,63441,16854
+ Wisconsin,Washington County,55131,96359,137879
+ Wisconsin,Waukesha County,55133,106076,411762
+ Wisconsin,Waupaca County,55135,72830,51569
+ Wisconsin,Waushara County,55137,67107,24868
+ Wisconsin,Winnebago County,55139,74925,171769
+ Wisconsin,Wood County,55141,67989,74004
+ Wyoming,Albany County,56001,61917,38249
+ Wyoming,Big Horn County,56003,62101,11828
+ Wyoming,Campbell County,56005,89869,47240
+ Wyoming,Carbon County,56007,70511,14463
+ Wyoming,Converse County,56009,81558,13762
+ Wyoming,Crook County,56011,79637,7455
+ Wyoming,Fremont County,56013,64904,39533
+ Wyoming,Goshen County,56015,58929,12605
+ Wyoming,Hot Springs County,56017,61250,4620
+ Wyoming,Johnson County,56019,64871,8686
+ Wyoming,Laramie County,56021,80173,101060
+ Wyoming,Lincoln County,56023,89330,20486
+ Wyoming,Natrona County,56025,72156,79977
+ Wyoming,Niobrara County,56027,64113,2368
+ Wyoming,Park County,56029,73035,30449
+ Wyoming,Platte County,56031,67718,8612
+ Wyoming,Sheridan County,56033,71388,32055
+ Wyoming,Sublette County,56035,83597,8838
+ Wyoming,Sweetwater County,56037,75034,41542
+ Wyoming,Teton County,56039,124172,23396
+ Wyoming,Uinta County,56041,82980,20644
+ Wyoming,Washakie County,56043,65714,7703
+ Wyoming,Weston County,56045,89509,6826
+ Puerto Rico,Adjuntas Municipio,72001,19549,17960
+ Puerto Rico,Aguada Municipio,72003,21501,37758
+ Puerto Rico,Aguadilla Municipio,72005,21540,54137
+ Puerto Rico,Aguas Buenas Municipio,72007,23072,23614
+ Puerto Rico,Aibonito Municipio,72009,21744,24636
+ Puerto Rico,Añasco Municipio,72011,24436,25094
+ Puerto Rico,Arecibo Municipio,72013,23635,86467
+ Puerto Rico,Arroyo Municipio,72015,21186,15341
+ Puerto Rico,Barceloneta Municipio,72017,24508,22494
+ Puerto Rico,Barranquitas Municipio,72019,23407,29054
+ Puerto Rico,Bayamón Municipio,72021,31354,182469
+ Puerto Rico,Cabo Rojo Municipio,72023,26408,46876
+ Puerto Rico,Caguas Municipio,72025,31379,125586
+ Puerto Rico,Camuy Municipio,72027,27411,32734
+ Puerto Rico,Canóvanas Municipio,72029,29642,41816
+ Puerto Rico,Carolina Municipio,72031,36958,152204
+ Puerto Rico,Cataño Municipio,72033,25508,22467
+ Puerto Rico,Cayey Municipio,72035,30129,40917
+ Puerto Rico,Ceiba Municipio,72037,25454,10995
+ Puerto Rico,Ciales Municipio,72039,22586,16805
+ Puerto Rico,Cidra Municipio,72041,29246,39643
+ Puerto Rico,Coamo Municipio,72043,22045,33998
+ Puerto Rico,Comerío Municipio,72045,17134,18711
+ Puerto Rico,Corozal Municipio,72047,23797,34444
+ Puerto Rico,Culebra Municipio,72049,29630,1387
+ Puerto Rico,Dorado Municipio,72051,36391,35810
+ Puerto Rico,Fajardo Municipio,72053,25563,31489
+ Puerto Rico,Florida Municipio,72054,22332,11532
+ Puerto Rico,Guánica Municipio,72055,17633,12855
+ Puerto Rico,Guayama Municipio,72057,20402,35298
+ Puerto Rico,Guayanilla Municipio,72059,23915,17141
+ Puerto Rico,Guaynabo Municipio,72061,46731,89378
+ Puerto Rico,Gurabo Municipio,72063,42216,40228
+ Puerto Rico,Hatillo Municipio,72065,28146,38157
+ Puerto Rico,Hormigueros Municipio,72067,26828,15441
+ Puerto Rico,Humacao Municipio,72069,27038,50100
+ Puerto Rico,Isabela Municipio,72071,23266,42890
+ Puerto Rico,Jayuya Municipio,72073,21796,14566
+ Puerto Rico,Juana Díaz Municipio,72075,24852,46156
+ Puerto Rico,Juncos Municipio,72077,29863,36829
+ Puerto Rico,Lajas Municipio,72079,19695,23035
+ Puerto Rico,Lares Municipio,72081,18917,27855
+ Puerto Rico,Las Marías Municipio,72083,16314,8744
+ Puerto Rico,Las Piedras Municipio,72085,25232,34951
+ Puerto Rico,Loíza Municipio,72087,24272,22768
+ Puerto Rico,Luquillo Municipio,72089,24225,17532
+ Puerto Rico,Manatí Municipio,72091,22683,38943
+ Puerto Rico,Maricao Municipio,72093,21302,4988
+ Puerto Rico,Maunabo Municipio,72095,18045,10399
+ Puerto Rico,Mayagüez Municipio,72097,18295,70828
+ Puerto Rico,Moca Municipio,72099,23586,37424
+ Puerto Rico,Morovis Municipio,72101,25003,28397
+ Puerto Rico,Naguabo Municipio,72103,23395,23054
+ Puerto Rico,Naranjito Municipio,72105,22156,29310
+ Puerto Rico,Orocovis Municipio,72107,20302,21309
+ Puerto Rico,Patillas Municipio,72109,24396,15563
+ Puerto Rico,Peñuelas Municipio,72111,22697,19853
+ Puerto Rico,Ponce Municipio,72113,19877,132760
+ Puerto Rico,Quebradillas Municipio,72115,24640,23409
+ Puerto Rico,Rincón Municipio,72117,24447,15378
+ Puerto Rico,Río Grande Municipio,72119,28943,46051
+ Puerto Rico,Sabana Grande Municipio,72121,22065,22407
+ Puerto Rico,Salinas Municipio,72123,21901,25079
+ Puerto Rico,San Germán Municipio,72125,18317,31305
+ Puerto Rico,San Juan Municipio,72127,27992,336160
+ Puerto Rico,San Lorenzo Municipio,72129,22847,37431
+ Puerto Rico,San Sebastián Municipio,72131,19920,39088
+ Puerto Rico,Santa Isabel Municipio,72133,25795,19903
+ Puerto Rico,Toa Alta Municipio,72135,35241,66320
+ Puerto Rico,Toa Baja Municipio,72137,32017,73039
+ Puerto Rico,Trujillo Alto Municipio,72139,40055,67088
+ Puerto Rico,Utuado Municipio,72141,20800,27621
+ Puerto Rico,Vega Alta Municipio,72143,25538,34921
+ Puerto Rico,Vega Baja Municipio,72145,24244,53892
+ Puerto Rico,Vieques Municipio,72147,19803,8078
+ Puerto Rico,Villalba Municipio,72149,26286,21556
+ Puerto Rico,Yabucoa Municipio,72151,22944,29400
+ Puerto Rico,Yauco Municipio,72153,24255,32993
