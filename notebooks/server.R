@@ -1,241 +1,168 @@
 library(shiny)
+library(shinydashboard)
 library(leaflet)
 library(sf)
 library(dplyr)
 library(readr)
 library(tigris)
 library(stringr)
+library(plotly)
+library(DT)
+library(viridis)
 
-options(
-  tigris_use_cache = TRUE
+options(tigris_use_cache = TRUE)
+
+# Load data
+master <- read_csv("../data/master_df.csv")
+
+master$fips <- master$fips |>
+  as.character() |>
+  str_pad(width = 5, side = "left", pad = "0")
+
+# County boundaries
+counties_sf <- tigris::counties(
+  cb = TRUE,
+  year = 2024
 )
 
-# LOAD DATA
+counties_sf$fips <- paste0(
+  counties_sf$STATEFP,
+  counties_sf$COUNTYFP
+)
 
-master <-
-  read_csv(
-    "../data/master_df.csv"
-  )
+# Merge data with geography
+map_df <- counties_sf |>
+  left_join(master, by = "fips")
 
-master$fips <-
-  master$fips |>
-  as.character() |>
-  str_pad(
-    width = 5,
-    pad = "0"
-  )
-
-# COUNTY SHAPES
-
-counties_sf <-
-  tigris::counties(
-    cb = TRUE,
-    year = 2024
-  )
-
-counties_sf$fips <-
-  paste0(
-    counties_sf$STATEFP,
-    counties_sf$COUNTYFP
-  )
-
-# MERGE
-map_df <-
-  
-  counties_sf |>
-  
-  left_join(
-    master,
-    by = "fips"
-  )
-
-# SERVER
-
-function(
-    input,
-    output,
-    session
-){
-  
-  # FILTER
+function(input, output, session) {
   
   filtered <- reactive({
-    
-    df <- map_df
-    
-    if(
-      input$gender=="Male"
-    ){
-      
-      if(
-        "sex" %in% names(df)
-      ){
-        
-        df <-
-          df[
-            df$sex=="Male",
-          ]
-        
-      }
-      
-    }
-    
-    if(
-      input$gender=="Female"
-    ){
-      
-      if(
-        "sex" %in% names(df)
-      ){
-        
-        df <-
-          df[
-            df$sex=="Female",
-          ]
-        
-      }
-      
-    }
-    
-    df
-    
+    map_df
   })
   
-  # MAP
+  output$total_deaths <- renderValueBox({
+    valueBox(
+      value = format(sum(filtered()$deaths, na.rm = TRUE), big.mark = ","),
+      subtitle = "Total Opioid Deaths",
+      icon = icon("skull-crossbones"),
+      color = "red"
+    )
+  })
   
-  output$map <-
+  output$avg_overdose_rate <- renderValueBox({
+    valueBox(
+      value = round(mean(filtered()$overdose_rate, na.rm = TRUE), 1),
+      subtitle = "Average Overdose Rate",
+      icon = icon("chart-line"),
+      color = "orange"
+    )
+  })
+  
+  output$total_facilities <- renderValueBox({
+    valueBox(
+      value = format(sum(filtered()$facility_count, na.rm = TRUE), big.mark = ","),
+      subtitle = "Total Facilities",
+      icon = icon("hospital"),
+      color = "blue"
+    )
+  })
+  
+  output$avg_income <- renderValueBox({
+    valueBox(
+      value = paste0("$", format(round(mean(filtered()$median_income, na.rm = TRUE)), big.mark = ",")),
+      subtitle = "Average Median Income",
+      icon = icon("dollar-sign"),
+      color = "green"
+    )
+  })
+  
+  output$map <- renderLeaflet({
     
-    renderLeaflet({
-      
-      df <-
-        
-        filtered()
-      
-      pal <-
-        
-        colorNumeric(
-          
-          palette="viridis",
-          
-          domain=
-            df[[input$metric]],
-          
-          na.color=
-            "#d9d9d9"
-          
-        )
-      
-      leaflet(
-        df
+    df <- filtered()
+    
+    pal <- colorNumeric(
+      palette = "viridis",
+      domain = df[[input$metric]],
+      na.color = "#d9d9d9"
+    )
+    
+    leaflet(df) |>
+      addProviderTiles(providers$CartoDB.Positron) |>
+      fitBounds(
+        lng1 = -128,
+        lat1 = 23,
+        lng2 = -65,
+        lat2 = 50
       ) |>
+      addPolygons(
+        fillColor = ~pal(get(input$metric)),
+        fillOpacity = 0.8,
+        weight = 0.4,
+        color = "white",
+        smoothFactor = 0.2,
         
-        addProviderTiles(
-          providers$CartoDB.Positron
-        ) |>
+        label = ~paste0(
+          NAME,
+          ": ",
+          round(get(input$metric), 2)
+        ),
         
-        fitBounds(
-          
-          lng1=-128,
-          lat1=23,
-          
-          lng2=-65,
-          lat2=50
-          
-        ) |>
+        popup = ~paste0(
+          "<b>", NAME, "</b>",
+          "<br><b>Deaths:</b> ", deaths,
+          "<br><b>Overdose Rate:</b> ", round(overdose_rate, 2),
+          "<br><b>Facilities:</b> ", facility_count,
+          "<br><b>Facility Rate:</b> ", round(facility_rate, 2),
+          "<br><b>Population:</b> ", format(population, big.mark = ","),
+          "<br><b>Median Income:</b> $", format(median_income, big.mark = ","),
+          "<br><b>Poverty Rate:</b> ", poverty_rate, "%"
+        ),
         
-        addPolygons(
-          
-          fillColor=
-            ~pal(
-              get(
-                input$metric
-              )
-            ),
-          
-          fillOpacity=.8,
-          
-          weight=.5,
-          
-          color="white",
-          
-          smoothFactor=.2,
-          
-          label=
-            ~paste0(
-              NAME,
-              ": ",
-              round(
-                get(
-                  input$metric
-                ),
-                1
-              )
-            ),
-          
-          popup=
-            ~paste0(
-              
-              "<b>",
-              
-              NAME,
-              
-              "</b>",
-              
-              "<br><b>Deaths:</b> ",
-              deaths,
-              
-              "<br><b>Population:</b> ",
-              format(
-                population,
-                big.mark=","
-              ),
-              
-              "<br><b>Income:</b> $",
-              format(
-                median_income,
-                big.mark=","
-              ),
-              
-              "<br><b>Poverty:</b> ",
-              poverty_rate,
-              
-              "%",
-              
-              "<br><b>Overdose Rate:</b> ",
-              round(
-                overdose_rate,
-                1
-              )
-              
-            ),
-          
-          highlightOptions=
-            highlightOptions(
-              
-              weight=3,
-              
-              bringToFront=TRUE
-              
-            )
-          
-        ) |>
-        
-        addLegend(
-          
-          position=
-            "bottomright",
-          
-          pal=
-            pal,
-          
-          values=
-            df[[input$metric]],
-          
-          title=
-            input$metric
-          
+        highlightOptions = highlightOptions(
+          weight = 3,
+          color = "#333333",
+          bringToFront = TRUE
         )
-      
-    })
+      ) |>
+      addLegend(
+        position = "bottomright",
+        pal = pal,
+        values = df[[input$metric]],
+        title = input$metric
+      )
+  })
   
+  output$top_counties_plot <- renderPlotly({
+    
+    df <- filtered() |>
+      st_drop_geometry() |>
+      filter(!is.na(.data[[input$metric]])) |>
+      arrange(desc(.data[[input$metric]])) |>
+      slice_head(n = 20)
+    
+    plot_ly(
+      df,
+      x = ~.data[[input$metric]],
+      y = ~reorder(NAME, .data[[input$metric]]),
+      type = "bar",
+      orientation = "h"
+    ) |>
+      layout(
+        title = paste("Top 20 Counties by", input$metric),
+        xaxis = list(title = input$metric),
+        yaxis = list(title = "")
+      )
+  })
+  
+  output$data_table <- renderDT({
+    
+    filtered() |>
+      st_drop_geometry() |>
+      datatable(
+        options = list(
+          pageLength = 15,
+          scrollX = TRUE
+        )
+      )
+  })
 }

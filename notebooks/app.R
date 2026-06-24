@@ -1,3 +1,12 @@
-library(shiny)
-
-runApp()
+install.packages(c(
+  "shinydashboard",
+  "leaflet",
+  "sf",
+  "dplyr",
+  "readr",
+  "tigris",
+  "stringr",
+  "plotly",
+  "DT",
+  "viridis"
+))
