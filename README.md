@@ -22,6 +22,7 @@ The goal is to identify geographic disparities in access to care and highlight a
 
 ## Data Sources
 
-- CDC WONDER (Opioid overdose mortality data)
-- U.S. Census Bureau (ACS socioeconomic data via API)
-- SAMHSA (Treatment facility locations)
+- CDC WONDER (Opioid overdose mortality data 2018-2024)
+- U.S. Census Bureau (ACS socioeconomic data via API 2024)
+- SAMHSA (Treatment facility locations 2024)
+
