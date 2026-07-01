@@ -3,7 +3,7 @@
 #   "shinydashboard", "leaflet", "sf", "dplyr", "readr",
 #   "tigris", "stringr", "plotly", "DT", "viridis"
 # ))
-
+#install.packages("shinyjs")
 library(shiny)
 
 # Source UI and server definitions

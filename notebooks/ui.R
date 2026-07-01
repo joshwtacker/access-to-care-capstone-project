@@ -1,17 +1,13 @@
 library(shiny)
 library(shinydashboard)
+library(shinyjs)
 library(leaflet)
 library(plotly)
 library(DT)
 
-# state_choices is defined in server.R after data is loaded;
-# we reference it here via the shared global environment.
-
 ui <- dashboardPage(
   
-  dashboardHeader(
-    title = "Opioid Access Dashboard"
-  ),
+  dashboardHeader(title = "Opioid Access Dashboard"),
   
   dashboardSidebar(
     
@@ -28,39 +24,58 @@ ui <- dashboardPage(
       "metric",
       "Map Variable",
       choices = c(
-        "Total Deaths"              = "deaths",
-        "Overdose Rate (per 100k)"  = "overdose_rate",
-        "Facility Count"            = "facility_count",
-        "Facility Rate (per 100k)"  = "facility_rate",
-        "Access Gap Score"          = "gap_score",
-        "Population"                = "population",
-        "Median Income"             = "median_income",
-        "Poverty Rate"              = "poverty_rate"
+        "Total Deaths"                    = "deaths",
+        "Overdose Rate (per 100k)"        = "overdose_rate",
+        "Facility Count"                  = "facility_count",
+        "Facility Rate (per 100k)"        = "facility_rate",
+        "Access Gap Score"                = "gap_score",
+        "Urban–Rural Class. (RUCC 1–9)"  = "rucc",
+        "Population"                      = "population",
+        "Median Income"                   = "median_income",
+        "Poverty Rate"                    = "poverty_rate"
       ),
       selected = "overdose_rate"
     ),
     
     hr(),
     
-    # State filter — populated from data in server.R via updateSelectInput,
-    # or you can hardcode state_choices here after sourcing server.R first.
     selectizeInput(
       "state_filter",
       "Filter by State",
-      choices  = NULL,   # filled in server via updateSelectizeInput
+      choices  = NULL,
       multiple = TRUE,
       options  = list(placeholder = "All states")
+    ),
+    
+    # RUCC / urban-rural filter — only meaningful with RUCC data
+    div(
+      id = "rucc_filter_box",
+      selectInput(
+        "rucc_filter",
+        "Filter by Urban–Rural Type",
+        choices = c(
+          "All counties"         = "all",
+          "Metro (RUCC 1–3)"     = "metro",
+          "Non-metro (RUCC 4–6)" = "nonmetro",
+          "Rural (RUCC 7–9)"     = "rural"
+        ),
+        selected = "all"
+      )
     )
   ),
   
   dashboardBody(
     
+    useShinyjs(),
+    
     tags$head(
       tags$style(HTML("
         .content-wrapper, .right-side { background-color: #f4f6f9; }
-        .box        { border-radius: 8px; }
-        .small-box  { border-radius: 8px; }
+        .box       { border-radius: 8px; }
+        .small-box { border-radius: 8px; }
         .sidebar-menu .treeview-menu > li > a { padding-left: 30px; }
+        .rucc-legend { font-size: 11px; padding: 4px 8px; background: #fff;
+                       border: 1px solid #ddd; border-radius: 4px; }
       "))
     ),
     
@@ -74,7 +89,7 @@ ui <- dashboardPage(
           valueBoxOutput("total_deaths",      width = 3),
           valueBoxOutput("avg_overdose_rate", width = 3),
           valueBoxOutput("total_facilities",  width = 3),
-          valueBoxOutput("avg_income",        width = 3)
+          valueBoxOutput("high_risk_rural",   width = 3)   # NEW: rural high-risk callout
         ),
         
         fluidRow(
@@ -83,7 +98,19 @@ ui <- dashboardPage(
             width       = 12,
             status      = "primary",
             solidHeader = TRUE,
-            leafletOutput("map", height = 700)
+            
+            # RUCC quick-reference legend shown only when RUCC is selected
+            conditionalPanel(
+              condition = "input.metric == 'rucc'",
+              div(
+                class = "rucc-legend",
+                strong("RUCC Scale:"),
+                " 1–3 = Metro  ·  4–6 = Non-metro  ·  7–9 = Rural/Remote  ·  ",
+                "Higher number = more rural"
+              )
+            ),
+            
+            leafletOutput("map", height = 680)
           )
         )
       ),
@@ -114,10 +141,7 @@ ui <- dashboardPage(
                      sliderInput(
                        "risk_n",
                        "Number of counties to show:",
-                       min   = 5,
-                       max   = 100,
-                       value = 25,
-                       step  = 5
+                       min = 5, max = 100, value = 25, step = 5
                      )
               ),
               column(8,
@@ -135,7 +159,9 @@ ui <- dashboardPage(
                                  " fewer treatment facilities per 100k → higher risk")
                        ),
                        p("Composite Risk Score = average of three normalized components,
-                    scaled to 0–100. Counties missing any input are excluded.")
+                    scaled to 0–100. Counties missing any input are excluded."),
+                       p(em("Tip: use the Urban–Rural filter in the sidebar to see
+                        the most at-risk rural counties specifically."))
                      )
               )
             ),
@@ -189,34 +215,51 @@ ui <- dashboardPage(
               tags$li("Which counties show the largest gaps between overdose risk and treatment availability?")
             ),
             
+            h4("Key Findings"),
+            tags$ul(
+              tags$li(strong("Poverty (r = +0.29) and unemployment (r = +0.23)"),
+                      " are positively correlated with overdose mortality; income is protective (r = −0.24). All p < 0.001."),
+              tags$li(strong("462 counties"), " fall into the 'High Risk, Low Access' quadrant —
+                      above-median overdose rates with below-median facility access."),
+              tags$li("After controlling for urban–rural classification (RUCC), ",
+                      strong("rural counties show significantly higher overdose mortality"),
+                      " independent of socioeconomic factors (RUCC coef = −33.4, p < 0.001)."),
+              tags$li(strong("McDowell County, WV"), " leads the composite risk score at 91.9/100.
+                      West Virginia and Kentucky dominate the top 25 most at-risk counties.")
+            ),
+            
             h4("Data Sources"),
             tags$ul(
               tags$li(tags$a("CDC WONDER", href = "https://wonder.cdc.gov/", target = "_blank"),
-                      " — Opioid overdose mortality data, 2018–2024. Age-adjusted death rates
-                        per 100,000 population. Counties with fewer than 10 deaths are suppressed
-                        per CDC policy and appear as NA in this dataset."),
-              tags$li(tags$a("U.S. Census Bureau American Community Survey (ACS)", href = "https://www.census.gov/programs-surveys/acs", target = "_blank"),
-                      " — 5-year estimates for median household income, poverty rate,
-                        unemployment rate, and county population."),
+                      " — Opioid overdose mortality data, 2018–2024. Counties with fewer than
+                        10 deaths are suppressed per CDC policy and appear as NA."),
+              tags$li(tags$a("U.S. Census Bureau ACS", href = "https://www.census.gov/programs-surveys/acs", target = "_blank"),
+                      " — 5-year estimates: median household income, poverty rate,
+                        unemployment rate, county population."),
               tags$li(tags$a("SAMHSA Treatment Facility Locator", href = "https://findtreatment.gov/", target = "_blank"),
                       " — Substance abuse treatment facility locations used to calculate
-                        facility counts and rates per 100,000 population by county.")
+                        facility counts and rates per 100,000 population."),
+              tags$li(tags$a("USDA Rural-Urban Continuum Codes (2023)", href = "https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/", target = "_blank"),
+                      " — 9-category county classification from most urban (1) to most
+                        rural/remote (9), used to control for urbanicity in regression analysis.")
             ),
             
             h4("Key Metrics"),
             tags$ul(
-              tags$li(strong("Overdose Rate:"), " Age-adjusted opioid overdose deaths per 100,000 person-years, aggregated 2018–2024."),
-              tags$li(strong("Facility Rate:"), " Number of SAMHSA-listed treatment facilities per 100,000 residents."),
-              tags$li(strong("Access Gap Score:"), " Overdose Rate minus Facility Rate. Higher values indicate counties
-                      where mortality burden is high relative to available treatment — these are
-                      the highest-priority areas for resource allocation.")
+              tags$li(strong("Overdose Rate:"), " Age-adjusted opioid overdose deaths per 100,000 person-years, 2018–2024."),
+              tags$li(strong("Facility Rate:"), " SAMHSA-listed treatment facilities per 100,000 residents."),
+              tags$li(strong("Access Gap Score:"), " Overdose Rate minus Facility Rate. Higher = more unmet need."),
+              tags$li(strong("Composite Risk Score:"), " Equal-weighted average of normalized overdose rate, poverty rate,
+                      and inverse facility rate, scaled 0–100."),
+              tags$li(strong("RUCC:"), " USDA Rural-Urban Continuum Code (1 = largest metro, 9 = most remote rural).")
             ),
             
             h4("Limitations"),
             tags$ul(
-              tags$li("CDC WONDER suppresses death counts for counties with fewer than 10 deaths, creating missing data in rural and low-population areas."),
-              tags$li("Facility presence does not capture facility capacity, quality, or whether patients can actually afford or access care."),
-              tags$li("Socioeconomic data reflects ACS 5-year estimates and may not perfectly align with the mortality observation period.")
+              tags$li("CDC WONDER suppresses counties with fewer than 10 deaths — rural low-mortality counties are underrepresented."),
+              tags$li("Facility presence does not capture capacity, quality, cost, or actual patient access."),
+              tags$li("All findings are correlational, not causal."),
+              tags$li("Socioeconomic data reflects ACS 5-year estimates and may not perfectly align with the mortality period.")
             )
           ),
           
@@ -227,21 +270,24 @@ ui <- dashboardPage(
             solidHeader = TRUE,
             
             h4("Map"),
-            p("Use the ", strong("Map Variable"), " dropdown in the sidebar to change what's
-               displayed on the choropleth map. Click any county to see a full data popup.
-               Hover for a quick label."),
+            p("Use the ", strong("Map Variable"), " dropdown to change what's displayed.
+               Select ", strong("Urban–Rural Class. (RUCC 1–9)"), " to see the geographic
+               distribution of rurality. Click any county for a full data popup."),
             
-            h4("State Filter"),
-            p("Use the ", strong("Filter by State"), " control to focus the map,
-               rankings chart, and data table on one or more states."),
+            h4("Filters"),
+            p("Use ", strong("Filter by State"), " and ", strong("Filter by Urban–Rural Type"),
+              " together to focus on specific geographies — e.g., select 'Rural (RUCC 7–9)'
+               to see only the most remote counties."),
             
             h4("County Rankings"),
-            p("The Rankings tab shows the top 20 counties for whichever metric is selected.
-               Use this alongside the Access Gap Score to find the most underserved counties."),
+            p("The Rankings tab shows top 20 counties for the selected metric,
+               and the At-Risk table uses a composite score across overdose rate,
+               poverty, and facility access. Try filtering to Rural counties to
+               see the most underserved remote areas."),
             
             h4("Data Table"),
-            p("The Data Table tab shows the full county-level dataset. You can search,
-               sort, and export it using the table controls.")
+            p("Full county dataset with RUCC codes and urban–rural category labels.
+               Searchable, sortable, and exportable.")
           )
         )
       )

@@ -1,5 +1,6 @@
 library(shiny)
 library(shinydashboard)
+library(shinyjs)
 library(leaflet)
 library(sf)
 library(dplyr)
@@ -16,58 +17,87 @@ options(tigris_use_cache = TRUE)
 # Human-readable labels for each metric
 # ---------------------------------------------------------------------------
 metric_labels <- c(
-  deaths         = "Total Opioid Deaths (2018-2024)",
+  deaths         = "Total Opioid Deaths (2018–2024)",
   overdose_rate  = "Overdose Rate (per 100k, age-adjusted)",
   facility_count = "Treatment Facility Count",
   facility_rate  = "Treatment Facility Rate (per 100k)",
   population     = "County Population (single year)",
   median_income  = "Median Household Income ($)",
   poverty_rate   = "Poverty Rate (%)",
-  gap_score      = "Access Gap Score (Overdose Rate - Facility Rate)"
+  gap_score      = "Access Gap Score (Overdose Rate − Facility Rate)",
+  rucc           = "Urban–Rural Classification (RUCC 1–9)"
+)
+
+rucc_labels <- c(
+  "1" = "Metro >1M",
+  "2" = "Metro 250k–1M",
+  "3" = "Metro <250k",
+  "4" = "Non-metro, adj to large metro",
+  "5" = "Non-metro, adj to small metro",
+  "6" = "Non-metro, not adj to metro",
+  "7" = "Rural, adj to metro",
+  "8" = "Rural, adj to small metro",
+  "9" = "Rural, remote"
 )
 
 # ---------------------------------------------------------------------------
 # Load and clean data
 # ---------------------------------------------------------------------------
-master_raw <- read_csv("../data/master_df.csv")
-
-# FIX 1: Only rename Population -> population_7yr if that column actually exists.
-# The capital-P Population column may not be present depending on your CDC export.
-if ("Population" %in% names(master_raw)) {
-  master_raw <- master_raw |> rename(population_7yr = Population)
+data_file <- if (file.exists("../data/master_df_rucc.csv")) {
+  "../data/master_df_rucc.csv"
+} else {
+  message("master_df_rucc.csv not found — falling back to master_df.csv (no RUCC data)")
+  "../data/master_df.csv"
 }
 
-master <- master_raw |>
-  # Drop territory/unmatched rows
-  filter(!is.na(fips), as.character(fips) != "0") |>
+master_raw <- read_csv(data_file) |>
+  rename(
+    population_7yr = any_of("Population"),
+    population     = any_of("population")
+  ) |>
+  filter(fips != "00000") |>
   mutate(
-    # FIX 2: Robust FIPS cleaning — handles numeric (1001), float (1001.0),
-    # and string ("01001") formats that all come out of Python's to_csv.
-    fips = str_pad(
-      as.character(as.integer(suppressWarnings(as.numeric(fips)))),
+    fips      = str_pad(
+      as.character(as.integer(as.numeric(fips))),
       width = 5, side = "left", pad = "0"
     ),
     state     = str_extract(county_state, "[A-Z]{2}$"),
-    gap_score = overdose_rate - facility_rate,
-    # FIX 3: Add unemployment_rate as NA if missing (column referenced in
-    # popups and data table but not always present in master_df).
-    unemployment_rate = if ("unemployment_rate" %in% names(master_raw))
-      unemployment_rate
-    else
-      NA_real_
-  )
+    gap_score = overdose_rate - facility_rate
+  ) |>
+  # Deduplicate — keep one row per county (duplicates can arise from the RUCC merge)
+  distinct(fips, .keep_all = TRUE)
+
+# Check for RUCC outside mutate so we never reference '.' inside if()
+has_rucc <- "rucc" %in% names(master_raw) && !all(is.na(master_raw$rucc))
+
+master <- if (has_rucc) {
+  master_raw |>
+    mutate(
+      rucc       = as.integer(rucc),
+      is_rural   = as.integer(rucc >= 4),
+      rucc_label = rucc_labels[as.character(rucc)]
+    )
+} else {
+  master_raw |>
+    mutate(
+      rucc       = NA_integer_,
+      is_rural   = NA_integer_,
+      rucc_label = NA_character_
+    )
+}
 
 # ---------------------------------------------------------------------------
 # County boundaries from tigris
 # ---------------------------------------------------------------------------
 counties_sf <- tigris::counties(cb = TRUE, year = 2024)
-counties_sf$fips <- paste0(counties_sf$STATEFP, counties_sf$COUNTYFP)
+counties_sf$fips <- str_pad(
+  paste0(counties_sf$STATEFP, counties_sf$COUNTYFP),
+  width = 5, side = "left", pad = "0"
+)
 
-# Merge — left join keeps all counties even if no data match
 map_df <- counties_sf |>
   left_join(master, by = "fips")
 
-# Sorted list of states for the sidebar filter
 state_choices <- sort(unique(na.omit(master$state)))
 
 # ---------------------------------------------------------------------------
@@ -77,11 +107,29 @@ server <- function(input, output, session) {
   
   updateSelectizeInput(session, "state_filter", choices = state_choices, server = TRUE)
   
+  observe({
+    if (!has_rucc) shinyjs::hide("rucc_filter_box")
+  })
+  
+  # ---- Reactive filtered dataset ------------------------------------------
   filtered <- reactive({
     df <- map_df
+    
     if (!is.null(input$state_filter) && length(input$state_filter) > 0) {
       df <- df |> filter(state %in% input$state_filter)
     }
+    
+    if (has_rucc && !is.null(input$rucc_filter) && input$rucc_filter != "all") {
+      df <- df |> filter(
+        case_when(
+          input$rucc_filter == "metro"    ~ rucc %in% 1:3,
+          input$rucc_filter == "nonmetro" ~ rucc %in% 4:6,
+          input$rucc_filter == "rural"    ~ rucc %in% 7:9,
+          TRUE                            ~ TRUE
+        )
+      )
+    }
+    
     df
   })
   
@@ -90,7 +138,7 @@ server <- function(input, output, session) {
   output$total_deaths <- renderValueBox({
     valueBox(
       value    = format(sum(filtered()$deaths, na.rm = TRUE), big.mark = ","),
-      subtitle = "Total Opioid Deaths (2018-2024)",
+      subtitle = "Total Opioid Deaths (2018–2024)",
       icon     = icon("skull-crossbones"),
       color    = "red"
     )
@@ -114,12 +162,22 @@ server <- function(input, output, session) {
     )
   })
   
-  output$avg_income <- renderValueBox({
+  output$high_risk_rural <- renderValueBox({
+    df      <- filtered() |> st_drop_geometry()
+    od_med  <- median(df$overdose_rate, na.rm = TRUE)
+    fac_med <- median(df$facility_rate,  na.rm = TRUE)
+    n <- if (has_rucc) {
+      sum(df$rucc >= 4 & df$overdose_rate > od_med &
+            df$facility_rate < fac_med, na.rm = TRUE)
+    } else {
+      sum(df$overdose_rate > od_med & df$facility_rate < fac_med, na.rm = TRUE)
+    }
     valueBox(
-      value    = paste0("$", format(round(mean(filtered()$median_income, na.rm = TRUE)), big.mark = ",")),
-      subtitle = "Avg Median Household Income",
-      icon     = icon("dollar-sign"),
-      color    = "green"
+      value    = format(n, big.mark = ","),
+      subtitle = if (has_rucc) "Rural Counties: High Risk & Low Access"
+      else "Counties: High Risk & Low Access",
+      icon     = icon("triangle-exclamation"),
+      color    = "red"
     )
   })
   
@@ -131,52 +189,68 @@ server <- function(input, output, session) {
     metric_col <- input$metric
     label_text <- metric_labels[[metric_col]]
     
-    # Guard: if all values are NA the palette will error
-    vals <- df[[metric_col]]
-    if (all(is.na(vals))) {
-      return(leaflet() |> addProviderTiles(providers$CartoDB.Positron) |>
-               fitBounds(lng1 = -128, lat1 = 23, lng2 = -65, lat2 = 50))
+    if (metric_col == "rucc") {
+      rucc_vals <- sort(na.omit(unique(df[["rucc"]])))
+      pal <- colorFactor(
+        palette  = "RdYlBu",
+        domain   = rucc_vals,
+        na.color = "#d9d9d9",
+        reverse  = TRUE
+      )
+    } else {
+      pal <- colorNumeric(
+        palette  = "viridis",
+        domain   = df[[metric_col]],
+        na.color = "#d9d9d9"
+      )
     }
-    
-    pal <- colorNumeric(
-      palette  = "viridis",
-      domain   = vals,
-      na.color = "#d9d9d9"
-    )
     
     leaflet(df) |>
       addProviderTiles(providers$CartoDB.Positron) |>
       fitBounds(lng1 = -128, lat1 = 23, lng2 = -65, lat2 = 50) |>
       addPolygons(
-        fillColor   = ~pal(get(metric_col)),
-        fillOpacity = 0.8,
-        weight      = 0.4,
-        color       = "white",
+        fillColor    = ~pal(get(metric_col)),
+        fillOpacity  = 0.8,
+        weight       = 0.4,
+        color        = "white",
         smoothFactor = 0.2,
-        label = ~paste0(NAME, ": ", round(get(metric_col), 2)),
+        
+        label = ~if (metric_col == "rucc") {
+          paste0(NAME, ": ", rucc_labels[as.character(get(metric_col))])
+        } else {
+          paste0(NAME, ": ", round(get(metric_col), 2))
+        },
+        
         popup = ~paste0(
           "<b>", NAME, "</b>",
-          "<br><b>Deaths (2018-2024):</b> ",          ifelse(is.na(deaths), "Suppressed", deaths),
-          "<br><b>Overdose Rate (per 100k):</b> ",    ifelse(is.na(overdose_rate), "N/A", round(overdose_rate, 2)),
-          "<br><b>Facilities:</b> ",                  ifelse(is.na(facility_count), "N/A", facility_count),
-          "<br><b>Facility Rate (per 100k):</b> ",    ifelse(is.na(facility_rate), "N/A", round(facility_rate, 2)),
-          "<br><b>Access Gap Score:</b> ",            ifelse(is.na(gap_score), "N/A", round(gap_score, 2)),
-          "<br><b>Population:</b> ",                  ifelse(is.na(population), "N/A", format(population, big.mark = ",")),
-          "<br><b>Median Income:</b> $",              ifelse(is.na(median_income), "N/A", format(median_income, big.mark = ",")),
-          "<br><b>Poverty Rate:</b> ",                ifelse(is.na(poverty_rate), "N/A", paste0(poverty_rate, "%")),
-          "<br><b>Unemployment Rate:</b> ",           ifelse(is.na(unemployment_rate), "N/A", paste0(unemployment_rate, "%"))
+          "<br><b>Deaths (2018–2024):</b> ", deaths,
+          "<br><b>Overdose Rate (per 100k):</b> ", round(overdose_rate, 2),
+          "<br><b>Facilities:</b> ", facility_count,
+          "<br><b>Facility Rate (per 100k):</b> ", round(facility_rate, 2),
+          "<br><b>Access Gap Score:</b> ", round(gap_score, 2),
+          if (has_rucc) paste0("<br><b>Urban–Rural (RUCC):</b> ", rucc_label) else "",
+          "<br><b>Population:</b> ", format(population, big.mark = ","),
+          "<br><b>Median Income:</b> $", format(median_income, big.mark = ","),
+          "<br><b>Poverty Rate:</b> ", poverty_rate, "%",
+          "<br><b>Unemployment Rate:</b> ", unemployment_rate, "%"
         ),
+        
         highlightOptions = highlightOptions(
-          weight      = 3,
-          color       = "#333333",
+          weight       = 3,
+          color        = "#333333",
           bringToFront = TRUE
         )
       ) |>
       addLegend(
-        position = "bottomright",
-        pal      = pal,
-        values   = vals,
-        title    = label_text
+        position  = "bottomright",
+        pal       = pal,
+        values    = if (metric_col == "rucc") rucc_vals else df[[metric_col]],
+        title     = label_text,
+        labFormat = if (metric_col == "rucc") {
+          labelFormat(transform = function(x) rucc_labels[as.character(x)])
+        } else {
+          labelFormat()
+        }
       )
   })
   
@@ -239,8 +313,10 @@ server <- function(input, output, session) {
         `Facility Rate`    = facility_rate,
         `Facility Count`   = facility_count,
         `Median Income`    = median_income,
-        Population         = population
+        Population         = population,
+        any_of("rucc_label")
       ) |>
+      rename(any_of(c("rucc_label" = "Urban–Rural"))) |>
       mutate(
         `Overdose Rate` = round(`Overdose Rate`, 2),
         `Facility Rate` = round(`Facility Rate`, 2)
@@ -278,8 +354,16 @@ server <- function(input, output, session) {
         Population          = population,
         `Median Income`     = median_income,
         `Poverty Rate`      = poverty_rate,
-        `Unemployment Rate` = unemployment_rate
+        `Unemployment Rate` = unemployment_rate,
+        any_of("rucc"),
+        any_of("rucc_label"),
+        any_of("is_rural")
       ) |>
+      rename(any_of(c(
+        "rucc"       = "RUCC Code",
+        "rucc_label" = "Urban–Rural Category",
+        "is_rural"   = "Is Rural (1=yes)"
+      ))) |>
       mutate(
         `Overdose Rate` = round(`Overdose Rate`, 2),
         `Facility Rate` = round(`Facility Rate`, 2),
