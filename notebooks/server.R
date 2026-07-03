@@ -5,13 +5,10 @@ library(leaflet)
 library(sf)
 library(dplyr)
 library(readr)
-library(tigris)
 library(stringr)
 library(plotly)
 library(DT)
 library(viridis)
-
-options(tigris_use_cache = TRUE)
 
 # ---------------------------------------------------------------------------
 # Human-readable labels for each metric
@@ -41,84 +38,51 @@ rucc_labels <- c(
 )
 
 # ---------------------------------------------------------------------------
-# Load and clean data
+# Load pre-built map data
+# Geometry is already simplified and merged with county data.
+# Run build_map_data.R locally to regenerate map_data.rds.
 # ---------------------------------------------------------------------------
-data_file <- if (file.exists("../data/master_df_rucc.csv")) {
-  "../data/master_df_rucc.csv"
-} else {
-  message("master_df_rucc.csv not found — falling back to master_df.csv (no RUCC data)")
-  "../data/master_df.csv"
-}
+map_df <- readRDS("map_data.rds")
 
-master_raw <- read_csv(data_file) |>
-  rename(
-    population_7yr = any_of("Population"),
-    population     = any_of("population")
-  ) |>
-  filter(fips != "00000") |>
-  mutate(
-    fips      = str_pad(
-      as.character(as.integer(as.numeric(fips))),
-      width = 5, side = "left", pad = "0"
-    ),
-    state     = str_extract(county_state, "[A-Z]{2}$"),
-    gap_score = overdose_rate - facility_rate
-  ) |>
-  # Deduplicate — keep one row per county (duplicates can arise from the RUCC merge)
-  distinct(fips, .keep_all = TRUE)
+# Flat data frame (no geometry) for filters, value boxes, tables
+master <- map_df |> st_drop_geometry()
 
-# Check for RUCC outside mutate so we never reference '.' inside if()
-has_rucc <- "rucc" %in% names(master_raw) && !all(is.na(master_raw$rucc))
+# Detect whether RUCC data is present
+has_rucc <- "rucc" %in% names(master) && !all(is.na(master$rucc))
 
-master <- if (has_rucc) {
-  master_raw |>
+# Add RUCC labels if available
+if (has_rucc) {
+  map_df <- map_df |>
     mutate(
       rucc       = as.integer(rucc),
       is_rural   = as.integer(rucc >= 4),
       rucc_label = rucc_labels[as.character(rucc)]
     )
-} else {
-  master_raw |>
-    mutate(
-      rucc       = NA_integer_,
-      is_rural   = NA_integer_,
-      rucc_label = NA_character_
-    )
+  master <- map_df |> st_drop_geometry()
 }
 
-# ---------------------------------------------------------------------------
-# County boundaries from tigris
-# ---------------------------------------------------------------------------
-counties_sf <- tigris::counties(cb = TRUE, year = 2024)
-counties_sf$fips <- str_pad(
-  paste0(counties_sf$STATEFP, counties_sf$COUNTYFP),
-  width = 5, side = "left", pad = "0"
-)
-
-map_df <- counties_sf |>
-  left_join(master, by = "fips")
-
+# Filter choices
 state_choices <- sort(unique(na.omit(master$state)))
 
 # ---------------------------------------------------------------------------
 # Server
 # ---------------------------------------------------------------------------
 server <- function(input, output, session) {
-  
+
   updateSelectizeInput(session, "state_filter", choices = state_choices, server = TRUE)
-  
+
   observe({
     if (!has_rucc) shinyjs::hide("rucc_filter_box")
   })
-  
+
   # ---- Reactive filtered dataset ------------------------------------------
   filtered <- reactive({
     df <- map_df
-    
+
     if (!is.null(input$state_filter) && length(input$state_filter) > 0) {
       df <- df |> filter(state %in% input$state_filter)
     }
-    
+
     if (has_rucc && !is.null(input$rucc_filter) && input$rucc_filter != "all") {
       df <- df |> filter(
         case_when(
@@ -129,12 +93,12 @@ server <- function(input, output, session) {
         )
       )
     }
-    
+
     df
   })
-  
+
   # ---- Value boxes --------------------------------------------------------
-  
+
   output$total_deaths <- renderValueBox({
     valueBox(
       value    = format(sum(filtered()$deaths, na.rm = TRUE), big.mark = ","),
@@ -143,7 +107,7 @@ server <- function(input, output, session) {
       color    = "red"
     )
   })
-  
+
   output$avg_overdose_rate <- renderValueBox({
     valueBox(
       value    = round(mean(filtered()$overdose_rate, na.rm = TRUE), 1),
@@ -152,7 +116,7 @@ server <- function(input, output, session) {
       color    = "orange"
     )
   })
-  
+
   output$total_facilities <- renderValueBox({
     valueBox(
       value    = format(sum(filtered()$facility_count, na.rm = TRUE), big.mark = ","),
@@ -161,7 +125,7 @@ server <- function(input, output, session) {
       color    = "blue"
     )
   })
-  
+
   output$high_risk_rural <- renderValueBox({
     df      <- filtered() |> st_drop_geometry()
     od_med  <- median(df$overdose_rate, na.rm = TRUE)
@@ -175,20 +139,20 @@ server <- function(input, output, session) {
     valueBox(
       value    = format(n, big.mark = ","),
       subtitle = if (has_rucc) "Rural Counties: High Risk & Low Access"
-      else "Counties: High Risk & Low Access",
+                 else "Counties: High Risk & Low Access",
       icon     = icon("triangle-exclamation"),
       color    = "red"
     )
   })
-  
+
   # ---- Choropleth map -----------------------------------------------------
-  
+
   output$map <- renderLeaflet({
-    
+
     df         <- filtered()
     metric_col <- input$metric
     label_text <- metric_labels[[metric_col]]
-    
+
     if (metric_col == "rucc") {
       rucc_vals <- sort(na.omit(unique(df[["rucc"]])))
       pal <- colorFactor(
@@ -204,7 +168,7 @@ server <- function(input, output, session) {
         na.color = "#d9d9d9"
       )
     }
-    
+
     leaflet(df) |>
       addProviderTiles(providers$CartoDB.Positron) |>
       fitBounds(lng1 = -128, lat1 = 23, lng2 = -65, lat2 = 50) |>
@@ -214,27 +178,27 @@ server <- function(input, output, session) {
         weight       = 0.4,
         color        = "white",
         smoothFactor = 0.2,
-        
+
         label = ~if (metric_col == "rucc") {
           paste0(NAME, ": ", rucc_labels[as.character(get(metric_col))])
         } else {
           paste0(NAME, ": ", round(get(metric_col), 2))
         },
-        
+
         popup = ~paste0(
           "<b>", NAME, "</b>",
-          "<br><b>Deaths (2018–2024):</b> ", deaths,
-          "<br><b>Overdose Rate (per 100k):</b> ", round(overdose_rate, 2),
-          "<br><b>Facilities:</b> ", facility_count,
-          "<br><b>Facility Rate (per 100k):</b> ", round(facility_rate, 2),
-          "<br><b>Access Gap Score:</b> ", round(gap_score, 2),
+          "<br><b>Deaths (2018–2024):</b> ",        deaths,
+          "<br><b>Overdose Rate (per 100k):</b> ",  round(overdose_rate, 2),
+          "<br><b>Facilities:</b> ",                facility_count,
+          "<br><b>Facility Rate (per 100k):</b> ",  round(facility_rate, 2),
+          "<br><b>Access Gap Score:</b> ",           round(gap_score, 2),
           if (has_rucc) paste0("<br><b>Urban–Rural (RUCC):</b> ", rucc_label) else "",
-          "<br><b>Population:</b> ", format(population, big.mark = ","),
-          "<br><b>Median Income:</b> $", format(median_income, big.mark = ","),
-          "<br><b>Poverty Rate:</b> ", poverty_rate, "%",
-          "<br><b>Unemployment Rate:</b> ", unemployment_rate, "%"
+          "<br><b>Population:</b> ",                format(population, big.mark = ","),
+          "<br><b>Median Income:</b> $",            format(median_income, big.mark = ","),
+          "<br><b>Poverty Rate:</b> ",              poverty_rate, "%",
+          "<br><b>Unemployment Rate:</b> ",         unemployment_rate, "%"
         ),
-        
+
         highlightOptions = highlightOptions(
           weight       = 3,
           color        = "#333333",
@@ -253,20 +217,20 @@ server <- function(input, output, session) {
         }
       )
   })
-  
+
   # ---- Top 20 bar chart ---------------------------------------------------
-  
+
   output$top_counties_plot <- renderPlotly({
-    
+
     metric_col <- input$metric
     label_text <- metric_labels[[metric_col]]
-    
+
     df <- filtered() |>
       st_drop_geometry() |>
       filter(!is.na(.data[[metric_col]])) |>
       arrange(desc(.data[[metric_col]])) |>
       slice_head(n = 20)
-    
+
     plot_ly(
       df,
       x           = ~.data[[metric_col]],
@@ -282,11 +246,11 @@ server <- function(input, output, session) {
         margin = list(l = 160)
       )
   })
-  
+
   # ---- At-risk county table -----------------------------------------------
-  
+
   output$risk_table <- renderDT({
-    
+
     df <- filtered() |>
       st_drop_geometry() |>
       filter(
@@ -305,15 +269,15 @@ server <- function(input, output, session) {
       mutate(Rank = row_number()) |>
       select(
         Rank,
-        County             = county_state,
-        State              = state,
-        `Risk Score`       = risk_score,
-        `Overdose Rate`    = overdose_rate,
+        County              = county_state,
+        State               = state,
+        `Risk Score`        = risk_score,
+        `Overdose Rate`     = overdose_rate,
         `Poverty Rate (%)`  = poverty_rate,
-        `Facility Rate`    = facility_rate,
-        `Facility Count`   = facility_count,
-        `Median Income`    = median_income,
-        Population         = population,
+        `Facility Rate`     = facility_rate,
+        `Facility Count`    = facility_count,
+        `Median Income`     = median_income,
+        Population          = population,
         any_of("rucc_label")
       ) |>
       rename(any_of(c("rucc_label" = "Urban–Rural"))) |>
@@ -321,7 +285,7 @@ server <- function(input, output, session) {
         `Overdose Rate` = round(`Overdose Rate`, 2),
         `Facility Rate` = round(`Facility Rate`, 2)
       )
-    
+
     datatable(
       df,
       rownames = FALSE,
@@ -335,11 +299,11 @@ server <- function(input, output, session) {
         backgroundPosition = "center"
       )
   })
-  
+
   # ---- Data table ---------------------------------------------------------
-  
+
   output$data_table <- renderDT({
-    
+
     filtered() |>
       st_drop_geometry() |>
       select(
