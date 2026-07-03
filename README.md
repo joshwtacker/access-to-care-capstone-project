@@ -1,52 +1,153 @@
-# Access to Care: Opioid Overdose Risk & Treatment Availability Across U.S. Counties
+<div align="center">
 
-[![R](https://img.shields.io/badge/R-Shiny-276DC3?logo=r)](https://shiny.posit.co/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Data: CDC WONDER](https://img.shields.io/badge/Data-CDC%20WONDER-005A8E)](https://wonder.cdc.gov/)
+# 🏥 Access to Care
+### Opioid Overdose Risk & Treatment Availability Across U.S. Counties
 
-An interactive geospatial analysis of opioid overdose mortality, treatment access, and socioeconomic risk across **1,887 U.S. counties** from **2018–2024**, built as a data science capstone project.
+*A data science capstone project analyzing opioid mortality, treatment access, and socioeconomic risk across 1,887 U.S. counties from 2018–2024.*
 
-**[▶ Live Dashboard](https://joshwtacker.shinyapps.io/access_to_care_us_counties/)**
+[![Live Dashboard](https://img.shields.io/badge/▶%20Live%20Dashboard-shinyapps.io-1B2A4A?style=for-the-badge)](your-shinyapps-url-here)
 
 ---
 
-## 📊 Key Findings
+[![R Shiny](https://img.shields.io/badge/R-Shiny-276DC3?style=flat-square&logo=r&logoColor=white)](https://shiny.posit.co/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![CDC WONDER](https://img.shields.io/badge/Data-CDC%20WONDER-005A8E?style=flat-square)](https://wonder.cdc.gov/)
+[![SAMHSA](https://img.shields.io/badge/Data-SAMHSA-E8A020?style=flat-square)](https://findtreatment.gov/)
 
-| Research Question | Finding |
+</div>
+
+---
+
+## 📌 At a Glance
+
+<div align="center">
+
+| 🗺️ 1,887 Counties | 📅 2018–2024 | 🔬 4 Research Questions | 📊 4 Data Sources |
+|:---:|:---:|:---:|:---:|
+| Analyzed nationwide | 7-year study period | Answered with statistics | CDC · Census · SAMHSA · USDA |
+
+</div>
+
+---
+
+## 🔍 Key Findings
+
+> **TL;DR:** Poverty and unemployment predict overdose risk. Facilities are misallocated. Rural counties face compounded disadvantage. Appalachian counties are the most underserved in the nation.
+
+<br>
+
+**Q1 — Socioeconomic factors correlate with overdose mortality**
+- Poverty rate: **r = +0.29** · Unemployment rate: **r = +0.23** · Median income: **r = −0.24**
+- All significant at **p < 0.001** across 1,887 counties
+
+**Q2 — Facilities are NOT distributed in proportion to need**
+- **462 counties** are simultaneously High Risk & Low Access
+- Facility placement follows population density, not overdose burden — the distribution is nearly random relative to need
+
+**Q3 — Rural counties face independent disadvantage**
+- After controlling for income, poverty, and unemployment via USDA RUCC codes, rurality independently predicts higher overdose mortality
+- **RUCC coefficient = −33.4** (p < 0.001) · R² improved **0.118 → 0.170**
+
+**Q4 — The access gap is nationwide and severe**
+- **Every U.S. state** has a positive gap (overdose burden exceeds treatment supply)
+- **McDowell County, WV** leads the composite risk index at **91.9 / 100**
+- West Virginia and Kentucky account for **14 of the top 25** most at-risk counties
+
+---
+
+## 🖥️ Dashboard Features
+
+The interactive Shiny dashboard lets anyone explore these findings without running code.
+
+| Feature | Description |
 |---|---|
-| **Q1: Socioeconomic factors** | Poverty (r = +0.29) and unemployment (r = +0.23) positively correlate with overdose mortality; income is protective (r = −0.24). All p < 0.001. |
-| **Q2: Facility distribution** | 462 counties are High Risk & Low Access. Facilities follow population density, not overdose burden — the distribution is nearly random relative to need. |
-| **Q3: Does access help?** | After controlling for urbanicity (RUCC), rural counties face significantly higher overdose mortality independent of socioeconomic factors (RUCC coef = −33.4, p < 0.001). R² improved from 0.118 → 0.170. |
-| **Q4: Gap counties** | Every U.S. state has a positive access gap. McDowell County, WV scores 91.9/100 on the composite risk index. West Virginia and Kentucky together account for 14 of the top 25 most at-risk counties. |
+| 🗺️ **Choropleth Map** | 9 selectable metrics — including RUCC urban-rural classification. Click any county for a full data popup. |
+| 🔍 **Dual Filters** | Filter by state AND urban-rural type (Metro / Non-metro / Rural) simultaneously. |
+| ⚠️ **At-Risk Table** | Composite risk score rankings with a user-controlled slider (5–100 counties). |
+| 📊 **County Rankings** | Top 20 bar chart for any selected metric, updated dynamically by filters. |
+| 🔢 **Live Value Boxes** | Real-time summaries including "Rural Counties: High Risk & Low Access" count. |
+| 📋 **Full Data Table** | Complete county dataset with RUCC codes — sortable, searchable, exportable. |
 
 ---
 
-## 🗂 Project Structure
+## 🚀 How to Run
+
+### 1 · Python Analysis
+
+> **Requires:** Python 3.10+
+
+```bash
+pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn requests openpyxl
+```
+
+Run the notebooks **in order:**
+
+```
+1. API_Socioeconomic_Data_Pull.ipynb   →  Pull Census ACS data
+2. cleaning_data_2024.ipynb            →  Clean CDC WONDER mortality data
+3. Merging_Cleaning_Data.ipynb         →  Build master dataset + merge USDA RUCC codes
+4. analysis.ipynb                      →  Run all 4 research questions, generate charts
+```
+
+> ℹ️ `Merging_Cleaning_Data.ipynb` downloads USDA RUCC data automatically. Internet access required.
+
+---
+
+### 2 · R Shiny Dashboard
+
+> **Requires:** R 4.2+
+
+```r
+install.packages(c(
+  "shiny", "shinydashboard", "shinyjs",
+  "leaflet", "sf", "dplyr", "readr",
+  "tigris", "stringr", "plotly", "DT", "viridis"
+))
+```
+
+**Before running the app**, generate the pre-built map file:
+
+```r
+source("build_map_data.R")   # run once locally — creates map_data.rds
+```
+
+Then launch:
+
+```r
+shiny::runApp("shiny/")
+```
+
+**To deploy to shinyapps.io**, include these four files:
+
+```
+app.R  ·  server.R  ·  ui.R  ·  map_data.rds
+```
+
+---
+
+## 🗂️ Project Structure
 
 ```
 access-to-care-capstone-project/
 │
-├── data/
-│   ├── cleaned/
-│   │   ├── cdc_cleaned_2024.csv          # CDC WONDER opioid mortality data
-│   │   ├── samhsa_facilities_zip.csv     # SAMHSA treatment facility locations
-│   │   └── census_acs_2024.csv          # ACS socioeconomic estimates
+├── 📂 data/
 │   ├── master_df.csv                     # Base merged dataset
 │   └── master_df_rucc.csv               # Enriched with USDA RUCC codes
 │
-├── notebooks/
+├── 📂 notebooks/
 │   ├── API_Socioeconomic_Data_Pull.ipynb # Census ACS data collection
-│   ├── cleaning_data_2024.ipynb          # CDC WONDER data cleaning
-│   ├── Merging_Cleaning_Data.ipynb       # Master dataset construction + RUCC merge
+│   ├── cleaning_data_2024.ipynb          # CDC WONDER cleaning
+│   ├── Merging_Cleaning_Data.ipynb       # Master dataset + RUCC merge
 │   └── analysis.ipynb                    # Full analysis — all 4 research questions
 │
-├── shiny/
+├── 📂 shiny/
 │   ├── app.R                             # App launcher
 │   ├── server.R                          # Server logic
-│   └── ui.R                             # UI layout
+│   ├── ui.R                             # UI layout
+│   ├── build_map_data.R                 # Pre-build map_data.rds (run before deploying)
+│   └── map_data.rds                     # Pre-merged, simplified shapefile (generated)
 │
-├── outputs/                              # Generated charts (gitignored if large)
+├── 📂 outputs/                           # Generated charts
 │   ├── q1_correlation_heatmap.png
 │   ├── q1_socioeconomic_scatter.png
 │   ├── q2_facility_vs_overdose.png
@@ -65,119 +166,51 @@ access-to-care-capstone-project/
 
 ---
 
-## 🚀 How to Run
-
-### Python Analysis (Jupyter Notebooks)
-
-**Requirements:** Python 3.10+
-
-```bash
-pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn requests openpyxl
-```
-
-Run notebooks in this order:
-
-1. `API_Socioeconomic_Data_Pull.ipynb` — pulls Census ACS data
-2. `cleaning_data_2024.ipynb` — cleans CDC WONDER data
-3. `Merging_Cleaning_Data.ipynb` — builds `master_df.csv` and `master_df_rucc.csv`
-4. `analysis.ipynb` — runs all four research questions and generates output charts
-
-> **Note:** `Merging_Cleaning_Data.ipynb` downloads USDA RUCC data automatically from the USDA ERS website. Internet access required.
-
-### R Shiny Dashboard
-
-**Requirements:** R 4.2+
-
-Install dependencies:
-
-```r
-install.packages(c(
-  "shiny", "shinydashboard", "shinyjs",
-  "leaflet", "sf", "dplyr", "readr",
-  "tigris", "stringr", "plotly", "DT", "viridis"
-))
-```
-
-Launch the app:
-
-```r
-shiny::runApp("shiny/")
-```
-
-Or open `shiny/app.R` in RStudio and click **Run App**.
-
-> **Important:** Run `Merging_Cleaning_Data.ipynb` first to generate `data/master_df_rucc.csv`. The app will fall back to `master_df.csv` if the RUCC-enriched file is not present, but the urban–rural filter and RUCC map layer will be unavailable.
-
----
-
 ## 📦 Data Sources
 
-| Source | Description | Years |
+| Source | What it provides | Coverage |
 |---|---|---|
-| [CDC WONDER](https://wonder.cdc.gov/) | Age-adjusted opioid overdose mortality rates per 100,000 population by county. Counties with <10 deaths are suppressed per CDC policy. | 2018–2024 |
-| [U.S. Census Bureau ACS](https://www.census.gov/programs-surveys/acs) | 5-year estimates: median household income, poverty rate, unemployment rate, county population | 2018–2024 |
-| [SAMHSA Treatment Facility Locator](https://findtreatment.gov/) | Substance abuse treatment facility locations, used to calculate facility counts and rates per 100,000 by county | Current |
-| [USDA Rural-Urban Continuum Codes](https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/) | 9-category county classification from most urban (1) to most remote rural (9) | 2023 |
+| [CDC WONDER](https://wonder.cdc.gov/) | Age-adjusted opioid overdose mortality rates per 100k by county. Counties with <10 deaths are suppressed. | 2018–2024 |
+| [U.S. Census Bureau ACS](https://www.census.gov/programs-surveys/acs) | Median household income, poverty rate, unemployment rate, population | 5-year estimates |
+| [SAMHSA Treatment Locator](https://findtreatment.gov/) | Substance abuse treatment facility locations — used to compute facility counts and rates per 100k | Current |
+| [USDA Rural-Urban Continuum Codes](https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/) | 9-category urban-rural classification (1 = largest metro, 9 = most remote rural) | 2023 |
 
 ---
 
-## 📐 Key Metrics
+## 📐 Metric Definitions
 
-**Overdose Rate** — Age-adjusted opioid overdose deaths per 100,000 person-years, aggregated 2018–2024 using cumulative population as the denominator (CDC WONDER methodology).
+| Metric | Formula | What it measures |
+|---|---|---|
+| **Overdose Rate** | Deaths ÷ Population × 100,000 | Age-adjusted opioid deaths per 100k person-years, 2018–2024 |
+| **Facility Rate** | Facilities ÷ Population × 100,000 | Treatment supply per 100k residents |
+| **Gap Score** | Overdose Rate − Facility Rate | Unmet need — how much mortality burden exceeds treatment supply |
+| **Composite Risk Score** | (norm overdose + norm poverty + norm low facilities) ÷ 3 × 100 | Equal-weighted risk index scaled 0–100 |
+| **RUCC** | USDA classification 1–9 | 1 = metro >1M population · 9 = completely rural and remote |
 
-**Facility Rate** — Number of SAMHSA-listed substance abuse treatment facilities per 100,000 residents (single-year ACS population).
-
-**Access Gap Score** — `Overdose Rate − Facility Rate`. Both are per-100k rates, making them directly comparable. Positive values indicate counties where mortality burden exceeds treatment supply.
-
-**Composite Risk Score** — Equal-weighted average of three normalized components (each scaled 0–1 across all counties):
-- Overdose Rate (higher = worse)
-- Poverty Rate (higher = worse)
-- Facility Rate (lower = worse, i.e., inverted)
-
-Final score scaled to 0–100. Counties missing any component are excluded.
-
-**RUCC** — USDA Rural-Urban Continuum Code. 1 = county in metro area with 1M+ population; 9 = completely rural, not adjacent to any metro area.
-
----
-
-## 🖥 Shiny Dashboard Features
-
-| Feature | Description |
-|---|---|
-| **Choropleth Map** | 9 selectable metrics including RUCC urban-rural classification. Click any county for a full data popup. |
-| **State Filter** | Multi-select filter applied across map, rankings, and data table. |
-| **Urban–Rural Filter** | Filter by Metro (RUCC 1–3), Non-metro (RUCC 4–6), or Rural (RUCC 7–9). |
-| **Value Boxes** | Dynamic summaries including "Rural Counties: High Risk & Low Access" count. |
-| **County Rankings** | Top 20 bar chart for any selected metric. |
-| **At-Risk Table** | Composite risk score table with user-controlled slider (5–100 counties). |
-| **Data Table** | Full county dataset with RUCC codes, sortable and searchable. |
+> 💡 **Gap Score in plain English:** *"How many more people are dying per 100,000 than there are facilities to treat them."* The median U.S. county gap is **161.4** — and every county is positive.
 
 ---
 
 ## ⚠️ Limitations
 
-- **CDC suppression:** Counties with fewer than 10 opioid deaths have missing data, likely underrepresenting rural low-mortality areas.
-- **Correlational only:** All findings are observational. Unmeasured confounders (drug supply, state policy, cultural factors) explain remaining variance.
-- **Facility presence ≠ access:** SAMHSA data captures whether a facility exists, not capacity, cost, wait times, or whether patients can realistically access care.
-- **Time alignment:** ACS 5-year estimates may not perfectly align with the 2018–2024 mortality observation window.
+- **CDC suppression** — Counties with <10 opioid deaths have missing mortality data, likely underrepresenting rural low-mortality areas and understating rural risk.
+- **Correlational only** — All findings are observational. Unmeasured confounders (drug supply, state policy, cultural factors) explain remaining variance. No causal claims are made.
+- **Facility presence ≠ access** — SAMHSA data captures whether a facility exists, not its capacity, cost, wait times, or whether patients can realistically receive care.
+- **Time alignment** — ACS 5-year estimates may not perfectly align with the 2018–2024 mortality observation window.
 
 ---
 
 ## 🔭 Future Directions
 
-- Incorporate DEA fentanyl seizure data by county to separate supply-side from demand-side drivers
-- Add state policy covariates (naloxone access laws, Medicaid expansion, prescribing regulations)
-- Longitudinal tracking of county risk quadrant movement over time
-- Replace facility count with capacity-weighted or utilization-based access measures
+- **Drug supply data** — Incorporate DEA fentanyl seizure data by county to separate supply-side from demand-side drivers
+- **State policy variables** — Add naloxone access laws, Medicaid expansion status, and opioid prescribing regulations as covariates
+- **Longitudinal analysis** — Track how counties move across risk quadrants over time as policy and facility access evolve
+- **Capacity-adjusted access** — Replace raw facility count with capacity-weighted or utilization-based measures for a truer access metric
 
 ---
 
 ## 👤 Author
 
-**Josh Tacker** — Data Science Capstone Project, 2026
+**Josh Tacker** · Data Science Capstone Project · 2026
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
